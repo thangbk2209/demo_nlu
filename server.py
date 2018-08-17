@@ -4,6 +4,8 @@ from data_cleaner import DataCleaner
 import tensorflow as tf
 import pickle as pk 
 import numpy as np 
+from sklearn_crf import NerCrf
+from pyvi import ViPosTagger,ViTokenizer
 def read_trained_data(file_trained_data):
     with open(file_trained_data,'rb') as input_file :
         vectors = pk.load(input_file)
@@ -27,8 +29,10 @@ def intent_classify():
     #     train_index = [int(i) for i in temp]
     # data_classifier_size = 
     content = request.form['content']
+    
     print (content)
     content = content.lower()
+
     input_size = 16
     window_size = 2
     embedding_dim = 32
@@ -64,6 +68,21 @@ def intent_classify():
         print (sess.run(corr_pred))
         print (sess.run(index))
         intent = int2intent[sess.run(index)[0]]
-    return render_template('home.html', content = content, intent = intent, all_words = all_words)
+    ##chay ner
+    # ner = NerCrf(1000,20)
+    # ner.train()
+    ner = read_ner_model()
+    y_pred,y_test = ner.test(content)
+    s = ViPosTagger.postagging(ViTokenizer.tokenize(content))[0]
+    data = []
+    for i in range(len(s)):
+        data.append([s[i],y_pred[0][i],y_test[0][i]])
+    return render_template('home.html', content = content, intent = intent, all_words = all_words,data = data)
+def read_ner_model():
+    ner = pk.load(open('./ner/crf_model.pkl','rb'))
+    return ner
+   
+
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -77,14 +77,33 @@
                 <input class = "btn btn-primary" type="submit">
             </div>
         </form>
-        <div>
+        <div class="text-white">
           {{all_words}}
           {{content}},{{intent}}
+          
         </div>
         
         
         <!-- <img src="{{url_for('static', filename='img/ipad.png')}}" class="img-fluid" alt=""> -->
       </div>
+      <div class="text-white">
+          <table border = 1>
+            <tr>
+              <th> token </th>
+              <th> predicted entity</th>
+              <th> output entity</th> 
+            </tr>
+            {% for key in data %}
+            
+              <tr>
+                  <th> {{ key[0] }} </th>
+                  <th> {{ key[1] }}</th>
+                  <th> {{ key[2] }}</th>
+              </tr>
+              
+            {% endfor %}
+          </table>
+        </div>
     </section>
 
     <!-- Projects Section -->
