@@ -6,6 +6,7 @@ import pickle as pk
 import numpy as np 
 from sklearn_crf import NerCrf
 from pyvi import ViPosTagger,ViTokenizer
+import json
 def read_trained_data(file_trained_data):
     with open(file_trained_data,'rb') as input_file :
         vectors = pk.load(input_file)
@@ -14,25 +15,8 @@ def read_trained_data(file_trained_data):
     return vectors, word2int, int2word
 
 app = Flask(__name__)
-@app.route('/')
-def index():
-    name = request.args.get('name')
-    if not name:
-        name = '<unknown>'
-    return render_template('home.html', name=name)
-@app.route('/submit', methods=['POST'])
-def intent_classify():
-    # with open('../../data/train/train.txt') as input:
-    #     line = input.readline()
-    #     line = line.strip()
-    #     temp = line.split(" ")
-    #     train_index = [int(i) for i in temp]
-    # data_classifier_size = 
-    content = request.form['content']
-    
-    print (content)
+def text_classify(content):
     content = content.lower()
-
     input_size = 16
     window_size = 2
     embedding_dim = 32
@@ -68,16 +52,64 @@ def intent_classify():
         print (sess.run(corr_pred))
         print (sess.run(index))
         intent = int2intent[sess.run(index)[0]]
-    ##chay ner
-    # ner = NerCrf(1000,20)
-    # ner.train()
+    return intent
+def named_entity_reconignition(content,intent):
+    content = content.lower()
     ner = read_ner_model()
     y_pred,y_test = ner.test(content)
     s = ViPosTagger.postagging(ViTokenizer.tokenize(content))[0]
+    print (s)
     data = []
+    side = ""
+    price = "" 
+    quantity = ""
+    symbol = ""
+
     for i in range(len(s)):
-        data.append([s[i],y_pred[0][i],y_test[0][i]])
-    return render_template('home.html', content = content, intent = intent, all_words = all_words,data = data)
+        if y_pred[0][i] == 'side-B':
+            side = 'B'
+        elif y_pred[0][i] == 'side-S':
+            side = 'S'
+        elif y_pred[0][i] == 'price':
+            price = s[i]
+        elif y_pred[0][i] == 'quantity':
+            quantity = s[i]
+            
+        elif y_pred[0][i] == 'symbol':
+            symbol = s[i]
+        data.append([s[i],y_pred[0][i]])
+    
+    json_data = {
+        
+        "entities":{
+            "price":price,
+            "quantity":quantity,
+            "side":side,
+            "symbol":symbol,
+        },
+        "intent": intent,
+        "text" : content
+    }  
+    return json_data
+@app.route('/')
+def index():
+    # name = request.args.get('name')
+    return render_template('home.html')
+@app.route('/postContent', methods = ['POST'])
+def postContent():
+    # content = request.form['content']
+    # print (content)
+    print ('call API OK')
+    data = json.loads(request.data.decode())
+    content = data["content"]
+    intent = text_classify(content)
+    json_data = named_entity_reconignition(content,intent)
+    json_data = str(json_data)
+    print("sd: ",json_data)
+    # print (entities)
+    
+
+    return json_data
 def read_ner_model():
     ner = pk.load(open('./ner/crf_model.pkl','rb'))
     return ner

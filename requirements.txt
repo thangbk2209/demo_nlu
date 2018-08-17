@@ -1,0 +1,7 @@
+nltk
+pickle
+pyvi
+re
+random
+pandas
+regex
