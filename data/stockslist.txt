@@ -1,0 +1,1512 @@
+AAA,Công ty Cổ phần Nhựa và Môi trường Xanh An Phát,HSX
+AAM,Công ty Cổ phần Thủy sản Mekong,HSX
+AAV,Công ty cổ phần Việt Tiên Sơn Địa ốc,HNX
+ABC,CTCP Truyền thông VMG,UPCOM
+ABI,CTCP Bảo hiểm Ngân hàng Nông Nghiệp,UPCOM
+ABR,Công ty cổ phần Đầu tư Nhãn Hiệu Việt,UPCOM
+ABT,Công ty Cổ phần Xuất nhập khẩu Thủy sản Bến Tre,HSX
+AC4,CTCP ACC-244,UPCOM
+ACB,Ngân hàng TMCP Á Châu,HNX
+ACC,Công ty Cổ phần Bê tông BECAMEX,HSX
+ACE,CTCP Bê tông Ly tâm An Giang,UPCOM
+ACL,Công ty Cổ phần Xuất Nhập Khẩu Thủy sản Cửu Long An Giang,HSX
+ACM,CTCP Tập đoàn Khoáng sản Á Cường,HNX
+ACS,CTCP Xây lắp Thương mại 2,UPCOM
+ACV,Tổng công ty Cảng hàng không Việt Nam - CTCP,UPCOM
+ADC,Công ty cổ phần Mĩ thuật và Truyền thông,HNX
+ADP,CTCP Sơn Á Đông,UPCOM
+ADS,Công ty Cổ phần Damsan,HSX
+AFC,CTCP Nông Lâm Nghiệp Bình Dương,UPCOM
+AFX,CTCP Xuất nhập khẩu Nông sản Thực phẩm An Giang,UPCOM
+AG1,CTCP 281,UPCOM
+AGF,Công ty Cổ phần Xuất nhập khẩu Thủy sản An Giang,HSX
+AGM,Công ty Cổ phần Xuất Nhập Khẩu An Giang,HSX
+AGP,CTCP Dược phẩm Agimexpharm,UPCOM
+AGR,Công ty Cổ phần Chứng khoán Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam,HSX
+AGX,CTCP Thực phẩm Nông sản Xuất khẩu Sài Gòn,UPCOM
+ALT,CTCP Văn hóa Tân Bình,HNX
+ALV,CTCP Đầu tư Phát triển hạ tầng ALV,HNX
+AMC,CTCP Khoáng sản Á Châu,HNX
+AMD,Công ty Cổ phần Đầu tư và Khoáng sản FLC AMD,HSX
+AME,CTCP Alphanam E&C,HNX
+AMP,CTCP Armephaco,UPCOM
+AMS,CTCP Cơ khí Xây dựng AMECC,UPCOM
+AMV,CTCP Sản xuất kinh doanh dược và trang thiết bị y tế Việt Mỹ,HNX
+ANT,CTCP Rau quả Thực phẩm An Giang,UPCOM
+ANV,Công ty Cổ phần Nam Việt,HSX
+APC,Công ty Cổ phần Chiếu xạ An Phú,HSX
+APF,CTCP Nông sản Thực phẩm Quảng Ngãi,UPCOM
+APG,Công ty Cổ phần Chứng khoán An Phát,HSX
+API,CTCP Đầu tư Châu Á - Thái Bình Dương,HNX
+APL,CTCP Cơ khí và Thiết bị áp lực - VVMI,UPCOM
+APP,CTCP Phát triển phụ gia và sản phầm dầu mỏ,HNX
+APS,Công ty Cổ phần Chứng khoán Châu Á - Thái Bình Dương,HNX
+ARM,CTCP Xuất nhập khẩu hàng không,HNX
+ART,Công ty Cổ phần phần Chứng khoán Artex,UPCOM
+ASA,CTCP Hàng tiêu dùng ASA,HNX
+ASD,CTCP Sông Đà Hà Nội,UPCOM
+ASM,Công ty Cổ phần Tập đoàn Sao Mai,HSX
+ASP,Công ty Cổ phần Tập đoàn Dầu khí An Pha,HSX
+AST,Công ty Cổ phần Dịch vụ Hàng không Taseco,HSX
+ATA,CTCP NTACO,UPCOM
+ATB,CTCP An Thịnh,UPCOM
+ATG,Công ty Cổ phần An Trường An,HSX
+ATS,CTCP Suất ăn công nghiệp Atesco,HNX
+AUM,CTCP Vinacafe Sơn Thành,UPCOM
+AVC,CTCP Thủy điện A Vương,UPCOM
+AVF,CTCP Việt An,UPCOM
+B82,CTCP 482,HNX
+BAB,Ngân hàng Thương mại Cổ phần Bắc Á,UPCOM
+BAL,CTCP Bao bì Bia - Rượu - Nước giải khát,UPCOM
+BAX,CTCP Thống Nhất,HNX
+BBC,Công ty Cổ phần BIBICA,HSX
+BBM,CTCP Bia Hà Nội - Nam Định,UPCOM
+BBS,Công ty CP Vicem bao bì Bút Sơn,HNX
+BBT,CTCP Bông Bạch Tuyết,UPCOM
+BCC,CTCP Xi măng Bỉm Sơn,HNX
+BCE,Công ty Cổ phần Xây dựng và Giao thông Bình Dương,HSX
+BCG,Công ty Cổ phần Bamboo Capital,HSX
+BCM,Tổng Công ty Đầu tư và Phát triển Công nghiệp - CTCP,UPCOM
+BCP,CTCP Dược Becamex,UPCOM
+BDB,CTCP Sách và thiết bị Bình Định,HNX
+BDF,CTCP Giày Bình Định,UPCOM
+BDG,Công ty Cổ phần May mặc Bình Dương,UPCOM
+BDP,CTCP Biệt thự và Khách sạn biển Đông Phương,UPCOM
+BDT,CTCP Xây lắp và Vật liệu Xây dựng Đồng Tháp,UPCOM
+BDW,CTCP Cấp thoát nước Bình Định,UPCOM
+BED,CTCP Sách và Thiết bị trường học Đà Nẵng,HNX
+BEL,CTCP Điện tử Biên Hòa,UPCOM
+BFC,Công ty Cổ phần Phân bón Bình Điền,HSX
+BGW,CTCP Nước sạch Bắc Giang,UPCOM
+BHA,CTCP Thủy điện Bắc Hà,UPCOM
+BHC,Công ty cổ phần bê tông Biên hòa,UPCOM
+BHK,CTCP Bia Hà Nội - Kim Bài,UPCOM
+BHN,Tổng Công ty Cổ phần Bia – Rượu – Nước giải khát Hà Nội,HSX
+BHP,CTCP Bia Hà Nội - Hải Phòng,UPCOM
+BHT,CTCP Đầu tư Xây dựng Bạch Đằng TMC,UPCOM
+BHV,CTCP Viglacera Bá Hiến,UPCOM
+BIC,Tổng Công ty Bảo hiểm Ngân hàng Đầu tư và Phát triển Việt Nam,HSX
+BID,Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam,HSX
+BII,CTCP Đầu tư và Phát triển Công nghiệp Bảo Thư,HNX
+BKC,CTCP Khoáng Sản Bắc Kạn,HNX
+BLF,CTCP Thủy sản Bạc Liêu,HNX
+BLI,Tổng CTCP Bảo hiểm Bảo Long,UPCOM
+BLN,CTCP Vận tải và Dịch vụ Liên Ninh,UPCOM
+BLT,CTCP Lương thực Bình Định,UPCOM
+BMC,Công ty Cổ phần Khoáng sản Bình Định,HSX
+BMD,CTCP Môi trường và Dịch vụ đô thị Bình Thuận,UPCOM
+BMF,CTCP Vật liệu Xây dựng và Chất đốt Đồng Nai,UPCOM
+BMI,Tổng Công ty Cổ phần Bảo Minh,HSX
+BMJ,CTCP Khoáng sản Becamex,UPCOM
+BMN,Công ty Cổ phần 715,UPCOM
+BMP,Công ty Cổ phần Nhựa Bình Minh,HSX
+BMV,CTCP Bột mỳ Vinafood 1,UPCOM
+BPC,CTCP Vicem Bao bì Bỉm sơn,HNX
+BPW,CTCP Cấp thoát nước Bình Phước,UPCOM
+BQB,CTCP Bia Hà Nội - Quảng Bình,UPCOM
+BRC,Công ty Cổ phần Cao su Bến Thành,HSX
+BRR,CTCP Cao su Bà Rịa,UPCOM
+BRS,CTCP Dịch vụ Đô thị Bà Rịa,UPCOM
+BSC,CÔNG TY CP DỊCH VỤ BẾN THÀNH,HNX
+BSD,CTCP Bia Rượu Sài Gòn - Đồng Xuân,UPCOM
+BSG,CTCP Xe khách Sài Gòn,UPCOM
+BSI,Công ty Cổ phần Chứng khoán Ngân hàng Đầu tư và Phát triển Việt Nam,HSX
+BSL,CTCP Bia Sài Gòn - Sông Lam,UPCOM
+BSP,CTCP Bia Sài Gòn - Phú Thọ,UPCOM
+BSQ,CTCP Bia Sài Gòn - Quảng Ngãi,UPCOM
+BSR,Công ty TNHH Một thành viên Lọc - Hóa dầu Bình Sơn,UPCOM
+BST,CTCP Sách và Thiết bị Bình Thuận,HNX
+BT1,CTCP Bảo vệ Thực vật 1 Trung ương,UPCOM
+BT6,CTCP BETON 6,UPCOM
+BTB,CTCP Bia Hà Nội - Thái Bình,UPCOM
+BTC,CTCP Cơ Khí và Xây Dựng Bình Triệu,UPCOM
+BTD,CTCP Bê tông Ly tâm Thủ Đức,UPCOM
+BTG,CTCP Bao bì Tiền Giang,UPCOM
+BTH,CTCP Chế tạo biến thế và Vật liệu điện Hà Nội,UPCOM
+BTN,CTCP Gạch Tuy Nen Bình Định,UPCOM
+BTP,Công ty Cổ phần Nhiệt điện Bà Rịa,HSX
+BTR,CTCP Đường sắt Bình Trị Thiên,UPCOM
+BTS,CTCP Xi măng VICEM Bút Sơn,HNX
+BTT,Công ty Cổ phần Thương mại – Dịch vụ Bến Thành,HSX
+BTU,Công ty Cổ phần Công trình Đô Thị Bến Tre,UPCOM
+BTV,CTCP Dịch vụ Du lịch Bến Thành,UPCOM
+BTW,CTCP Cấp nước Bến Thành,HNX
+BUD,Công ty TNHH MTV Thoát nước và Phát triển Đô thị tỉnh Bà Rịa - Vũng Tàu,UPCOM
+BVG,CTCP Đầu tư BVG,UPCOM
+BVH,Tập đoàn Bảo Việt,HSX
+BVN,CTCP Bông Việt Nam,UPCOM
+BVS,Công ty Cổ phần Chứng khoán Bảo Việt,HNX
+BWA,CTCP Cấp thoát nước và Xây dựng Bảo Lộc,UPCOM
+BWE,Công ty Cổ phần Nước – Môi trường Bình Dương,HSX
+BWS,CTCP Cấp nước Bà Rịa - Vũng Tàu,UPCOM
+BXH,Công Ty Cổ phần Vicem bao bì Hải Phòng,HNX
+C12,CTCP Cầu 12,UPCOM
+C21,CTCP Thế kỷ 21,UPCOM
+C22,Công ty cô phần 22,UPCOM
+C32,Công ty Cổ phần Đầu tư Xây dựng 3-2,HSX
+C36,CTCP Quản lý và Xây dựng công trình giao thông 236,UPCOM
+C47,Công ty Cổ phần Xây dựng 47,HSX
+C69,CTCP Xây dựng 1369,HNX
+C71,CTCP 471,UPCOM
+C92,CTCP Xây dựng và Đầu tư 492,HNX
+CAD,CTCP Chế biến & XNK Thủy sản Cadovimex,UPCOM
+CAG,CTCP Cảng An Giang,HNX
+CAN,CTCP Đồ hộp Hạ Long,HNX
+CAP,Công ty Cổ phần lâm nông sản thực phẩm Yên Bái,HNX
+CAT,CTCP Thủy sản Cà Mau,UPCOM
+CAV,Công ty Cổ phần Dây cáp điện Việt Nam,HSX
+CBI,CTCP Gang thép Cao Bằng,UPCOM
+CBS,CTCP Mía đường Cao Bằng,UPCOM
+CC1,Tổng Công ty Xây dựng Số 1 - CTCP,UPCOM
+CC4,CTCP Đầu tư và Xây dựng số 4,UPCOM
+CCH,CTCP Tư vấn và Đầu tư Xây dựng CCIC Hà Nội,UPCOM
+CCI,Công ty Cổ phần Đầu tư Phát triển Công nghiệp Thương mại Củ Chi,HSX
+CCL,Công ty Cổ phần Đầu tư và Phát triển Đô thị Dầu khí Cửu Long,HSX
+CCP,CTCP Cảng Cửa Cấm Hải Phòng,UPCOM
+CCR,CTCP Cảng Cam Ranh,UPCOM
+CCT,CTCP Cảng Cần Thơ,UPCOM
+CCV,CTCP Tư vấn Xây dựng Công nghiệp và Đô thị Việt Nam,UPCOM
+CDC,Công ty Cổ phần Chương Dương,HSX
+CDG,CTCP Cầu Đuống,UPCOM
+CDH,CTCP Công trình công cộng và Dịch vụ Du lịch Hải Phòng,UPCOM
+CDN,Công ty Cổ phần Cảng Đà Nẵng,HNX
+CDO,Công ty Cổ phần Tư vấn Thiết kế và Phát triển Đô thị,HSX
+CDR,CTCP Xây dựng Cao su Đồng Nai,UPCOM
+CE1,CTCP Xây dựng và Thiết bị Công nghiệp CIE1,UPCOM
+CEC,CTCP Thiết kế Công nghiệp Hóa chất,UPCOM
+CEE,Công ty Cổ phần Xây dựng Hạ tầng CII,HSX
+CEG,CTCP Tập đoàn Xây dựng và Thiết bị Công nghiệp,UPCOM
+CEN,Công ty cổ phần Cencon Việt Nam,UPCOM
+CEO,CTCP Tập đoàn CEO,HNX
+CER,CTCP Địa chính và Tài nguyên Môi trường,UPCOM
+CET,CTCP Tech - Vina,HNX
+CFC,CTCP Cafico Việt Nam,UPCOM
+CGP,CTCP Dược phẩm Cần Giờ,UPCOM
+CGV,CTCP Sành sứ Thủy tinh Việt Nam,UPCOM
+CH5,CTCP Xây dựng số 5 Hà Nội,UPCOM
+CHC,CTCP Cẩm Hà,UPCOM
+CHP,Công ty Cổ phần Thủy điện Miền Trung,HSX
+CHS,CTCP Chiếu sáng Công cộng Thành phố Hồ Chí Minh,UPCOM
+CI5,CTCP Đầu tư Xây dựng số 5,UPCOM
+CIA,CTCP Dịch vụ Sân bay Quốc tế Cam Ranh,HNX
+CID,CTCP Xây dựng và Phát triển Cơ sở hạ tầng,UPCOM
+CIG,Công ty Cổ phần COMA18,HSX
+CII,Công ty Cổ phần Đầu tư Hạ tầng Kỹ thuật TPHCM,HSX
+CIP,CTCP Xây lắp và Sản xuất Công nghiệp,UPCOM
+CJC,CTCP Cơ điện Miền Trung,HNX
+CKD,CTCP Cơ khí Đông Anh Licogi,UPCOM
+CKH,CTCP Cơ khí chế tạo Hải Phòng,UPCOM
+CKV,CTCP COKYVINA,HNX
+CLC,Công ty Cổ phần Cát Lợi,HSX
+CLG,Công ty Cổ phần Đầu tư và Phát triển Nhà đất COTEC,HSX
+CLH,CTCP Xi măng La Hiên VVMI,HNX
+CLL,Công ty Cổ phần Cảng Cát Lái,HSX
+CLM,CTCP Xuất nhập khẩu than - Vinacomin,HNX
+CLW,Công ty Cổ phần Cấp nước Chợ Lớn,HSX
+CLX,CTCP Xuất nhập khẩu và Đầu tư Chợ Lớn (Cholimex),UPCOM
+CMC,CTCP Đầu tư CMC,HNX
+CMF,CTCP Thực phẩm Cholimex,UPCOM
+CMG,Công ty Cổ phần Tập đoàn Công nghệ CMC,HSX
+CMI,CTCP CMISTONE Việt Nam,HNX
+CMK,CTCP Cơ khí Mạo Khê - Vinacomin,UPCOM
+CMN,CTCP Lương thực Thực phẩm Colusa - Miliket,UPCOM
+CMP,Công ty Cổ phần Cảng Chân Mây,UPCOM
+CMS,CTCP Xây dựng và Nhân lực Việt Nam,HNX
+CMT,Công ty Cổ phần Công nghệ Mạng và Truyền thông,HSX
+CMV,Công ty Cổ phần Thương nghiệp Cà Mau,HSX
+CMW,CTCP Cấp nước Cà Mau,UPCOM
+CMX,Công ty Cổ phần Camimex Group,HSX
+CNC,CTCP Công nghệ Cao Traphaco,UPCOM
+CNG,Công ty Cổ phần CNG Việt Nam,HSX
+CNH,CTCP Cảng Nha Trang,UPCOM
+CNN,CTCP Tư vấn công nghệ thiết bị và kiểm định xây dựng - CONINCO,UPCOM
+CNT,CTCP Xây dựng và Kinh doanh Vật tư,UPCOM
+COM,Công ty Cổ phần Vật tư - Xăng dầu,HSX
+CPC,CTCP Thuốc sát trùng Cần Thơ,HNX
+CPH,CTCP Phục vụ Mai táng Hải Phòng,UPCOM
+CPI,CTCP Đầu tư Cảng Cái Lân,UPCOM
+CQT,CTCP Xi măng Quán Triều VVMI,UPCOM
+CSC,CTCP Tập đoàn COTANA,HNX
+CSM,Công ty Cổ phần Công nghiệp Cao su Miền Nam,HSX
+CSV,Công ty Cổ phần Hóa chất cơ bản miền Nam,HSX
+CT3,CTCP Đầu tư và Xây dựng Công trình 3,UPCOM
+CT6,CTCP Công trình 6,HNX
+CTA,CTCP Vinavico,HNX
+CTB,CTCP Chế bạo bơm Hải Dương,HNX
+CTC,CTCP Gia Lai CTC,HNX
+CTD,Công ty Cổ phần Xây dựng COTECCONS,HSX
+CTF,Công ty Cổ phần City Auto,HSX
+CTG,Ngân hàng Thương mại Cổ phần Công Thương Việt Nam,HSX
+CTI,Công ty Cổ phần Đầu tư Phát triển Cường Thuận IDICO,HSX
+CTN,CTCP Xây dựng công trình ngầm,UPCOM
+CTP,CTCP Cà Phê Thương Phú,HNX
+CTR,CTCP Công trình Viettel,UPCOM
+CTS,Công ty Cổ phần Chứng khoán Ngân hàng Công Thương Việt Nam,HSX
+CTT,CTCP Chế tạo máy - Vinacomin,HNX
+CTW,CTCP Cấp thoát nước Cần Thơ,UPCOM
+CTX,Tổng công ty cổ phần Đầu tư xây dựng và Thương mại Việt Nam,HNX
+CVC,CTCP Cơ điện Vật tư,UPCOM
+CVH,CTCP Công viên Cây xanh Hải Phòng,UPCOM
+CVN,CÔNG TY CỔ PHẦN VINAM,HNX
+CVT,Công ty Cổ phần CMC,HSX
+CX8,CTCP Đầu tư và Xây lắp Constrexim số 8,HNX
+CXH,Công ty Cổ phần Xe Khách Hà Nội,UPCOM
+CYC,CTCP Gạch men Chang Yih,UPCOM
+CZC,CTCP Than Miền Trung,UPCOM
+D11,Công ty cổ phần Địa ốc 11,HNX
+D2D,Công ty Cổ phần Phát triển Đô thị Công nghiệp số 2,HSX
+DAC,CTCP Viglacera Đông Anh,UPCOM
+DAD,CTCP Đầu tư và Phát triển Giáo dục Đã Nẵng,HNX
+DAE,CTCP Sách giáo dục tại Tp Đà Nẵng,HNX
+DAG,Công ty Cổ phần Tập đoàn Nhựa Đông Á,HSX
+DAH,Công ty Cổ phần Tập đoàn Khách sạn Đông Á,HSX
+DAP,CTCP Đông Á,UPCOM
+DAR,CTCP Xe lửa Dĩ An,UPCOM
+DAS,CTCP Máy - Thiết bị Dầu khí Đà Nẵng,UPCOM
+DAT,Công ty Cổ phần Đầu tư Du lịch và Phát triển Thủy sản,HSX
+DBC,CTCP Tập đoàn DABACO Việt Nam,HNX
+DBD,CTCP Dược - Trang thiết bị Y tế Bình Định,HSX
+DBH,CTCP Đường bộ Hải Phòng,UPCOM
+DBM,CTCP Dược - Vật tư y tế Đăk Lăk,UPCOM
+DBT,CTCP Dược phẩm Bến Tre,HNX
+DBW,CTCP Cấp nước Điện Biên,UPCOM
+DC1,CTCP Đầu tư Phát triển Xây dựng số 1,UPCOM
+DC2,CTCP Đầu tư Phát triển - Xây dựng (DIC) số 2,HNX
+DC4,CTCP DIC số 4,HNX
+DCD,CTCP Du lịch & Thương mại DIC,UPCOM
+DCF,CTCP Xây dựng và Thiết kế Số 1,UPCOM
+DCH,CTCP Địa chính Hà Nội,UPCOM
+DCI,CTCP Công nghiệp Hóa chất Đà Nẵng,UPCOM
+DCL,Công ty Cổ phần Dược phẩm Cửu Long,HSX
+DCM,Công ty Cổ phần Phân bón Dầu khí Cà Mau,HSX
+DCS,CTCP Tập Đoàn Đại Châu,HNX
+DCT,Công ty Cổ phần Tấm lợp Vật liệu Xây dựng Đồng Nai,UPCOM
+DDH,CTCP Đảm bảo giao thông đường thủy Hải Phòng,UPCOM
+DDM,CTCP Hàng hải Đông Đô,UPCOM
+DDN,CTCP Dược - Thiết bị y tế Đà Nẵng,UPCOM
+DDV,CTCP DAP - VINACHEM,UPCOM
+DFC,CTCP Xích líp Đông Anh,UPCOM
+DGC,CTCP Bột giặt và Hóa chất Đức Giang,HNX
+DGL,CTCP Hóa chất Đức Giang - Lào Cai,HNX
+DGT,CTCP Công trình Giao thông Đồng Nai,UPCOM
+DGW,Công ty Cổ phần Thế Giới Số,HSX
+DHA,Công ty Cổ phần Hóa An,HSX
+DHB,CTCP Phân đạm và Hóa chất Hà Bắc,UPCOM
+DHC,Công ty Cổ phần Đông Hải Bến Tre,HSX
+DHD,CTCP Dược Vật tư Y tế Hải Dương,UPCOM
+DHG,Công ty Cổ phần Dược Hậu Giang,HSX
+DHM,Công ty Cổ phần Thương mại và Khai thác Khoáng sản Dương Hiếu,HSX
+DHN,CTCP Dược phẩm Hà Nội,UPCOM
+DHP,CTCP Điện cơ Hải Phòng,HNX
+DHT,CTCP Dược phẩm Hà Tây,HNX
+DIC,Công ty Cổ phần Đầu tư và Thương mại DIC,HSX
+DID,CTCP DIC - Đồng Tiến,HNX
+DIG,Tổng Công ty Cổ phần Đầu tư Phát triển Xây dựng,HSX
+DIH,Công ty Cổ phần Đầu tư Phát triển Xây dựng - Hội An,HNX
+DL1,CTCP Đầu tư phát triển dịch vụ công trình công cộng Đức Long - Gia Lai,HNX
+DLD,CTCP Du lịch ĐăkLăk,UPCOM
+DLG,Công ty Cổ phần Tập đoàn Đức Long Gia Lai,HSX
+DLR,Công ty Cổ phần Địa ốc Đà Lạt,HNX
+DLT,CTCP Du lịch và Thương mại - Vinacomin,UPCOM
+DMC,Công ty Cổ phần Xuất nhập khẩu Y tế DOMESCO,HSX
+DNA,CTCP Điện nước An Giang,UPCOM
+DNC,CTCP Điện nước lắp máy Hải Phòng,HNX
+DND,CTCP Đầu tư Xây dựng và Vật liệu Đồng Nai,UPCOM
+DNE,CTCP Môi trường Đô thị Đà Nẵng,UPCOM
+DNH,CTCP Thủy điện Đa Nhim - Hàm Thuận - Đa Mi,UPCOM
+DNL,CTCP Logistics Cảng Đà Nẵng,UPCOM
+DNM,TỔNG CÔNG TY CỔ PHẦN Y TẾ DANAMECO,HNX
+DNN,CTCP Cấp nước Đà Nẵng,UPCOM
+DNP,CTCP Nhựa Đồng Nai,HNX
+DNR,CTCP Đường Sắt Quảng Nam - Đà Nẵng,UPCOM
+DNS,CTCP Thép Đà Nẵng,UPCOM
+DNW,Công ty Cổ phần Cấp nước Đồng Nai,UPCOM
+DNY,CTCP Thép Dana-Ý,HNX
+DOC,CTCP Vật tư Nông nghiệp Đồng Nai,UPCOM
+DOP,CTCP Vận tải Xăng dầu Đồng Tháp,UPCOM
+DP1,Công ty cổ phần Dược phẩm Trung ương CPC1,UPCOM
+DP2,CTCP Dược phẩm Trung ương 2,UPCOM
+DP3,CTCP Dược phẩm Trung ương 3,HNX
+DPC,Công ty Cổ phần Nhựa Đà Nẵng,HNX
+DPG,Công ty Cổ phần Đạt Phương,HSX
+DPH,CTCP Dược phẩm Hải Phòng,UPCOM
+DPM,Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần,HSX
+DPP,CTCP Dược Đồng Nai,UPCOM
+DPR,Công ty Cổ phần Cao su Đồng Phú,HSX
+DPS,CTCP Đầu tư Phát triển Sóc Sơn,HNX
+DQC,Công ty Cổ phần Bóng đèn Điện Quang,HSX
+DRC,Công ty Cổ phần Cao su Đà Nẵng,HSX
+DRH,Công ty Cổ phần Đầu tư Căn Nhà Mơ Ước,HSX
+DRI,CTCP Đầu tư Cao su Đắk Lắk,UPCOM
+DRL,Công ty Cổ phần Thủy điện - Điện lực 3,HSX
+DS3,CTCP Quản lý Đường sông số 3,HNX
+DSC,CTCP Chứng khoán Đà Nẵng,UPCOM
+DSG,CTCP Kính Viglacera Đáp Cầu,UPCOM
+DSN,Công ty Cổ phần Công viên nước Đầm Sen,HSX
+DSS,CTCP Đường sắt Sài Gòn,UPCOM
+DST,CTCP Đầu tư Sao Thăng Long,HNX
+DSV,CTCP Đường sắt Vĩnh Phú,UPCOM
+DT4,CTCP Quản lý bảo trì đường thủy nội địa số 4,UPCOM
+DTA,Công ty Cổ phần Đệ Tam,HSX
+DTC,CTCP Viglacera Đông Triều,UPCOM
+DTD,CTCP Đầu tư Phát triển Thành Đạt,HNX
+DTG,CTCP Dược phẩm Tipharco,UPCOM
+DTI,CTCP Đầu tư Đức Trung,UPCOM
+DTK,Tổng công ty Điện lực TKV - CTCP,UPCOM
+DTL,Công ty Cổ phần Đại Thiên Lộc,HSX
+DTN,CTCP Diêm Thống nhất,UPCOM
+DTT,Công ty Cổ phần Kỹ nghệ Đô Thành,HSX
+DTV,CTCP Phát triển điện nông thôn Trà Vinh,UPCOM
+DVC,CTCP Thương mại Dịch vụ Tổng hợp Cảng Hải Phòng,UPCOM
+DVH,CTCP Chế tạo máy điện Việt Nam - Hungari,UPCOM
+DVN,Tổng Công ty Dược Việt Nam - CTCP,UPCOM
+DVP,Công ty Cổ phần Đầu tư và Phát triển Cảng Đình Vũ,HSX
+DVW,Công ty cổ phần Dịch vụ và Xây dựng cấp nước Đồng Nai,UPCOM
+DXG,Công ty Cổ phần Tập đoàn Đất Xanh,HSX
+DXL,CTCP Du lịch và Xuất nhập khẩu Lạng Sơn,UPCOM
+DXP,CTCP Cảng Đoạn Xá,HNX
+DXV,Công ty Cổ phần Vicem Vật liệu Xây dựng Đà Nẵng,HSX
+DZM,CTCP Chế tạo máy Dzĩ An,HNX
+E1VFVN30,Công ty cổ phần Quản lý quỹ Đầu tư Việt Nam - Quỹ ETF VFMVN30,HSX
+EAD,CTCP Thủy điện Điện lực Đắk Lắk,UPCOM
+EBS,CTCP Sách giáo dục tại TP Hà Nội,HNX
+ECI,CTCP Bản đồ và tranh ảnh giáo dục,HNX
+EFI,CTCP Đầu tư tài chính Giáo dục,UPCOM
+EIB,Ngân hàng Thương mại Cổ phần Xuất Nhập khẩu Việt Nam,HSX
+EIC,CTCP EVN Quốc Tế,UPCOM
+EID,CTCP Đầu tư và Phát triển Giáo dục Hà Nội,HNX
+EIN,CTCP Đầu tư - Thương mại - Dịch vụ Điện lực,UPCOM
+ELC,Công ty Cổ phần Đầu tư Phát triển Công nghệ Điện tử - Viễn thông,HSX
+EMC,Công ty Cổ phần Cơ điện Thủ Đức,HSX
+EME,CTCP Điện Cơ,UPCOM
+EMG,CTCP Thiết bị phụ tùng cơ điện,UPCOM
+EMS,Tổng công ty Chuyển phát nhanh Bưu điện- CTCP,UPCOM
+EPH,CTCP Dịch vụ Xuất bản Giáo dục Hà Nội,UPCOM
+EVE,Công ty Cổ phần Everpia,HSX
+EVG,Công ty Cổ phần Đầu tư Everland,HSX
+FBA,CTCP Tập đoàn Quốc Tế FBA,UPCOM
+FBC,CTCP Cơ khí Phổ Yên,UPCOM
+FCC,Công ty cổ phần Liên hợp Thực phẩm,UPCOM
+FCM,Công ty Cổ phần Khoáng sản FECON,HSX
+FCN,Công ty Cổ phần FECON,HSX
+FCS,CTCP Lương thực Thành phố Hồ Chí Minh,UPCOM
+FDC,Công ty Cổ phần Ngoại thương và Phát triển Đầu tư Thành phố Hồ Chí Minh,HSX
+FDG,CTCP Docimexco,UPCOM
+FDT,CTCP Fiditour,HNX
+FHN,CTCP Xuất nhập khẩu Lương thực- Thực phẩm Hà Nội,UPCOM
+FID,CTCP Đầu tư và Phát triển Doanh nghiệp Việt Nam,HNX
+FIT,Công ty Cổ phần Tập đoàn FIT,HSX
+FLC,Công ty Cổ phần Tập đoàn FLC,HSX
+FMC,Công ty Cổ phần Thực phẩm Sao Ta,HSX
+FOX,CTCP Viễn thông FPT,UPCOM
+FPT,Công ty Cổ phần FPT,HSX
+FRM,CTCP Lâm nghiệp Sài Gòn,UPCOM
+FRT,Công ty Cổ phần Bán lẻ Kỹ thuật số FPT,HSX
+FSC,CÔNG TY CỔ PHẦN CHỨNG KHOÁN YUANTA VIỆT NAM,UPCOM
+FSO,Công ty Cổ phần Cơ khí đóng tàu thủy sản Việt Nam,UPCOM
+FT1,CTCP Phụ tùng máy số 1,UPCOM
+FTI,CTCP Công nghiệp - Thương mại Hữu Nghị,UPCOM
+FTM,Công ty Cổ phần Đầu tư và Phát triển Đức Quân,HSX
+FTS,Công ty Cổ phần Chứng khoán FPT,HSX
+FUCTVGF1,Công ty Cổ phần Quản lý Quỹ Thiên Việt,HSX
+FUCVREIT,Công ty TNHH Quản lý Quỹ Kỹ thương,HSX
+FUESSV50,Công ty TNHH Quản lý Quỹ SSI(Quỹ ETF SSIAM VNX50),HSX
+G20,CTCP Đầu tư Dệt may GHome,UPCOM
+G36,Tổng Công ty 36 - CTCP,UPCOM
+GAS,Tổng Công ty Khí Việt Nam - Công ty Cổ phần,HSX
+GCB,CTCP Petec Bình Định,UPCOM
+GDT,Công ty Cổ phần Chế biến Gỗ Đức Thành,HSX
+GDW,CTCP Cấp nước Gia Định,UPCOM
+GEG,CTCP Điện Gia Lai,UPCOM
+GER,CTCP Thể thao Ngôi sao Geru,UPCOM
+GEX,Tổng Công ty Cổ phần Thiết bị điện Việt Nam,HSX
+GGG,CTCP Ô tô Giải Phóng,UPCOM
+GGS,Công ty Cổ phần Giống gia súc Hà Nội,UPCOM
+GHC,CTCP Thủy điện Gia Lai,UPCOM
+GIL,Công ty Cổ phần Sản xuất Kinh doanh Xuất nhập khẩu Bình Thạnh,HSX
+GKM,CTCP Gạch Khang Minh,HNX
+GLT,CTCP Kỹ thuật Điện Toàn Cầu,HNX
+GLW,CTCP Cấp nước Gia Lai,UPCOM
+GMC,Công ty Cổ phần Sản xuất Thương mại May Sài Gòn,HSX
+GMD,Công ty Cổ phần GEMADEPT,HSX
+GMX,CTCP Gạch Ngói Gốm Xây dựng Mỹ Xuân,HNX
+GND,CTCP Gạch ngói Đồng Nai,UPCOM
+GSM,CTCP Thủy điện Hương Sơn,UPCOM
+GSP,Công ty Cổ phần Vận tải Sản phẩm Khí Quốc tế,HSX
+GTA,Công ty Cổ phần Chế biến Gỗ Thuận An,HSX
+GTC,CTCP Trà Rồng Vàng,UPCOM
+GTD,Công ty cổ phần Giầy Thượng Đình,UPCOM
+GTH,CTCP Xây dựng- Giao thông Thừa Thiên Huế,UPCOM
+GTN,Công ty Cổ phần GTNFOODS,HSX
+GTS,CTCP Công trình Giao thông Sài Gòn,UPCOM
+GTT,CTCP Thuận Thảo,UPCOM
+GVR,Tập đoàn Công nghiệp Cao su Việt Nam,UPCOM
+GVT,Công ty Cổ phần Giấy Việt Trì,UPCOM
+H11,CTCP Xây dựng HUD 101,UPCOM
+HAB,CTCP Sách và Thiết bị trường học Hà Nội,UPCOM
+HAC,CTCP Chứng khoán Hải Phòng,UPCOM
+HAD,CTCP Bia Hà Nội - Hải Dương,HNX
+HAF,CTCP Thực phẩm Hà Nội,UPCOM
+HAG,Công ty Cổ phần Hoàng Anh Gia Lai,HSX
+HAH,Công ty Cổ phần Vận tải và Xếp dỡ Hải An,HSX
+HAI,Công ty Cổ phần Nông dược HAI,HSX
+HAM,CTCP Vật tư Hậu Giang,UPCOM
+HAN,Tổng công ty Xây dựng Hà Nội - CTCP,UPCOM
+HAP,Công ty Cổ phần Tập đoàn HAPACO,HSX
+HAR,Công ty Cổ phần Đầu tư Thương mại Bất động sản An Dương Thảo Điền,HSX
+HAS,Công ty Cổ phần HACISCO,HSX
+HAT,CTCP Thương mại Bia Hà Nội,HNX
+HAV,CTCP Rượu Hapro,UPCOM
+HAX,Công ty Cổ phần Dịch vụ Ô tô Hàng Xanh,HSX
+HBC,Công ty Cổ phần Tập đoàn Xây dựng Hòa Bình,HSX
+HBD,CTCP Bao bì PP Bình Dương,UPCOM
+HBE,CTCP Sách - Thiết bị trường học Hà Tĩnh,HNX
+HBH,CTCP Habeco - Hải Phòng,UPCOM
+HBS,Công ty Cổ phần Chứng khoán Hòa Bình,HNX
+HC3,CTCP Xây dựng số 3 Hải Phòng,UPCOM
+HCC,CTCP Bê tông Hòa Cầm - Intimex,HNX
+HCD,Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD,HSX
+HCI,CTCP Đầu tư - Xây dựng Hà Nội,UPCOM
+HCM,Công ty Cổ phần Chứng khoán Thành phố Hồ Chí Minh,HSX
+HCS,CTCP Thông tin Tín hiệu Đường sắt Hà Nội,UPCOM
+HCT,CTCP Thương mại-Dịch vụ-Vận tải Xi măng Hải Phòng,HNX
+HD2,CTCP Đầu tư Phát triển nhà HUD2,UPCOM
+HDA,CTCP Hãng sơn Đông Á,HNX
+HDB,Ngân hàng TMCP Phát triển TPHồ Chí Minh,HSX
+HDC,Công ty Cổ phần Phát triển nhà Bà Rịa – Vũng Tàu,HSX
+HDG,Công ty Cổ phần Tập đoàn Hà Đô,HSX
+HDM,CTCP Dệt May Huế,UPCOM
+HDO,CTCP Hưng Đạo Container,UPCOM
+HDP,CTCP Dược Hà Tĩnh,UPCOM
+HDW,CTCP Kinh doanh nước sạch Hải Dương,UPCOM
+HEC,Công ty cổ phần Tư vấn Xây dựng Thủy lợi II,UPCOM
+HEJ,Tổng công ty Tư vấn Xây dựng Thủy Lợi Việt Nam - CTCP,UPCOM
+HEM,CTCP Chế tạo Điện cơ Hà Nội,UPCOM
+HEP,CTCP Môi trường và Công trình Đô thị Huế,UPCOM
+HES,CTCP Dịch vụ Giải trí Hà Nội,UPCOM
+HEV,Công ty Cổ phần Sách Đại học - Dạy nghề,HNX
+HFB,CTCP Công trình Cầu phà Thành phố Hồ Chí Minh,UPCOM
+HFC,CTCP xăng dầu HFC,UPCOM
+HFS,CTCP Thương mại Dịch vụ Thời trang Hà Nội,UPCOM
+HFT,CTCP Chứng khoán HFT,UPCOM
+HFX,CTCP Sản xuất - Xuất nhập khẩu Thanh Hà,UPCOM
+HGM,Công ty Cổ phần Cơ khí và Khoáng sản Hà Giang,HNX
+HGW,CTCP Cấp thoát nước - Công trình đô thị Hậu Giang,UPCOM
+HHA,CTCP Văn phòng phẩm Hồng Hà,UPCOM
+HHC,Công ty cổ phần Bánh kẹo Hải Hà,HNX
+HHG,CTCP Hoàng Hà,HNX
+HHN,CTCP Vận tải và Dịch vụ Hàng hóa Hà Nội,UPCOM
+HHR,Công ty cổ phần Đường sắt Hà Hải,UPCOM
+HHS,Công ty Cổ phần Đầu tư Dịch vụ Hoàng Huy,HSX
+HHV,CTCP Quản lý và Khai thác Hầm đường bộ Hải Vân,UPCOM
+HID,Công ty Cổ phần Halcom Việt Nam,HSX
+HIG,CTCP Tập Đoàn HIPT,UPCOM
+HII,Công ty Cổ phần Nhựa và Khoáng sản An Phát – Yên Bái,HSX
+HJC,CTCP Hòa Việt,UPCOM
+HJS,CTCP Thủy điện Nậm Mu,HNX
+HKB,CTCP Nông nghiệp và Thực phẩm Hà Nội-Kinh Bắc,HNX
+HKP,Công ty Cổ phần Bao bì Hà Tiên,UPCOM
+HKT,CTCP Chè Hiệp Khánh,HNX
+HLA,CTCP Hữu Liên Á Châu,UPCOM
+HLB,CTCP Bia và Nước giải khát Hạ Long,UPCOM
+HLC,CTCP Than Hà Lầm - Vinacomin,HNX
+HLD,CTCP Đầu tư và phát triển Bất động sản HUDLAND,HNX
+HLE,CTCP Điện chiếu sáng Hải Phòng,UPCOM
+HLG,Công ty Cổ phần Tập đoàn Hoàng Long,HSX
+HLR,Công ty Cổ phần Đường sắt Hà Lạng,UPCOM
+HLS,CTCP Sứ kỹ thuật Hoàng Liên Sơn,UPCOM
+HLY,CTCP Viglacera Hạ Long I,HNX
+HMC,Công ty Cổ phần Kim khí Thành phố Hồ Chí Minh - Vnsteel,HSX
+HMG,Công ty Cổ phần Kim khí Hà Nội - VNSTEEL,UPCOM
+HMH,CTCP Hải Minh,HNX
+HMS,CTCP Xây dựng bảo tàng Hồ Chí Minh,UPCOM
+HNA,CTCP Thủy điện Hủa Na,UPCOM
+HNB,CTCP Bến Xe Hà Nội,UPCOM
+HND,CTCP Nhiệt điện Hải Phòng,UPCOM
+HNF,CTCP Thực phẩm Hữu Nghị,UPCOM
+HNG,Công ty Cổ phần Nông nghiệp Quốc tế Hoàng Anh Gia Lai,HSX
+HNI,CTCP May Hữu Nghị,UPCOM
+HNM,CTCP Sữa Hà Nội,HNX
+HNP,CTCP Hanel Xốp Nhựa,UPCOM
+HNR,Công ty cổ phần Cồn rượu Hà Nội,UPCOM
+HNT,Công ty Cổ phần Xe điện Hà Nội,UPCOM
+HOM,CTCP Xi măng VICEM Hoàng Mai,HNX
+HOT,Công ty Cổ phần Du lịch Dịch vụ Hội An,HSX
+HPB,CTCP Bao bì PP,UPCOM
+HPD,CTCP Thủy điện Đăk Đoa,UPCOM
+HPG,Công ty Cổ phần Tập đoàn Hòa Phát,HSX
+HPH,CTCP Hóa chất Hưng Phát Hà Bắc,UPCOM
+HPI,CTCP Khu công nghiệp Hiệp Phước,UPCOM
+HPM,CTCP Xây dựng Thương mại và Khoáng sản Hoàng Phúc,HNX
+HPP,CTCP Sơn Hải Phòng,UPCOM
+HPT,CTCP Dịch vụ Công nghệ Tin học HPT,UPCOM
+HPU,CTCP 28 Hưng Phú,UPCOM
+HPW,CTCP Cấp nước Hải Phòng,UPCOM
+HQC,Công ty Cổ phần Tư vấn – Thương mại – Dịch vụ Địa ốc Hoàng Quân,HSX
+HRB,CTCP Harec Đầu tư và Thương mại,UPCOM
+HRC,Công ty Cổ phần Cao su Hòa Bình,HSX
+HRG,Công ty Cổ phần Cao su Hà Nội,UPCOM
+HRT,CTCP Vận tải Đường sắt Hà Nội,UPCOM
+HSA,Công ty Cổ phần Hestia,UPCOM
+HSG,Công ty Cổ phần Tập đoàn Hoa Sen,HSX
+HSI,CTCP Vật tư Tổng hợp và Phân bón Hóa sinh,UPCOM
+HSL,Công ty Cổ phần Chế biến Nông sản Hồng Hà Sơn La,HSX
+HSM,Tổng Công ty cổ phần Dệt may Hà Nội,UPCOM
+HST,CT CP Phát hành sách và Thiết bị trường học Hưng Yên,HNX
+HT1,Công ty Cổ phần Xi măng Hà Tiên 1,HSX
+HTC,Công ty Cổ phần Thương mại Hóc Môn,HNX
+HTE,CTCP Đầu tư Kinh doanh Điện lực Thành phố Hồ Chí Minh,UPCOM
+HTG,Tổng công ty cổ phần Dệt may Hòa Thọ,UPCOM
+HTI,Công ty Cổ phần Đầu tư Phát triển Hạ tầng IDICO,HSX
+HTL,Công ty Cổ phần Kỹ thuật và Ô tô Trường Long,HSX
+HTM,Tổng công ty Thương mại Hà Nội,UPCOM
+HTP,CTCP In Sách giáo khoa Hòa Phát,HNX
+HTR,CTCP Đường sắt Hà Thái,UPCOM
+HTT,Công ty Cổ phần Thương mại Hà Tây,HSX
+HTU,CTCP Môi trường và Công trình đô thị Hà Tĩnh,UPCOM
+HTV,Công ty Cổ phần Vận tải Hà Tiên,HSX
+HTW,CTCP Cấp nước Hà Tĩnh,UPCOM
+HU1,Công ty Cổ phần Đầu tư và Xây dựng HUD1,HSX
+HU3,Công ty Cổ phần Đầu tư và Xây dựng HUD3,HSX
+HU4,Công ty cổ phần Đầu tư và Xây dựng HUD4,UPCOM
+HU6,CTCP Đầu tư Phát triển nhà và đô thị HUD6,UPCOM
+HUG,Tổng công ty May Hưng Yên - CTCP,UPCOM
+HUT,CTCP Tasco,HNX
+HVA,CTCP Đầu tư HVA,HNX
+HVG,Công ty Cổ phần Hùng Vương,HSX
+HVN,Tổng Công ty Hàng không Việt Nam - CTCP,UPCOM
+HVT,CTCP Hóa chất Việt Trì,HNX
+HVX,Công ty Cổ phần Xi măng Vicem Hải Vân,HSX
+I10,Công ty Cổ phần Đầu tư Xây dựng số 10 IDICO,UPCOM
+IBC,Công ty Cổ phần Đầu tư Apax Holdings,HSX
+ICC,CTCP Xây dựng Công Nghiệp,UPCOM
+ICF,Công ty Cổ phần Đầu tư Thương mại Thủy sản,HSX
+ICG,CTCP Xây dựng Sông Hồng,HNX
+ICI,CTCP Đầu tư và Xây dựng công nghiệp,UPCOM
+ICN,CTCP Đầu tư Xây dựng Dầu khí IDICO,UPCOM
+IDC,Tổng Công ty IDICO - CTCP,UPCOM
+IDI,Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia IDI,HSX
+IDJ,CTCP Đầu tư IDJ Việt Nam,HNX
+IDN,CTCP In và Dịch vụ Đà Nẵng,UPCOM
+IDV,Công ty Cổ phần Phát triển Hạ tầng Vĩnh Phúc,HNX
+IFC,CTCP Thực Phẩm Công Nghệ Sài Gòn,UPCOM
+IFS,CTCP Thực phẩm Quôc tế,UPCOM
+IHK,CTCP In Hàng không,UPCOM
+IJC,Công ty Cổ phần Phát triển Hạ tầng Kỹ thuật,HSX
+IKH,CTCP In Khoa học Kỹ thuật,UPCOM
+ILA,CTCP ILA,UPCOM
+ILS,CTCP Đầu tư Thương mại và Dịch vụ Quốc tế,UPCOM
+IME,CTCP Cơ khí và Xây lắp Công nghiệp,UPCOM
+IMP,Công ty Cổ phần Dược phẩm Imexpharm,HSX
+IN4,CTCP In số 4,UPCOM
+INC,CTCP Tư vấn Đầu tư IDICO,HNX
+INN,CTCP Bao bì và In Nông nghiệp,HNX
+IPA,CTCP Tập đoàn Đầu tư IPA,UPCOM
+IRC,CTCP Cao su Công nghiệp,UPCOM
+ISG,CTCP Vận tải biển và Hợp tác lao động Quốc tế,UPCOM
+ISH,CTCP Thủy điện Srok Phu Miêng IDICO,UPCOM
+IST,CTCP ICD Tân Cảng Sóng Thần,UPCOM
+ITA,Công ty Cổ phần Đầu tư và Công nghiệp Tân Tạo,HSX
+ITC,Công ty Cổ phần Đầu tư - Kinh doanh Nhà,HSX
+ITD,Công ty Cổ phần Công nghệ Tiên Phong,HSX
+ITQ,CTCP Tập đoàn Thiên Quang,HNX
+ITS,CTCP Đầu tư Thương mại và Dịch vụ - Vinacomin,UPCOM
+IVS,Công ty Cổ phần Chứng khoán Đầu tư Việt Nam,HNX
+JOS,CTCP Chế biến Thủy sản Xuất khẩu Minh Hải,UPCOM
+JVC,Công ty Cổ phần Thiết bị Y tế Việt Nhật,HSX
+KAC,Công ty Cổ phần Đầu tư Địa ốc Khang An,HSX
+KBC,Tổng Công ty Phát triển Đô Thị Kinh Bắc – Công ty Cổ phần,HSX
+KBE,CTCP Sách - Thiết bị trường học Kiên Giang,UPCOM
+KCB,CTCP Khoáng sản và Luyện Kim Cao Bằng,UPCOM
+KCE,CTCP Bê tông ly tâm Điện lực Khánh Hòa,UPCOM
+KDC,Công ty Cổ phần Tập đoàn Kido,HSX
+KDF,CTCP Thực phẩm đông lạnh KIDO,UPCOM
+KDH,Công ty Cổ phần Đầu tư và Kinh doanh Nhà Khang Điền,HSX
+KDM,CTCP Đầu tư HP Việt Nam,HNX
+KGM,CTCP Xuất nhập khẩu Kiên Giang,UPCOM
+KGU,CTCP Phát triển Đô thị Kiên Giang,UPCOM
+KHA,CTCP Đầu tư và Dịch vụ Khánh Hội,UPCOM
+KHB,CTCP Khoáng sản Hòa Bình,HNX
+KHD,CTCP Khai thác Chế biến khoáng sản Hải Dương,UPCOM
+KHL,CTCP Khoảng sản và Vật liệu Xây dựng Hưng Long,UPCOM
+KHP,Công ty Cổ phần Điện lực Khánh Hòa,HSX
+KHS,CTCP Kiên Hùng,HNX
+KHW,CTCP Cấp thoát nước Khánh Hòa,UPCOM
+KIP,Công ty Cổ phần KIP Việt Nam,UPCOM
+KKC,CTCP Kim khí KKC,HNX
+KLB,Ngân hàng Thương mại cổ phần Kiên Long,UPCOM
+KLF,CTCP Liên doanh Đầu tư Quốc tế KLF,HNX
+KMR,Công ty Cổ phần MIRAE,HSX
+KMT,CTCP Kim khí Miền Trung,HNX
+KOS,CTCP Kosy,UPCOM
+KPF,Công ty Cổ phần Đầu tư Tài chính Hoàng Minh,HSX
+KSA,Công ty Cổ phần Công nghiệp Khoáng sản Bình Thuận,HSX
+KSB,Công ty Cổ phần Khoáng sản và Xây dựng Bình Dương,HSX
+KSD,CTCP Đầu tư DNA,HNX
+KSE,CTCP Xuất khẩu Thủy sản Khánh Hòa,UPCOM
+KSH,Công ty Cổ phần Đầu tư và Phát triển KSH,HSX
+KSK,CTCP Khoáng sản luyện kim màu,HNX
+KSQ,CTCP Đầu tư KSQ,HNX
+KST,Công ty Cổ phần KASATI,HNX
+KSV,Tổng Công ty Khoáng Sản TKV - CTCP,UPCOM
+KTB,Công ty Cổ phần Đầu tư Khoáng Sản Tây Bắc,UPCOM
+KTC,Công ty cổ phần Thương mại Kiên Giang,UPCOM
+KTL,CTCP Kim khí Thăng Long,UPCOM
+KTS,CTCP Đường KonTum,HNX
+KTT,Công ty Cổ phần Đầu tư thiết bị và Xây lắp điện Thiên Trường,HNX
+KTU,CTCP Môi trường đô thị Kom Tum,UPCOM
+KVC,CTCP Sản xuất Xuất nhập khẩu Inox Kim Vĩ,HNX
+L10,Công ty Cổ phần Lilama 10,HSX
+L12,CTCP Licogi 12,UPCOM
+L14,CTCP Licogi 14,HNX
+L18,CTCP Đầu tư và Xây dựng số 18,HNX
+L35,Công ty Cổ phần Cơ khí lắp máy Lilama,HNX
+L43,CTCP Lilama 453,HNX
+L44,CTCP Lilama 454,UPCOM
+L45,CTCP Lilama 451,UPCOM
+L61,CTCP Lilama 69-1,HNX
+L62,Công ty cổ phần LILAMA 69-2,HNX
+L63,Công ty Cổ phần Lilama 69-3,UPCOM
+LAF,Công ty Cổ phần Chế biến Hàng xuất khẩu Long An,HSX
+LAI,CTCP Đầu Tư Xây dựng Long An IDICO,UPCOM
+LAS,CTCP Supe Phốt phát và Hóa chất Lâm Thao,HNX
+LAW,CTCP Cấp thoát nước Long An,UPCOM
+LBC,CTCP Thương mại - Đầu tư Long Biên,UPCOM
+LBE,CTCP Sách và Thiết bị Trường học Long An,HNX
+LBM,Công ty Cổ phần Khoáng sản và Vật liệu Xây dựng Lâm Đồng,HSX
+LCC,CTCP Xi măng Hồng Phong,UPCOM
+LCD,ctcp Lắp máy - Thí nghiệm cơ điện,HNX
+LCG,Công ty Cổ phần LICOGI 16,HSX
+LCM,Công ty Cổ phần Khai thác và Chế biến Khoáng sản Lào Cai,HSX
+LCS,CTCP Licogi 166,HNX
+LCW,CTCP Nước sạch Lai Châu,UPCOM
+LDG,Công ty Cổ phần Đầu tư LDG,HSX
+LDP,CTCP Dược Lâm Đồng - Ladophar,HNX
+LDW,Công ty TNHH MTV Cấp thoát nước Lâm Đồng,UPCOM
+LEC,Công ty Cổ phần Bất động sản Điện lực Miền Trung,HSX
+LG9,CTCP Cơ giới và Xây lắp số 9,UPCOM
+LGC,Công ty Cổ phần Đầu tư Cầu Đường CII,HSX
+LGL,Công ty Cổ phần Đầu tư và Phát triển Đô thị Long Giang,HSX
+LHC,CTCP Đầu tư và Xây dựng Thủy lợi Lâm Đồng,HNX
+LHG,Công ty Cổ phần Long Hậu,HSX
+LIC,Tổng Công ty Licogi - CTCP,UPCOM
+LIG,CTCP Licogi 13,HNX
+LIX,Công ty Cổ phần Bột giặt LIX,HSX
+LKW,CTCP Cấp nước Long Khánh,UPCOM
+LLM,Tổng Công ty Lắp máy Việt Nam - CTCP,UPCOM
+LM3,CTCP Lilama 3,UPCOM
+LM7,CTCP Lilama 7,HNX
+LM8,Công ty Cổ phần Lilama 18,HSX
+LMC,CTCP Khoáng sản Latca,UPCOM
+LMI,CTCP Đầu tư Xây dựng Lắp máy IDICO,UPCOM
+LO5,CTCP Lilama 5,HNX
+LPB,Ngân hàng TMCP Bưu điện Liên Việt,UPCOM
+LQN,CTCP Licogi Quảng Ngãi,UPCOM
+LSS,Công ty Cổ phần Mía đường Lam Sơn,HSX
+LTC,CTCP Điện nhẹ viễn thông,HNX
+LTG,CTCP Tập đoàn Lộc Trời,UPCOM
+LUT,CTCP Đầu tư Xây dựng Lương Tài,HNX
+LWS,CTCP Cấp nước tỉnh Lào Cai,UPCOM
+M10,Tổng Công ty May 10 - Công ty cổ phần,UPCOM
+MAC,CTCP Cung ứng và Dịch vụ Kỹ thuật hàng hải,HNX
+MAS,CTCP Dịch vụ Hàng Không Sân Bay Đà Nẵng,HNX
+MBB,Ngân hàng Thương mại Cổ phần Quân Đội,HSX
+MBG,CTCP Đầu tư Phát triển Xây dựng và Thương mại Việt Nam,HNX
+MBS,Công ty Cổ phần Chứng khoán MB,HNX
+MC3,CTCP Khoáng sản 3- Vimico,UPCOM
+MCC,CTCP Gạch ngói cao cấp,HNX
+MCF,Công ty CP Xây lắp Cơ khí và Lương thực Thực phẩm,HNX
+MCG,Công ty Cổ phần Cơ điện và Xây dựng Việt Nam,HSX
+MCH,CTCP Hàng tiêu dùng Masan,UPCOM
+MCI,CTCP Đầu tư Xây dựng và Phát triển Vật liệu IDICO,UPCOM
+MCO,CTCP Đầu tư & Xây dựng BDC Việt Nam,HNX
+MCP,Công ty Cổ phần In và Bao bì Mỹ Châu,HSX
+MCT,CTCP Kinh doanh Vật tư và Xây dựng,UPCOM
+MDA,CTCP Môi trường Đô thị Đông Anh,UPCOM
+MDC,CTCP Than Mông Dương - Vinacomin,HNX
+MDF,CTCP GỖ MDF VRG QUẢNG TRỊ,UPCOM
+MDG,Công ty Cổ phần Miền Đông,HSX
+MEC,CTCP Cơ khí - Lắp máy Sông Đà,HNX
+MEF,Công ty cổ phần MEINFA,UPCOM
+MEL,CTCP Thép Mê Lin,HNX
+MES,CTCP Cơ điện Công trình,UPCOM
+MGC,CTCP Địa chất Mỏ - TKV,UPCOM
+MGG,Tổng công ty Đức Giang - Công ty cổ phần,UPCOM
+MH3,CTCP Khu công nghiệp cao su Bình Long,UPCOM
+MHC,Công ty Cổ phần MHC,HSX
+MHL,CTCP Minh Hữu Liên,HNX
+MIC,CTCP Kỹ nghệ khoáng sản Quảng Nam,UPCOM
+MIE,Tổng Công ty Máy và Thiết bị Công nghiệp - CTCP,UPCOM
+MIG,Tổng Công ty cổ phần Bảo Hiểm Quân Đội,UPCOM
+MIM,CTCP Khoáng sản và Cơ khí,HNX
+MKP,CTCP Hóa - Dược phẩm Mekophar,UPCOM
+MKV,CTCP Dược Thú Y Cai Lậy,HNX
+MLC,CTCP Môi trường Đô thị tỉnh Lào Cai,UPCOM
+MLS,CTCP Chăn nuôi - Mitraco,UPCOM
+MNB,Tổng Công ty May Nhà Bè - CTCP,UPCOM
+MND,CTCP Môi trường Nam Định,UPCOM
+MPC,Công ty cổ phần Tập đoàn Thủy sản Minh Phú,UPCOM
+MPT,CTCP May Phú Thành,HNX
+MPY,CTCP Môi trường đô thị Phú Yên,UPCOM
+MQB,CTCP Môi trường và Phát triển Đô thị Quảng Bình,UPCOM
+MQN,MQN,UPCOM
+MRF,CTCP Merufa,UPCOM
+MSC,CTCP Dịch vụ Phú Nhuận,HNX
+MSN,Công ty Cổ phần Tập đoàn MaSan,HSX
+MSR,CTCP Tài nguyên Masan,UPCOM
+MST,CTCP Xây dựng 1168,HNX
+MTA,Tổng công ty Khoáng sản và Thương mại Hà Tĩnh - CTCP,UPCOM
+MTC,CTCP Dịch vụ du lịch Mỹ Trà,UPCOM
+MTG,CTCP MT Gas,UPCOM
+MTH,CTCP Môi trường đô thị Hà Đông,UPCOM
+MTL,CTCP Dịch vụ Môi trường Đô thị Từ Liêm,UPCOM
+MTM,Công ty Cổ phần Mỏ và Xuất nhập khẩu Khoáng sản Miền Trung,UPCOM
+MTP,CTCP Dược Medipharco,UPCOM
+MTS,CTCP Vật tư - TKV,UPCOM
+MTV,CTCP Dịch vụ Môi trường và Công trình Đô thị Vũng Tàu,UPCOM
+MVB,Tổng công ty Công nghiệp mỏ Việt Bắc TKV - CTCP,UPCOM
+MVC,CTCP Vật liệu và Xây dựng Bình Dương,UPCOM
+MVY,CTCP Môi trường và Dịch vụ Đô thị Vĩnh Yên,UPCOM
+MWG,Công ty Cổ phần Đầu tư Thế Giới Di Động,HSX
+NAC,CTCP Tư vấn Xây dựng Tổng hợp,UPCOM
+NAF,Công ty Cổ phần Nafoods Group,HSX
+NAG,CTCP Tập Đoàn Nagakawa,HNX
+NAP,Công ty Cổ phần Cảng Nghệ Tĩnh,HNX
+NAS,CTCP Dịch vụ hàng không sân bay Nội Bài,UPCOM
+NAU,Công ty Cổ phần Môi trường và Công trình đô thị Nghệ An,UPCOM
+NAV,Công ty Cổ phần Nam Việt,HSX
+NAW,CTCP Cấp nước Nghệ An,UPCOM
+NBB,Công ty Cổ phần Đầu tư Năm Bảy Bảy,HSX
+NBC,CTCP Than Núi Béo - Vinacomin,HNX
+NBE,CTCP Sách và thiết bị Giáo dục miền Bắc,UPCOM
+NBP,Công ty cổ phần Nhiệt điện Ninh Bình,HNX
+NBR,CTCP Đường Sắt Nghĩa Bình,UPCOM
+NBT,CTCP Cấp thoát nước Bến Tre,UPCOM
+NBW,CTCP Cấp nước Nhà Bè,HNX
+NCP,CTCP Nhiệt điện Cẩm Phả - TKV,UPCOM
+NCS,CTCP Suất ăn Hàng Không Nội Bài,UPCOM
+NCT,Công ty Cổ phần Dịch vụ Hàng hóa Nội Bài,HSX
+ND2,CTCP Đầu tư và phát triển điện miền Bắc 2,UPCOM
+NDC,CTCP Nam Dược,UPCOM
+NDF,CTCP Chế biến thực phẩm nông sản xuất khẩu Nam Định,HNX
+NDN,CTCP Đầu tư phát triển Nhà Đà Nẵng,HNX
+NDP,CTCP Dược phẩm 2-9,UPCOM
+NDX,CTCP Xây lắp Phát triển Nhà Đà Nẵng,HNX
+NED,CTCP Đầu tư và Phát triển Điện Tây Bắc,UPCOM
+NET,Công ty Cổ Phần Bột Giặt NET,HNX
+NFC,CTCP Phân lân Ninh Bình,HNX
+NGC,CTCP Chế biến Thủy sản xuất khẩu Ngô Quyền,HNX
+NHA,Tổng công ty Đầu tư Phát triển Nhà và đô thị Nam Hà Nội,HNX
+NHC,CTCP Gạch ngói Nhị Hiệp,HNX
+NHH,CTCP Nhựa Hà Nội,UPCOM
+NHP,CTCP Sản xuất Xuất nhập khẩu NHP,HNX
+NHT,CTCP Sản xuất và Thương mại Nam Hoa,UPCOM
+NHV,CTCP Đầu tư NHV,UPCOM
+NKG,Công ty Cổ phần Thép Nam Kim,HSX
+NLG,Công ty Cổ phần Đầu tư Nam Long,HSX
+NLS,Công ty Cổ phần Cấp thoát Nước Lạng Sơn,UPCOM
+NMK,Công ty Cổ phần Xây dựng Công trình 510,UPCOM
+NNB,CTCP Cấp thoát nước Ninh Bình,UPCOM
+NNC,Công ty Cổ phần Đá Núi Nhỏ,HSX
+NNG,CTCP Công nghiệp - Dịch vụ - Thương mại Ngọc Nghĩa,UPCOM
+NNT,CTCP Cấp nước Ninh Thuận,UPCOM
+NOS,Công ty cổ phần Vận Tải Biển và Thương mại Phương Đông,UPCOM
+NPH,CTCP Khách sạn Bưu điện Nha Trang,UPCOM
+NPS,CTCP May Phú Thịnh Nhà Bè,UPCOM
+NQB,CTCP Cấp nước Quảng Bình,UPCOM
+NQN,Công ty cổ phần Nước Sạch Quảng Ninh,UPCOM
+NQT,CTCP Nước sạch Quảng Trị,UPCOM
+NRC,CTCP Bất động sản Netland,HNX
+NS2,Công ty Cổ phần Nước sạch số 2 Hà Nội,UPCOM
+NS3,CTCP Sản xuất Kinh doanh Nước sạch số 3 Hà Nội,UPCOM
+NSC,Công ty Cổ phần Giống cây trồng Trung Ương,HSX
+NSG,CTCP Nhựa Sài Gòn,UPCOM
+NSH,CTCP Nhôm Sông Hồng,HNX
+NST,CTCP Ngân Sơn,HNX
+NT2,Công ty Cổ phần Điện lực Dầu khí Nhơn Trạch 2,HSX
+NTB,CTCP Đầu tư xây dựng và Khai thác Công trình giao thông 584,UPCOM
+NTC,CTCP Khu Công nghiệp Nam Tân Uyên,UPCOM
+NTL,Công ty Cổ phần Phát triển Đô thị Từ Liêm,HSX
+NTP,CTCP Nhựa Thiếu niên- Tiền Phong,HNX
+NTR,CTCP Đường sắt Nghệ Tĩnh,UPCOM
+NTT,CTCP Dệt - May Nha Trang,UPCOM
+NTW,CTCP Cấp nước Nhơn Trạch,UPCOM
+NUE,CTCP Môi trường đô thị Nha Trang,UPCOM
+NVB,Ngân hàng TMCP Quốc Dân,HNX
+NVL,Công ty Cổ phần Tập đoàn Đầu tư Địa ốc No Va,HSX
+NVP,CTCP Nước sạch Vĩnh Phúc,UPCOM
+NVT,Công ty Cổ phần Bất động sản Du lịch Ninh Vân Bay,HSX
+NWT,Công ty Cổ phần Vận tải Newway,UPCOM
+OCH,CTCP Khách sạn và dịch vụ Đại Dương,HNX
+OGC,Công ty Cổ phần Tập đoàn Đại Dương,HSX
+OIL,Tổng Công ty Dầu Việt Nam - Công ty TNHH MTV,UPCOM
+ONE,CTCP Truyền thông số 1,HNX
+ONW,CTCP Dịch vụ Một thế giới,UPCOM
+OPC,Công ty Cổ phần Dược phẩm OPC,HSX
+ORS,Công ty Cổ phần Chứng khoán Phương Đông,HNX
+PAC,Công ty Cổ phần Pin Ắc quy miền Nam,HSX
+PAI,CTCP Công nghệ thông tin Viễn thông và Tự động hóa dầu khí,UPCOM
+PAN,Công ty Cổ phần Tập đoàn PAN,HSX
+PBK,CTCP Điện lực Dầu khí Bắc Kạn,UPCOM
+PBP,CTCP Bao bì Dầu khí Việt Nam,HNX
+PC1,Công ty Cổ phần Xây lắp Điện I,HSX
+PCC,CTCP Tập đoàn Xây lắp 1 - Petrolimex,UPCOM
+PCE,CTCP Phân bón và Hóa chất Dầu khí Miền Trung,HNX
+PCF,CTCP Cà phê Petec,UPCOM
+PCG,Công ty Cổ phần Đầu tư Phát triển Gas Đô thị,HNX
+PCM,CTCP Vật liệu Xây dựng Bưu Điện,UPCOM
+PCN,CTCP Hóa phẩm dầu khí DMC - Miền Bắc,HNX
+PCT,CTCP Dịch vụ - Vận tải Dầu khí Cửu Long,HNX
+PDB,CTCP Pacific Dinco,HNX
+PDC,CTCP Du lịch Dầu khí Phương Đông,HNX
+PDN,Công ty Cổ phần Cảng Đồng Nai,HSX
+PDR,Công ty Cổ phần Phát triển Bất động sản Phát Đạt,HSX
+PDV,CTCP Vận tải Dầu Phương Đông Việt,UPCOM
+PEC,CTCP Cơ khí Điện lực,UPCOM
+PEN,CTCP Xây lắp III Petrolimex,HNX
+PEQ,CTCP Thiết bị Xăng dầu Petrolimex,UPCOM
+PET,Tổng Công ty Cổ phần Dịch vụ Tổng hợp Dầu khí,HSX
+PFL,Công ty cổ phần Dầu khí Đông Đô,UPCOM
+PGC,Tổng Công ty Gas Petrolimex - Công ty Cổ phần,HSX
+PGD,Công ty Cổ phần Phân phối Khí thấp áp Dầu khí Việt Nam,HSX
+PGI,Tổng Công ty Cổ phần Bảo hiểm Petrolimex,HSX
+PGS,CTCP Kinh doanh Khí miền Nam,HNX
+PGT,CTCP PGT Holdings,HNX
+PGV,Công ty TNHH MTV- Tổng công ty Phát điện 3,UPCOM
+PHC,CTCP Xây dựng Phục Hưng Holdings,HNX
+PHH,CTCP HỒNG HÀ VIỆT NAM,UPCOM
+PHP,CTCP Cảng Hải Phòng,HNX
+PHR,Công ty Cổ phần Cao su Phước Hòa,HSX
+PIA,CTCP Tin học Viễn thông Petrolimex,UPCOM
+PIC,CTCP Đầu tư Điện lực 3,HNX
+PID,CTCP Trang trí nội thất Dầu Khí,UPCOM
+PIS,Tổng công ty Pisico Bình Định - CTCP,UPCOM
+PIT,Công ty Cổ phần Xuất nhập khẩu PETROLIMEX,HSX
+PIV,CTCP PIV,HNX
+PJC,CTCP Thương mại và Vận tải Petrolimex Hà Nội,HNX
+PJS,CTCP Cấp nước Phú Hòa Tân,UPCOM
+PJT,Công ty Cổ phần Vận tải Xăng dầu Đường thủy Petrolimex,HSX
+PKR,CTCP Đường sắt Phú Khánh,UPCOM
+PLA,CTCP Đầu tư Dịch vụ Hạ tầng Xăng dầu,UPCOM
+PLC,Tổng Công ty Hóa dầu Petrolimex - CTCP,HNX
+PLP,Công ty Cổ phần Sản xuất và Công nghệ Nhựa Pha Lê,HSX
+PLX,Tập đoàn Xăng dầu Việt Nam,HSX
+PMB,CTCP Phân bón và Hóa chất Dầu khí Miền Bắc,HNX
+PMC,CTCP Dược phẩm dược liệu Pharmedic,HNX
+PME,Công ty Cổ phần Pymepharco,HSX
+PMG,Công ty Cổ phần Đầu tư và Sản xuất Petro Miền Trung,HSX
+PMJ,CTCP Vật tư Bưu điện,UPCOM
+PMP,CTCP Bao bì Đạm Phú Mỹ,HNX
+PMS,CTCP Cơ khí xăng dầu,HNX
+PMT,CTCP Viễn thông Telvina Việt Nam,UPCOM
+PNC,Công ty Cổ phần Văn hóa Phương Nam,HSX
+PND,CTCP Xăng dầu Dầu khí Nam Định,UPCOM
+PNG,Công ty Cổ phần Thương mại Phú Nhuận,UPCOM
+PNJ,Công ty Cổ phần Vàng bạc Đá quý Phú Nhuận,HSX
+PNT,CTCP Kỹ thuật Xây dựng Phú Nhuận,UPCOM
+POB,CTCP Xăng dầu Dầu khí Thái Bình,UPCOM
+POM,Công ty Cổ phần Thép POMINA,HSX
+POS,CTCP Dịch vụ Lắp đặt Vận hành và Bảo dưỡng Công trình Dầu khí biển PTSC,UPCOM
+POT,CTCP Thiết bị Bưu điện,HNX
+POV,CTCP Xăng dầu Dầu khí Vũng Áng,UPCOM
+POW,Tổng công ty Điện lực Dầu khí Việt Nam,UPCOM
+PPC,Công ty Cổ phần Nhiệt điện Phả Lại,HSX
+PPE,CTCP Tư vấn Điện lực Dầu khí Việt Nam,HNX
+PPG,CTCP Sản xuất – Thương Mại - Dịch vụ Phú Phong,UPCOM
+PPH,Tổng công ty cổ phần Phong Phú,UPCOM
+PPI,Công ty Cổ phần Đầu tư và Phát triển Dự án Hạ tầng Thái Bình Dương,HSX
+PPP,CTCP Dược phẩm Phong Phú,HNX
+PPS,Công ty cổ phần Dịch vụ kỹ thuật Điện lực Dầu khí Việt Nam,HNX
+PPY,CTCP Xăng dầu Dầu khí Phú Yên,HNX
+PRC,CTCP Logistics Portserco,HNX
+PRO,CTCP Procimex Việt Nam,UPCOM
+PRT,Tổng công ty Sản xuất - Xuất nhập khẩu Bình Dương- TNHH MTV,UPCOM
+PSB,CTCP Đầu tư Dầu khí Sao Mai – Bến Đình,UPCOM
+PSC,CTCP Vận tải và Dịch vụ Petrolimex Sài Gòn,HNX
+PSD,CTCP Dịch vụ Phân phối Tổng hợp Dầu khí,HNX
+PSE,CTCP Phân bón và Hóa chất Dầu khí Đông Nam Bộ,HNX
+PSG,CTCP Đầu tư và Xây lắp Dầu khí Sài Gòn,UPCOM
+PSI,Công ty Cổ phần Chứng khoán Dầu khí,HNX
+PSL,CTCP Chăn nuôi Phú Sơn,UPCOM
+PSN,CTCP Cảng Dịch vụ Dầu khí Tổng hợp - PTSC Thanh Hóa,UPCOM
+PSP,CTCP Cảng dịch vụ Dầu khí Đình Vũ,UPCOM
+PSW,CTCP Phân bón và Hóa chất Dầu khí Tây Nam Bộ,HNX
+PTB,Công ty Cổ phần Phú Tài,HSX
+PTC,Công ty Cổ phần Đầu tư và Xây dựng Bưu điện,HSX
+PTD,CÔNG TY CỔ PHẦN THIẾT KẾ XÂY DỰNG THƯƠNG MẠI PHÚC THỊNH,HNX
+PTE,Công ty Cổ phần Xi măng Phú Thọ,UPCOM
+PTG,CTCP May Xuất Khẩu Phan Thiết,UPCOM
+PTH,CTCP Vận tải và Dịch vụ Petrolimex Hà Tây,UPCOM
+PTI,TỔNG CÔNG TY CỔ PHẦN BẢO HIỂM BƯU ĐIỆN,HNX
+PTK,CTCP Luyện Kim Phú Thịnh,UPCOM
+PTL,Công ty Cổ phần Đầu tư Hạ tầng và Đô thị Dầu khí,HSX
+PTM,CTCP Sản xuất Thương mại và Dịch vụ Ôtô PTM,UPCOM
+PTO,CTCP Dịch vụ- Xây dựng Công trình Bưu điện,UPCOM
+PTP,CTCP Dịch vụ viễn thông và In bưu điện,UPCOM
+PTS,CTCP Vận tải và Dịch vụ Petrolimex Hải Phòng,HNX
+PTT,CTCP Vận tải dầu khí Đông Dương,UPCOM
+PV2,Công ty cổ phần Đầu tư PV2,HNX
+PVA,CTCP Tổng Công ty Xây lắp Dầu khí Nghệ An,UPCOM
+PVB,CTCP Bọc Ống Dầu khí Việt Nam,HNX
+PVC,Tổng Công ty Dung dịch khoan và Hoá phẩm Dầu khí - CTCP,HNX
+PVD,Tổng Công ty Cổ phần Khoan và Dịch vụ Khoan Dầu khí,HSX
+PVE,Tổng Công ty Tư vấn Thiết kế Dầu khí - CTCP,HNX
+PVG,CTCP Kinh doanh Khí miền Bắc,HNX
+PVH,CTCP Xây lắp Dầu khí Thanh Hóa,UPCOM
+PVI,CTCP PVI,HNX
+PVL,CTCP Đầu tư Nhà đất Việt,HNX
+PVM,CTCP Máy - Thiết bị Dầu khí,UPCOM
+PVO,CTCP Dầu nhờn PV Oil,UPCOM
+PVP,CTCP Vận tải Dầu khí Thái Bình Dương,UPCOM
+PVR,CTCP Kinh doanh dịch vụ cao cấp Dầu khí Việt Nam,UPCOM
+PVS,Tổng CTCP Dịch Vụ Kỹ Thuật Dầu Khí Việt Nam,HNX
+PVT,Tổng Công ty Cổ phần Vận tải Dầu khí,HSX
+PVV,Công ty cổ phần Vinaconex 39,HNX
+PVX,Tổng CTCP Xây lắp Dầu khí Việt Nam,HNX
+PVY,CTCP Chế tạo Giàn khoan Dầu khí,UPCOM
+PWS,CTCP Cấp thoát nước Phú Yên,UPCOM
+PX1,CTCP Xi Măng Sông Lam 2,UPCOM
+PXA,CTCP Đầu tư và Thương mại Dầu khí Nghệ An,UPCOM
+PXC,Công ty Cổ phần Phát triển Đô thị Dầu khí,UPCOM
+PXI,Công ty Cổ phần Xây dựng Công nghiệp & Dân dụng Dầu khí,HSX
+PXL,CTCP Đầu tư Xây dựng Thương mại Dầu khí - IDICO,UPCOM
+PXM,CTCP Xây lắp Dầu khí Miền Trung,UPCOM
+PXS,Công ty Cổ phần Kết cấu Kim loại và Lắp máy Dầu khí,HSX
+PXT,Công ty Cổ phần Xây lắp Đường ống Bể chứa Dầu khí,HSX
+PYU,CTCP Môi trường và Công trình đô thị Phúc Yên,UPCOM
+QBR,CTCP Đường sắt Quảng Bình,UPCOM
+QBS,Công ty Cổ phần Xuất nhập khẩu Quảng Bình,HSX
+QCC,CTCP Đầu tư Xây dựng và Phát triển Hạ tầng Viễn thông,UPCOM
+QCG,Công ty Cổ phần Quốc Cường Gia Lai,HSX
+QHD,CTCP Que hàn điện Việt Đức,HNX
+QHW,CTCP Nước khoáng Quảng Ninh,UPCOM
+QLD,CTCP Quản lý và Xây dựng Giao thông Lạng Sơn,UPCOM
+QLT,CTCP Quản lý Bảo trì Đường thủy nội địa số 10,UPCOM
+QNC,CTCP Xi măng và Xây dựng Quảng Ninh,HNX
+QNS,CTCP Đường Quảng Ngãi,UPCOM
+QNU,CTCP Môi trường đô thị Quảng Nam,UPCOM
+QNW,CTCP Cấp thoát nước và Xây dựng Quảng Ngãi,UPCOM
+QPH,CTCP Thủy điện Quế Phong,UPCOM
+QSP,CTCP Tân Cảng Quy Nhơn,UPCOM
+QST,CTCP Sách và Thiết bị Trường học Quảng Ninh,HNX
+QTC,Công ty Cổ phần Công trình Giao thông Vận tải Quảng Nam,HNX
+QTP,CTCP Nhiệt điện Quảng Ninh,UPCOM
+RAL,Công ty Cổ phần Bóng đèn Phích nước Rạng Đông,HSX
+RAT,CTCP Vận tải và Thương mại Đường sắt,UPCOM
+RBC,CTCP Công nghiệp và Xuất nhập khẩu Cao su,UPCOM
+RCC,CTCP Tổng công ty Công trình đường sắt,UPCOM
+RCD,CTCP Xây dựng - Địa ốc Cao su,UPCOM
+RCL,Công Ty Cổ Phần Địa ốc Chợ Lớn,HNX
+RDP,Công ty Cổ phần Nhựa Rạng Đông,HSX
+REE,Công ty Cổ phần Cơ Điện Lạnh,HSX
+RGC,CTCP Đầu tư PV- Inconess,UPCOM
+RHN,CTCP Đường sắt Hà Ninh,UPCOM
+RIC,Công ty Cổ phần Quốc tế Hoàng Gia,HSX
+RLC,CTCP Đường bộ Lào Cai,UPCOM
+ROS,Công ty Cổ phần Xây dựng FLC FAROS,HSX
+RTB,CTCP Cao su Tân Biên,UPCOM
+RTH,CTCP Đường sắt Thanh Hóa,UPCOM
+RTS,CTCP Thông tin tín hiệu Đường sắt Đà Nẵng,UPCOM
+S12,CTCP Sông Đà 12,UPCOM
+S27,Công ty Cổ phần Sông Đà 27,UPCOM
+S33,CTCP Mía đường 333,UPCOM
+S4A,Công ty Cổ phần Thủy điện Sê San 4A,HSX
+S55,Công ty cổ phần Sông Đà 505,HNX
+S72,CTCP Sông Đà 702,UPCOM
+S74,Công ty cổ phần Sông Đà 704,HNX
+S96,Công ty Cổ Phần Sông Đà 906,UPCOM
+S99,Công ty cổ phần SCI,HNX
+SAB,Tổng Công ty Cổ phần Bia – Rượu – Nước giải khát Sài Gòn,HSX
+SAC,CTCP Xếp dỡ và Dịch vụ Cảng Sài Gòn,UPCOM
+SAF,CTCP Lương thực Thực phẩm SAFOCO,HNX
+SAL,CTCP Trục vớt cứu hộ Việt Nam,UPCOM
+SAM,Công ty Cổ phần SAM Holdings,HSX
+SAP,Công Ty Cổ phần In Sách giáo khoa Tp HCM,UPCOM
+SAS,CTCP Dịch vụ Hàng không Sân bay Tân Sơn Nhất,UPCOM
+SAV,Công ty Cổ phần Hợp tác Kinh tế và Xuất nhập khẩu SAVIMEX,HSX
+SB1,CTCP Bia Sài Gòn- Nghệ Tĩnh,UPCOM
+SBA,Công ty Cổ phần Sông Ba,HSX
+SBD,CTCP Công nghệ Sao Bắc Đẩu,UPCOM
+SBH,Công ty cổ phần Thủy điện Sông Ba Hạ,UPCOM
+SBL,Công ty Cổ phần Bia Sài Gòn - Bạc Liêu,UPCOM
+SBM,CTCP Đầu tư Phát triển Bắc Minh,UPCOM
+SBS,Công ty Cổ phần Chứng khoán Ngân Hàng Sài Gòn Thương Tín,UPCOM
+SBT,Công ty Cổ phần Thành Thành Công - Biên Hòa,HSX
+SBV,Công ty Cổ phần Siam Brothers Việt Nam,HSX
+SC5,Công ty Cổ phần Xây dựng số 5,HSX
+SCC,CTCP Đầu tư Thương mại Hưng Long tỉnh Hòa Bình,UPCOM
+SCD,Công ty Cổ phần Nước giải khát Chương Dương,HSX
+SCI,CTCP SCI E&C,HNX
+SCJ,CTCP Xi măng Sài Sơn,HNX
+SCL,Công ty cổ phần Sông Đà Cao Cường,HNX
+SCO,CTCP Công nghiệp Thủy sản,UPCOM
+SCR,Công ty Cổ phần Địa ốc Sài Gòn Thương Tín,HSX
+SCS,CTCP Dịch vụ Hàng hóa Sài Gòn,UPCOM
+SCY,CTCP Đóng tàu Sông Cấm,UPCOM
+SD1,Công ty cổ phần Sông Đà 1,UPCOM
+SD2,CTCP Sông Đà 2,HNX
+SD3,CTCP Sông Đà 3,UPCOM
+SD4,CÔNG TY CỔ PHẦN SÔNG ĐÀ 4,HNX
+SD5,CTCP Sông Đà 5,HNX
+SD6,CTCP Sông Đà 6,HNX
+SD7,Công ty Cổ phần Sông Đà 7,UPCOM
+SD8,Công ty cổ phần Sông Đà 8,UPCOM
+SD9,CTCP Sông Đà 9,HNX
+SDA,CTCP SIMCO Sông Đà,HNX
+SDB,CTCP Sông Đà 207,UPCOM
+SDC,CTCP Tư vấn Sông Đà,HNX
+SDD,CTCP Đầu tư và Xây lắp Sông đà,HNX
+SDE,CTCP Kỹ thuật điện Sông Đà,HNX
+SDG,CTCP Sadico Cần Thơ,HNX
+SDH,CTCP Xây dựng hạ tầng Sông Đà,UPCOM
+SDI,Công ty cổ phần Đầu tư và Phát triển Đô thị Sài Đồng,UPCOM
+SDJ,CTCP Sông Đà 25,UPCOM
+SDK,CTCP Cơ khí luyện kim,UPCOM
+SDN,CTCP Sơn Đồng Nai,HNX
+SDP,CTCP SDP,HNX
+SDT,CTCP Sông Đà 10,HNX
+SDU,CTCP Đầu tư xây dựng và Phát triển đô thị Sông Đà,HNX
+SDV,CTCP Dịch vụ Sonadezi,UPCOM
+SDX,CTCP Phòng cháy chữa cháy và Đầu tư Xây dựng Sông Đà,UPCOM
+SDY,CTCP Xi măng Sông Đà Yaly,UPCOM
+SEA,Tổng công ty Thủy sản Việt Nam- Công ty cổ phần,UPCOM
+SEB,CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN ĐIỆN MIỀN TRUNG,HNX
+SED,CTCP Đầu tư và Phát triển Giáo dục Phương Nam,HNX
+SEP,CTCP Tổng Công ty Thương mại Quảng Trị,UPCOM
+SFC,Công ty Cổ phần Nhiên liệu Sài Gòn,HSX
+SFG,Công ty Cổ phần Phân bón Miền Nam,HSX
+SFI,Công ty Cổ phần Đại lý Vận tải SAFI,HSX
+SFN,CTCP Dệt lưới Sài Gòn,HNX
+SGC,CTCP Xuất nhập khẩu Sa Giang,HNX
+SGD,CTCP Sách giáo dục tại Tp HCM,HNX
+SGH,CTCP Khách sạn Sài Gòn,HNX
+SGN,CTCP Phục vụ Mặt đất Sài Gòn,UPCOM
+SGO,CTCP Dầu thực vật Sài Gòn,HNX
+SGP,CTCP Cảng Sài Gòn,UPCOM
+SGR,Công ty Cổ phần Địa ốc Sài Gòn,HSX
+SGS,CTCP Vận tải biển Sài Gòn,UPCOM
+SGT,Công ty Cổ phần Công nghệ Viễn thông Sài Gòn,HSX
+SHA,Công ty Cổ phần Sơn Hà Sài Gòn,HSX
+SHB,Ngân hàng TMCP Sài Gòn - Hà Nội,HNX
+SHC,CTCP Hàng hải Sài Gòn,UPCOM
+SHG,Tổng CTCP Sông Hồng,UPCOM
+SHI,Công ty Cổ phần Quốc tế Sơn Hà,HSX
+SHN,CTCP Đầu tư Tổng hợp Hà Nội,HNX
+SHP,Công ty Cổ phần Thủy điện Miền Nam,HSX
+SHS,Công ty Cổ phần chứng khoán Sài Gòn - Hà Nội,HNX
+SHX,CTCP Sài Gòn Hỏa xa,UPCOM
+SIC,CTCP ANI,HNX
+SID,CTCP Đầu tư Phát triển Sài Gòn Coop,UPCOM
+SII,Công ty Cổ phần Hạ tầng nước Sài Gòn,HSX
+SIV,CTCP SIVICO,UPCOM
+SJ1,CTCP Nông nghiệp Hùng Hậu,HNX
+SJC,CTCP Sông Đà 101,HNX
+SJD,Công ty Cổ phần Thủy điện Cần Đơn,HSX
+SJE,CTCP Sông Đà 11,HNX
+SJF,Công ty Cổ phần Đầu tư Sao Thái Dương,HSX
+SJG,Tổng công ty Sông Đà - CTCP,UPCOM
+SJM,Công ty Cổ Phần Sông Đà 19,UPCOM
+SJS,Công ty Cổ phần Đầu tư Phát triển Đô thị và Khu công nghiệp Sông Đà,HSX
+SKG,Công ty Cổ phần Tàu cao tốc Superdong – Kiên Giang,HSX
+SKH,CTCP Nước giải khát Sanest Khánh Hòa,UPCOM
+SKV,CTCP Nước giải khát Yến sào Khánh Hòa,UPCOM
+SLC,CTCP Dịch vụ Xuất khẩu lao động và chuyên gia,UPCOM
+SLS,CTCP Mía đường Sơn La,HNX
+SMA,Công ty Cổ phần Thiết bị Phụ tùng Sài Gòn,HSX
+SMB,CTCP Bia Sài Gòn - Miền Trung,UPCOM
+SMC,Công ty Cổ phần Đầu tư Thương mại SMC,HSX
+SMN,CTCP Sách và Thiết bị Giáo dục Miền Nam,HNX
+SMT,CTCP SAMETEL,HNX
+SNC,Công ty Cổ phần Xuất nhập khẩu Thủy sản Năm Căn,UPCOM
+SNZ,Tổng công ty cổ phần Phát triển khu công nghiệp,UPCOM
+SON,CTCP Cung ứng nhân lực quốc tế và thương mại,UPCOM
+SP2,CTCP Thủy điện Sử Pán 2,UPCOM
+SPA,CTCP Bao bì Sài Gòn,UPCOM
+SPB,CTCP Sợi Phú Bài,UPCOM
+SPC,CTCP Bảo vệ Thực vật Sài Gòn,UPCOM
+SPD,CTCP Xuất nhập khẩu Thủy sản miền Trung,UPCOM
+SPH,CTCP Xuất nhập khẩu Thủy sản Hà Nội,UPCOM
+SPI,CTCP SPI,HNX
+SPM,Công ty Cổ phần SPM,HSX
+SPP,CTCP Bao bì Nhựa Sài Gòn,HNX
+SPV,CTCP Thủy Đặc Sản,UPCOM
+SQC,CTCP Khoáng sản Sài Gòn - Quy Nhơn,UPCOM
+SRA,CTCP SARA Việt Nam,HNX
+SRB,CTCP Tập đoàn Sara,UPCOM
+SRC,Công ty Cổ phần Cao su Sao Vàng,HSX
+SRF,Công ty Cổ phần Kỹ Nghệ Lạnh,HSX
+SRT,CTCP Vận tải Đường sắt Sài Gòn,UPCOM
+SSC,Công ty Cổ phần Giống Cây trồng Miền Nam,HSX
+SSF,CTCP Giày Sài Gòn,UPCOM
+SSG,CTCP Vận tải biển Hải Âu,UPCOM
+SSI,Công ty Cổ phần Chứng khoán Sài Gòn,HSX
+SSM,CTCP Chế tạo Kết cấu thép VNECOSSM,HNX
+SSN,CTCP Xuất nhập khẩu Thủy sản Sài Gòn,UPCOM
+SSU,CTCP Môi trường Đô thị Sóc Sơn,UPCOM
+ST8,Công ty Cổ phần Siêu Thanh,HSX
+STB,Ngân hàng Thương mại Cổ phần Sài Gòn Thương Tín,HSX
+STC,CTCP Sách và Thiết bị Trường học tại Tp HCM,HNX
+STG,Công ty Cổ phần Kho vận Miền Nam,HSX
+STK,Công ty Cổ phần Sợi Thế Kỷ,HSX
+STL,CTCP Sông Đà Thăng Long,UPCOM
+STP,Công ty cổ phần Công nghiệp Thương mại Sông Đà,HNX
+STS,CTCP Dịch vụ Vận tải Sài Gòn,UPCOM
+STT,Công ty Cổ phần Vận chuyển Sài Gòn Tourist,HSX
+STU,CTCP Môi trường và Công trình Đô thị Sơn Tây,UPCOM
+STV,CTCP Chế tác đá Việt Nam,UPCOM
+SUM,CTCP Đo đạc và Khoáng sản,UPCOM
+SVC,Công ty Cổ phần Dịch vụ Tổng hợp Sài Gòn,HSX
+SVG,CTCP Hơi Kỹ nghệ Que Hàn,UPCOM
+SVH,CTCP Thủy điện Sông Vàng,UPCOM
+SVI,Công ty Cổ phần Bao bì Biên Hòa,HSX
+SVL,CTCP Nhân lực Quốc tế Sovilaco,UPCOM
+SVN,CTCP SOLAVINA,HNX
+SVT,Công ty Cổ phần Công nghệ Sài Gòn Viễn Đông,HSX
+SWC,Tổng CTCP Đường sông Miền Nam,UPCOM
+SZE,CTCP Môi trường Sonadezi,UPCOM
+SZL,Công ty Cổ phần Sonadezi Long Thành,HSX
+T12,CTCP Thương mại Dịch vụ Tràng Thi,UPCOM
+TA3,CTCP Đầu tư và Xây lắp Thành An 386,UPCOM
+TA6,CTCP Đầu tư và Xây lắp Thành An 665,UPCOM
+TA9,CTCP Xây lắp Thanh An 96,HNX
+TAC,Công ty Cổ phần Dầu thực vật Tường An,HSX
+TAG,CTCP Thế giới số Trần Anh,HNX
+TAP,CTCP Đô thị Tân An,UPCOM
+TAW,CTCP Cấp nước Trung An,UPCOM
+TB8,CTCP Sản xuất và Kinh doanh Vật tư thiết bị- VVMI,UPCOM
+TBC,Công ty Cổ phần Thủy điện Thác Bà,HSX
+TBD,Tổng Công ty Thiết bị điện Đông Anh - CTCP,UPCOM
+TBN,CTCP Thoát nước và Xử lý Nước thải Bắc Ninh,UPCOM
+TBT,CTCP Xây Dựng Công Trình Giao Thông Bến Tre,UPCOM
+TBX,CTCP Xi măng Thái Bình,HNX
+TC6,CTCP Than Cọc Sáu - Vinacomin,HNX
+TCB,Ngân hàng Thương mại cổ phần Kỹ thương Việt Nam,HSX
+TCD,Công ty Cổ phần Đầu tư Phát triển Công nghiệp và Vận tải,HSX
+TCH,Công ty Cổ phần Đầu tư Dịch vụ Tài chính Hoàng Huy,HSX
+TCJ,CTCP Tô Châu,UPCOM
+TCK,Tổng công ty cơ khí xây dựng- CTCP,UPCOM
+TCL,Công ty Cổ phần Đai lý Giao nhận Vận tải Xếp dỡ Tân Cảng,HSX
+TCM,Công ty Cổ phần Dệt may - Đầu tư - Thương mại Thành Công,HSX
+TCO,Công ty Cổ phần Vận tải Đa phương thức Duyên Hải,HSX
+TCR,Công ty Cổ phần Công nghiệp Gốm sứ TAICERA,HSX
+TCS,CTCP Than Cao Sơn - Vinacomin,HNX
+TCT,Công ty Cổ phần Cáp treo Núi Bà Tây Ninh,HSX
+TCW,CTCP Kho vận Tân Cảng,UPCOM
+TDB,CTCP Thủy điện Định Bình,UPCOM
+TDC,Công ty Cổ phần Kinh doanh và Phát triển Bình Dương,HSX
+TDG,Công ty Cổ phần Dầu khí Thái Dương,HSX
+TDH,Công ty Cổ phần Phát triển Nhà Thủ Đức,HSX
+TDM,CTCP Nước Thủ Dầu Một,UPCOM
+TDN,CTCP Than Đèo Nai - Vinacomin,HNX
+TDS,CTCP Thép Thủ Đức - VNSTEEL,UPCOM
+TDW,Công ty Cổ phần Cấp nước Thủ Đức,HSX
+TEC,CTCP Traenco,UPCOM
+TEG,Công ty Cổ phần Bất động sản và Xây dựng Trường Thành,HSX
+TEL,CTCP Phát triển công trình Viễn thông,UPCOM
+TET,CTCP Vải sợi may mặc miền Bắc,HNX
+TFC,Công ty Cổ phần Trang,HNX
+TGG,Công ty Cổ phần Xây dựng và Đầu tư Trường Giang,HSX
+TGP,CTCP Trường Phú,UPCOM
+TH1,CTCP Xuất nhập khẩu Tổng hợp I Việt Nam,UPCOM
+THB,CTCP Bia Thanh Hoá,HNX
+THG,Công ty Cổ phần Đầu tư và Xây dựng Tiền Giang,HSX
+THI,Công ty Cổ phần Thiết Bị Điện,HSX
+THN,CTCP Cấp nước Thanh Hóa,UPCOM
+THR,CTCP Đường sắt Thuận Hải,UPCOM
+THS,CTCP Thanh Hoa - Sông Đà,HNX
+THT,CTCP Than Hà Tu - Vinacomin,HNX
+THU,CTCP Môi trường và Công trình Đô thị Thanh Hóa,UPCOM
+THW,CTCP Cấp nước Tân Hòa,UPCOM
+TIE,Công ty Cổ phần TIE,HSX
+TIG,CTCP Tập đoàn Đầu tư Thăng Long,HNX
+TIP,Công ty Cổ phần Phát triển Khu Công nghiệp Tín Nghĩa,HSX
+TIS,CTCP Gang thép Thái Nguyên,UPCOM
+TIX,Công ty Cổ phần Sản xuất Kinh doanh XNK Dịch vụ và Đầu tư Tân Bình,HSX
+TJC,CTCP Dịch vụ Vận tải và Thương mại,HNX
+TKC,CTCP Xây Dựng và Kinh doanh Địa Ốc Tân Kỷ,HNX
+TKU,CTCP Công nghiệp Tungkuang,HNX
+TL4,Tổng công ty Xây dựng Thủy lợi 4 - CTCP,UPCOM
+TLD,Công ty Cổ phần Đầu tư Xây dựng và Phát triển Đô thị Thăng Long,HSX
+TLG,Công ty Cổ phần Tập đoàn Thiên Long,HSX
+TLH,Công ty Cổ phần Tập đoàn Thép Tiến Lên,HSX
+TLP,Tổng công ty Thương mại Xuất nhập khẩu Thanh Lễ- TNHH MTV,UPCOM
+TLT,CTCP Viglacera Thăng Long,UPCOM
+TMB,CTCP Kinh doanh than miền Bắc-Vinacomin,HNX
+TMC,CTCP Thương mai Xuất nhập khẩu Thủ Đức,HNX
+TMG,CTCP Kim loại màu Thái Nguyên - Vimico,UPCOM
+TMP,Công ty Cổ phần Thủy điện Thác Mơ,HSX
+TMS,Công ty Cổ phần Transimex,HSX
+TMT,Công ty Cổ phần Ô tô TMT,HSX
+TMW,CTCP Tổng hợp Gỗ Tân Mai,UPCOM
+TMX,CTCP Vicem Thương mại xi măng,HNX
+TNA,Công ty Cổ phần Thương mại Xuất nhập khẩu Thiên Nam,HSX
+TNB,CTCP Thép Nhà Bè - VNSTEEL,UPCOM
+TNC,Công ty Cổ phần Cao su Thống Nhất,HSX
+TND,CTCP Than Tây Nam Đá Mài - Vinacomin,UPCOM
+TNG,CTCP Đầu tư và Thương mại TNG,HNX
+TNI,Công ty Cổ phần Tập đoàn Thành Nam,HSX
+TNM,CTCP Xuất nhập khẩu và Xây dựng công trình,UPCOM
+TNP,CTCP Cảng Thị Nại,UPCOM
+TNS,CTCP Thép Tấm lá Thống Nhất,UPCOM
+TNT,Công ty Cổ phần Tài Nguyên,HSX
+TNW,CTCP Nước sạch Thái Nguyên,UPCOM
+TOP,Công ty Cổ phần Phân phối Top One,UPCOM
+TOT,CTCP Vận tải Transimex,UPCOM
+TPB,Ngân hàng Thương mại Cổ phần Tiên Phong,HSX
+TPC,Công ty Cổ phần Nhựa Tân Đại Hưng,HSX
+TPH,CTCP In Sách giáo khoa tại Tp Hà Nội,HNX
+TPP,CTCP Nhựa Tân Phú,HNX
+TPS,CTCP Bến bãi Vận tải Sài Gòn,UPCOM
+TQN,CTCP Thông Quảng Ninh,UPCOM
+TRA,Công ty Cổ phần TRAPHACO,HSX
+TRC,Công ty Cổ phần Cao su Tây Ninh,HSX
+TRS,CTCP Vận tải và Dịch vụ Hàng Hải,UPCOM
+TRT,CTCP Trúc Thôn,UPCOM
+TS3,Công ty TNHH MTV 532,UPCOM
+TS4,Công ty Cổ phần Thủy sản số 4,HSX
+TS5,Công ty TNHH MTV 145,UPCOM
+TSB,CTCP Ắc quy Tia Sáng,HNX
+TSC,Công ty Cổ phần Vật tư Kỹ thuật Nông nghiệp Cần Thơ,HSX
+TSD,CTCP Du lịch Trường Sơn COECCO,UPCOM
+TSG,CTCP Thông tin Tín hiệu Đường sắt Sài Gòn,UPCOM
+TSJ,CTCP Du lịch Dịch vụ Hà Nội,UPCOM
+TST,CTCP Dịch vụ Kỹ thuật Viễn thông,HNX
+TTB,CTCP Tập đoàn Tiến Bộ,HNX
+TTC,CTCP Gạch men Thanh Thanh,HNX
+TTD,CTCP Bệnh viện tim Tâm Đức,UPCOM
+TTF,Công ty Cổ phần Tập đoàn Kỹ nghệ Gỗ Trường Thành,HSX
+TTG,CTCP May Thanh Trì,UPCOM
+TTH,CTCP Thương mại và Dịch vụ Tiến Thành,HNX
+TTJ,CTCP Thủy Tạ,UPCOM
+TTL,Tổng Công ty Thăng Long - CTCP,HNX
+TTN,CTCP Công nghệ và Truyền thông Việt Nam,UPCOM
+TTP,CTCP Bao bì Nhựa Tân Tiến,UPCOM
+TTR,CTCP Du lịch thương mại và đầu tư,UPCOM
+TTS,CTCP Cán thép Thái Trung,UPCOM
+TTT,CTCP Du lịch - Thương mại Tây Ninh,HNX
+TTV,CTCP Thông tin Tín hiệu Đường sắt Vinh,UPCOM
+TTZ,CTCP Đầu tư Xây dưng và Công nghệ Tiến Trung,HNX
+TUG,CTCP Lai dắt và Vận tải Cảng Hải Phòng,UPCOM
+TV1,Công ty Cổ phần Tư vấn Xây dựng Điện 1,HSX
+TV2,CTCP Tư vấn Xây dựng Điện 2,HNX
+TV3,Công ty cổ phần Tư vấn Xây dựng điện 3,HNX
+TV4,CTCP Tư vấn Xây dựng điện 4,HNX
+TVA,CTCP Sứ Viglacera Thanh Trì,UPCOM
+TVB,Công ty Cổ phần Chứng khoán Trí Việt,HSX
+TVC,CTCP Tập đoàn Quản lý Tài sản Trí Việt,HNX
+TVD,CTCP Than Vàng Danh - Vinacomin,HNX
+TVG,CTCP Tư vấn Đầu tư và Xây dựng Giao thông vận tải,UPCOM
+TVM,CTCP Tư vấn đầu tư mỏ và công nghiệp - Vinacomin,UPCOM
+TVN,Tổng Công ty Thép Việt Nam - CTCP,UPCOM
+TVP,CTCP Dược phẩm TVPharm,UPCOM
+TVS,Công ty Cổ phần Chứng khoán Thiên Việt,HSX
+TVT,Tổng Công ty Việt Thắng - CTCP,HSX
+TVU,CTCP Công trình Đô thị Trà Vinh,UPCOM
+TVW,CTCP Cấp thoát nước Trà Vinh,UPCOM
+TW3,CTCP Dược Trung ương 3,UPCOM
+TXM,CTCP Vicem Thạch cao Xi măng,HNX
+TYA,Công ty Cổ phần Dây và Cáp điện Taya Việt Nam,HSX
+UCT,CTCP Đô thị Cần Thơ,UPCOM
+UDC,Công ty Cổ phần Xây dựng và Phát triển Đô thị tỉnh Bà Rịa - Vũng Tàu,HSX
+UDJ,Công ty cổ phần Phát triển Đô Thị,UPCOM
+UEM,CTCP Cơ điện Uông Bí - Vinacomin,UPCOM
+UIC,Công ty Cổ phần Đầu tư Phát triển Nhà và Đô thị IDICO,HSX
+UMC,CTCP Công trình đô thị Nam Định,UPCOM
+UNI,CTCP Viễn Liên,HNX
+UPC,CTCP Phát triển Công viên cây xanh và Đô thị Vũng Tàu,UPCOM
+UPH,CTCP Dược phẩm TW25,UPCOM
+USC,CTCP Khảo sát và Xây dựng- USCO,UPCOM
+V11,CTCP Xây dựng số 11,UPCOM
+V12,Công ty cổ phần xây dựng số 12,HNX
+V15,CÔNG TY CỔ PHẦN XÂY DỰNG SỐ 15,UPCOM
+V21,CTCP Vinaconex 21,HNX
+VAF,Công ty Cổ phần Phân lân Nung chảy Văn Điển,HSX
+VAT,CTCP VT Vạn Xuân,HNX
+VAV,CTCP VIWACO,UPCOM
+VBC,CTCP Nhựa Bao bì Vinh,HNX
+VBG,CTCP Địa chất Việt Bắc- TKV,UPCOM
+VBH,CTCP Điện tử Bình Hòa,UPCOM
+VC1,Công ty cổ phần xây dựng số 1,HNX
+VC2,Công ty cổ phần xây dựng số 2,HNX
+VC3,Công ty Cổ phần Xây Dựng Số 3 - Vinaconex 3,HNX
+VC5,CTCP Xây dựng số 5,UPCOM
+VC6,Công ty cổ phần Xây dựng và đầu tư Visicons,HNX
+VC7,CTCP Xây dựng 7,HNX
+VC9,Công ty cổ phần xây dựng số 9,HNX
+VCA,CÔNG TY CỔ PHẦN THÉP VICASA - VNSTEEL,UPCOM
+VCB,Ngân hàng TMCP Ngoại Thương Việt Nam,HSX
+VCC,CTCP Vinaconex 25,HNX
+VCE,CTCP Xây lắp Môi trường - TKV,UPCOM
+VCF,Công ty Cổ phần VINACAFÉ Biên Hòa,HSX
+VCG,Tổng CTCP XNK và Xây dựng Việt Nam,HNX
+VCI,Công ty Cổ phần Chứng khoán Bản Việt,HSX
+VCM,CTCP Nhân lực và Thương mại Vinaconex,HNX
+VCP,CTCP Đầu tư xây dựng và Phát triển năng lượng Vinaconex,UPCOM
+VCR,CTCP Đầu tư và Phát triển Du lịch Vinaconex,HNX
+VCS,CTCP VICOSTONE,HNX
+VCT,CTCP Tư vấn xây dựng Vinaconex,UPCOM
+VCW,CTCP Đầu tư Nước sạch Sông Đà,UPCOM
+VCX,Công ty cổ phần Xi măng Yên Bình,UPCOM
+VDL,CTCP Thực phẩm Lâm Đồng,HNX
+VDM,Viện Dệt May,UPCOM
+VDN,CTCP Vinatex Đà Nẵng,UPCOM
+VDP,Công ty Cổ phần Dược phẩm Trung Ương Vidipha,HSX
+VDS,Công ty Cổ phần Chứng khoán Rồng Việt,HSX
+VDT,CTCP Lưới thép Bình Tây,UPCOM
+VE1,CTCP Xây dựng điện VNECO 1,HNX
+VE2,CTCP Xây dựng điện VNECO 2,HNX
+VE3,CTCP Xây dựng điện VNECO3,HNX
+VE4,CTCP Xây dựng Điện Vneco 4,HNX
+VE8,CTCP Xây dựng Điện Vneco 8,HNX
+VE9,CTCP Đầu tư và Xây dựng VNECO 9,HNX
+VEC,Tổng CTCP Điện tử và Tin học Việt Nam,UPCOM
+VEE,CTCP Thiết bị Điện Cẩm Phả,UPCOM
+VEF,CTCP Trung tâm Hội chợ Triển lãm Việt Nam,UPCOM
+VES,CTCP Đầu tư và Xây dựng điện Me ca Vneco,UPCOM
+VET,CTCP Thuốc thú y Trung ương Navetco,UPCOM
+VFC,CTCP Vinafco,UPCOM
+VFG,Công ty Cổ phần Khử trùng Việt Nam,HSX
+VFR,CTCP Vận tải và Thuê tàu,UPCOM
+VGC,Tổng Công ty Viglacera - CTCP,HNX
+VGG,Tổng CTCP May Việt Tiến,UPCOM
+VGL,CTCP Mạ kẽm công nghiệp Vingal-Vnsteel,UPCOM
+VGP,CTCP Cảng Rau Quả,HNX
+VGR,CTCP Cảng Xanh Vip,UPCOM
+VGS,CTCP Ống thép Việt Đức VGPIPE,HNX
+VGT,Tập đoàn Dệt may Việt Nam,UPCOM
+VGV,Tổng công ty Tư vấn Xây dựng Việt Nam - CTCP,UPCOM
+VHC,Công ty Cổ phần Vĩnh Hoàn,HSX
+VHD,CTCP Đầu tư Phát triển nhà và Đô thị Vinaconex,UPCOM
+VHF,CTCP Xây dựng và chế biến lương thực Vĩnh Hà,UPCOM
+VHG,Công ty Cổ phần Đầu tư Cao su Quảng Nam,HSX
+VHH,CTCP Đầu tư Kinh doanh nhà Thành Đạt,UPCOM
+VHL,CTCP Viglacera Hạ Long,HNX
+VHM,Công ty Cổ phần Vinhomes,HSX
+VIB,Ngân hàng TMCP Quốc tế Việt Nam,UPCOM
+VIC,Tập đoàn VINGROUP - Công ty Cổ phần,HSX
+VID,Công ty Cổ phần Đầu tư Phát triển Thương mại Viễn Đông,HSX
+VIE,CTCP Công nghệ Viễn thông VITECO,HNX
+VIF,Tổng công ty Lâm nghiệp Việt Nam- CTCP,UPCOM
+VIG,Công ty Cổ phần Chứng khoán Thương mại và Công nghiệp Việt Nam,HNX
+VIH,CTCP Viglacera Hà Nội,UPCOM
+VIM,CTCP Khoáng sản Viglacera,UPCOM
+VIN,CTCP Giao nhận Kho vận Ngoại thương Việt Nam,UPCOM
+VIP,Công ty Cổ phần Vận tải Xăng dầu VIPCO,HSX
+VIR,CTCP Du lịch quốc tế Vũng Tàu,UPCOM
+VIS,Công ty Cổ phần Thép Việt - Ý,HSX
+VIT,CÔNG TY CỔ PHẦN VIGLACERA TIÊN SƠN,HNX
+VIW,Tổng công ty Đầu tư Nước và Môi trường Việt Nam- CTCP,UPCOM
+VIX,Công ty Cổ phần Chứng khoán IB,HNX
+VJC,Công ty Cổ phần Hàng không VietJet,HSX
+VKC,CTCP Cáp nhựa Vĩnh Khánh,HNX
+VKD,CTCP Nước khoáng Khánh Hòa - FIT Beverage,UPCOM
+VKP,CTCP Nhựa Tân Hóa,UPCOM
+VLA,CTCP Đầu tư và phát triển công nghệ Văn Lang,HNX
+VLB,CTCP Xây dựng và Sản xuất vật liệu xây dựng Biên Hòa,UPCOM
+VLC,Tổng Công ty Chăn nuôi Việt Nam - CTCP,UPCOM
+VLF,CTCP Lương thực Thực phẩm Vĩnh Long,UPCOM
+VLG,CTCP Vinalines Logistics - Việt Nam,UPCOM
+VLP,CTCP Công trình công cộng Vĩnh Long,UPCOM
+VLW,CTCP Cấp nước Vĩnh Long,UPCOM
+VMA,CTCP Công nghiệp Ô tô - Vinacomin,UPCOM
+VMC,Công ty cổ phần VIMECO,HNX
+VMD,Công ty Cổ phần Y Dược phẩm Vimedimex,HSX
+VMG,CTCP Thương mại và Dịch vụ Dầu khí Vũng Tàu,UPCOM
+VMI,CTCP Khoáng sản và Đầu tư VISACO,HNX
+VMS,Công ty cổ phần Phát triển Hàng hải,HNX
+VN30F1807,HDTL VN30 07/18,HNX
+VN30F1808,HDTL VN30 08/18,HNX
+VN30F1809,HDTL VN30 09/18,HNX
+VN30F1812,HDTL VN30 12/18,HNX
+VNA,CTCP Vận tải biển Vinaship,UPCOM
+VNB,CTCP Sách Việt Nam,UPCOM
+VNC,CTCP Tập đoàn Vinacontrol,HNX
+VND,Công ty Cổ phần Chứng khoán VNDIRECT,HSX
+VNE,Tổng Công ty Cổ phần Xây dựng Điện Việt Nam,HSX
+VNF,CTCP Vinafreight,HNX
+VNG,Công ty Cổ phần Du lịch Thành Thành Công,HSX
+VNH,CTCP Đầu tư Việt Việt Nhật,UPCOM
+VNI,CTCP Đầu tư Bất động sản Việt Nam,UPCOM
+VNL,Công ty Cổ phần Logistics Vinalink,HSX
+VNM,Công ty Cổ phần Sữa Việt Nam,HSX
+VNN,CTCP Đầu tư và Thương mại VNN,UPCOM
+VNP,CTCP Nhựa Việt Nam,UPCOM
+VNR,Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam,HNX
+VNS,Công ty Cổ phần Ánh Dương Việt Nam,HSX
+VNT,CTCP Giao nhận Vận tải Ngoại thương,HNX
+VNX,CTCP Quảng cáo và Hội chợ thươnng mại Vinexad,UPCOM
+VOC,Tổng công ty Công nghiệp Dầu thực vật Việt Nam – CTCP,UPCOM
+VOS,Công ty Cổ phần Vận tải Biển Việt Nam,HSX
+VPA,CTCP Vận tải Hóa dầu VP,UPCOM
+VPB,Ngân hàng TMCP Việt Nam Thịnh Vượng,HSX
+VPC,CTCP Đầu tư và Phát triển Năng lượng Việt Nam,UPCOM
+VPD,Công ty Cổ phần Phát triển Điện lực Việt Nam,HSX
+VPG,Công ty Cổ phần Đầu tư Thương mại Xuất nhập khẩu Việt Phát,HSX
+VPH,Công ty Cổ phần Vạn Phát Hưng,HSX
+VPI,CTCP Đầu tư Văn Phú - Invest,HSX
+VPK,Công ty Cổ phần Bao bì Dầu thực vật,HSX
+VPR,CTCP In và Thương mại Vina,UPCOM
+VPS,Công ty Cổ phần Thuốc sát trùng Việt Nam,HSX
+VPW,CTCP Cấp thoát nước số 1 Vĩnh Phúc,UPCOM
+VQC,CTCP Giám định -Vinacomin,UPCOM
+VRC,Công ty Cổ phần Bất động sản và Đầu tư VRC,HSX
+VRE,Công ty Cổ phần Vincom Retail,HSX
+VRG,CTCP Phát triển đô thị và Khu công nghiệp Cao su Việt Nam,UPCOM
+VSA,CTCP Đại lý Hàng hải Việt Nam,HNX
+VSC,Công ty Cổ phần Container Việt Nam,HSX
+VSF,Công ty TNHH MTV- Tổng công ty Lương thực Miền Nam,UPCOM
+VSG,CTCP Container Phía Nam,UPCOM
+VSH,Công ty Cổ phần Thủy điện Vĩnh Sơn Sông Hinh,HSX
+VSI,Công ty Cổ phần Đầu tư và Xây dựng Cấp thoát nước,HSX
+VSM,CTCP Container Miền Trung,HNX
+VSN,CTCP Việt Nam Kỹ nghệ Súc sản,UPCOM
+VSP,CTCP Vận tải Biển và Bất động sản Việt Hải,UPCOM
+VST,CTCP Vận tải và Thuê tàu biển Việt Nam,UPCOM
+VT1,CTCP Vật tư Bến Thành,UPCOM
+VT8,CTCP Dịch vụ Vận tải ô tô số 8,UPCOM
+VTA,CTCP Vitaly,UPCOM
+VTB,Công ty Cổ phần Viettronics Tân Bình,HSX
+VTC,CTCP Viễn thông VTC,HNX
+VTE,Công ty cổ phần Viễn thông Điện tử VINACAP,UPCOM
+VTG,CTCP Du lịch tỉnh Bà Rịa - Vũng Tàu,UPCOM
+VTH,CTCP Dây cáp điện Việt Thái,HNX
+VTI,Công ty Cổ phần SX - XNK Dệt May,UPCOM
+VTJ,CTCP Thương mại và Đầu tư Vi na ta ba,HNX
+VTL,CTCP Vang Thăng Long,HNX
+VTM,CTCP Vận tải và Đưa đón Thợ mỏ-Vinacomin,UPCOM
+VTO,Công ty Cổ phần Vận tải Xăng dầu VITACO,HSX
+VTS,CTCP Viglacera Từ Sơn,HNX
+VTV,Công ty Cổ phần Vicem Vật tư Vận tải Xi măng,HNX
+VTX,CTCP Vận tải đa phương thức VIETRANSTIMEX,UPCOM
+VVN,Tổng CTCP Xây dựng công nghiệp Việt Nam,UPCOM
+VWS,CTCP Nước và Môi trường Việt Nam,UPCOM
+VXB,CTCP Vật liệu xây dựng Bến tre,HNX
+WCS,CTCP Bến xe Miền Tây,HNX
+WSB,Công ty Cổ phần Bia Sài Gòn - Miền Tây,UPCOM
+WSS,Công ty Cổ phần Chứng khoán Phố Wall,HNX
+WTC,CTCP Vận tải thủy Vinacomin,UPCOM
+WTN,CTCP Cấp thoát nước Tây Ninh,UPCOM
+X18,CTCP Xi măng X18,UPCOM
+X20,CTCP X20,HNX
+X77,CTCP Thành An 77,UPCOM
+XHC,CTCP Xuân Hòa Việt Nam,UPCOM
+XLV,CTCP Xây lắp và dịch vụ Sông Đà,UPCOM
+XMD,CTCP Xuân Mai - Đạo Tú,UPCOM
+XPH,CTCP Xà phòng Hà Nội,UPCOM
+YBC,CTCP Xi măng và Khoáng sản Yên Bái,UPCOM
+YEG,Công ty cổ phần Tập đoàn Yeah1,HSX
+YRC,CTCP Đường sắt Yên Lào,UPCOM
+YTC,CTCP Xuất nhập khẩu Y tế Thành phố Hồ Chí Minh,UPCOM
+vnindex,hsx,hsx
+vnindex,vn index,hsx
+vnindex,vn-index,hsx
+vnindex,hsxindex,hsx
+vnindex,hsx index,hsx
+vnindex,hsx-index,hsx
+vn30index,vn30,hsx
+vn30index,vn30 index\,hsx
+vn30index,vn30-index,hsx
+haindex,hnxindex,hnx
+haindex,hnx,hnx
+haindex,hnx-index,hnx
+haindex,hnx index,hnx
