@@ -28,9 +28,17 @@ class NerCrf:
         self.file_read = "./data/ner_data.csv"
         self.train_sents = vn_gen.read_raw_data(self.file_read)#vn_gen.gen_data(num_train)
         self.test_sents  = vn_gen.read_raw_data(self.file_read)#n_gen.gen_data(num_test)
-        print("train",self.train_sents[:3])
+        
         self.crf = None
         self.label = []
+        self.stock_code = []
+        self.read_stock_data("./data/stockslist.txt")
+    def read_stock_data(self,file_name):
+        stock_file = open(file_name,"r")
+        for line in stock_file:
+            temp = line.split(",")
+            self.stock_code.append(temp[0].lower())
+            # self.stock_name.append(temp[1])
     def word2features(self,sent, i):
         word = sent[i][0]
         postag = sent[i][1]
@@ -100,7 +108,7 @@ class NerCrf:
         #print(len(X_train))
         self.crf.fit(self.X_train, self.y_train)
         self.labels = list(self.crf.classes_)
-        self.labels.remove('O')
+      #  self.labels.remove('O')
         self.save_model('./ner/crf_model.pkl')
         self.trans = Counter(self.crf.transition_features_).most_common()
     def test(self,string):
@@ -118,8 +126,33 @@ class NerCrf:
         print(s)
         
         sorted_labels = sorted(self.labels, key=lambda name: (name[1:], name[0]))
-        print(metrics.flat_classification_report( self.y_test, y_pred, labels=sorted_labels, digits=3))
-        return y_pred,self.y_test 
+      #  print(metrics.flat_classification_report( self.y_test, y_pred, labels=sorted_labels, digits=3))
+        print("y pred before",y_pred[0])
+        y_pred_af = self.double_check(y_pred[0],s)
+        
+        print("y_pred after ",y_pred_af)
+        for i in range (len(y_pred_af)):
+            if y_pred_af[i] != y_pred[0][i]:
+                print(1)
+                print("y pred before",y_pred[0])
+                print("y_pred after ",y_pred_af)
+                break
+        
+        return [y_pred_af],self.y_test 
+    def double_check(self,y_pred,tokens):
+        #print("y_pred",y_pred)
+        #print("tokens",tokens)
+        for i in range(len(tokens)):
+            if y_pred[i] == 'price' or y_pred[i] == 'quantity':
+                if not tokens[i][0].isdigit():
+                    y_pred[i]  = 'O'
+            elif y_pred[i] == 'symbol':
+            
+                if not tokens[i] in self.stock_code:
+                    y_pred[i] = 'O'
+        return y_pred
+
+
     def save_model(self,file_name):
         pk.dump(self,open(file_name,'wb'))
     def read_model(self,file_name):
@@ -173,9 +206,9 @@ if __name__ == '__main__':
     print(string)
     y_p,y_t = k.test(string)
     #k.print_f1_score(y_p)
-   # k.print_tran()
+   # k.print_tran()g
     #k.print_all_trans()
-    k.calculate_most_likely_transitions_chain(y_p[0])
+   #k.calculate_most_likely_transitions_chain(y_p[0])
 """
     #print("x test",test_sents[1])
     #print("y_pred:",y_pred[1])

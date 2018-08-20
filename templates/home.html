@@ -70,13 +70,13 @@
           </div>
         </div>
         <!-- <form  action = "http://localhost:5000/submit" method="post">  -->
-        <form role="form" ng-submit="getResults()">
+        <form role="form" ng-submit="getResults()" method="POST">
           <div class= "rows">
                 <div class="form-group">
                     <label>User says</label>
                     <input type="text" class="form-control" name = "content" ng-model = "content" placeholder="User says!!!">
                 </div>
-                <input class = "btn btn-primary" type="submit">
+                <input class = "btn btn-primary" type="submit"> 
             </div>
         </form>
         <!-- </form>d -->

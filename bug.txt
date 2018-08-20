@@ -13,4 +13,102 @@ KeyError: 'chứng_khoáng'
 
 sd:  {'entities': {'price': '34', 'quantity': '30', 'side': 'B', 'symbol': 'ssi'}, 'intent': 'trade', 'text': 'nên hay không khi mua ssi giá 34 30 cổ phiếu'}
 
-3)
+3)tôi muốn mua 30 cổ phiếu ssi giá 34.5 nghìn đồng và 400 cổ phiếu ktl giá 399:
+xử lý các yêu cầu kép:
+string: tôi muốn mua 30 cổ phiếu ssi giá 34.5 nghìn đồng và 400 cổ phiếu ktl giá 399
+y pred: [['O', 'O', 'side-B', 'quantity', 'symbol-prefix', 'symbol', 'O', 'price', 'O', 'O', 'O', 'quantity', 'symbol-prefix', 'symbol', 'O', 'price']]
+y test: [['O', 'O', 'side-B', 'quantity', 'symbol-prefix', 'symbol', 'O', 'price', 'O', 'O', 'O', 'quantity', 'symbol-prefix', 'symbol', 'O', 'quantity']]
+['tôi', 'muốn', 'mua', '30', 'cổ_phiếu', 'ssi', 'giá', '34.5', 'nghìn', 'đồng', 'và', '400', 'cổ_phiếu', 'ktl', 'giá', '399']
+
+4)  nên mua cổ phiếu ssi giá 223 hay cổ phiếu hcm hơn?
+ NER:
+y pred: [['O', 'side-B', 'symbol-prefix', 'symbol', 'O', 'price', 'O', 'symbol-prefix', 'symbol', 'O', 'O']]
+y test: [['O', 'side-B', 'symbol-prefix', 'symbol', 'O', 'quantity', 'O', 'symbol-prefix', 'symbol', 'O', 'O']]
+['nên', 'mua', 'cổ_phiếu', 'ssi', 'giá', '223', 'hay', 'cổ_phiếu', 'hcm', 'hơn', '?']
+
+intent: 
+{'entities': {'price': '223', 'quantity': '', 'side': 'B', 'symbol': 'hcm'}, 'intent': 'trade', 'text': 'nên mua cổ phiếu ssi giá 223 hay cổ phiếu hcm hơn?'}
+
+5)nên mua cổ phiếu ssi giá 223 hay cổ phiếu hcm  khối lượng 39 giá 59 hơn?
+{'entities': {'price': '59', 'quantity': '39', 'side': 'B', 'symbol': 'hcm'}, 'intent': 'trade', 'text': 'nên mua cổ phiếu ssi giá 223 hay cổ phiếu hcm  khối lượng 39 giá 59 hơn?'}
+y pred: [['O', 'side-B', 'symbol-prefix', 'symbol', 'O', 'price', 'O', 'symbol-prefix', 'symbol', 'O', 'quantity', 'O', 'price', 'O', 'O']]
+
+6) nên mua ssi hay hcm 
+
+y pred: [['O', 'side-B', 'symbol-prefix', 'symbol', 'O', 'O']]
+{'entities': {'price': '', 'quantity': '', 'side': 'B', 'symbol': 'hay'}, 'intent': 'advice', 'text': 'nên mua ssi hay hcm ?'}
+
+7) ssi biến động như thế nào:
+8) với thị trường hiện tại đang lên xuống thất thường, có nên mua 30 cổ phiếu ssi giá 24.5:
+y pred: [['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'side-B', 'quantity', 'symbol-prefix', 'symbol', 'O', 'price']]
+y test: [['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'side-B', 'quantity', 'symbol-prefix', 'symbol', 'O', 'price']]
+['với', 'thị_trường', 'hiện_tại', 'đang', 'lên', 'xuống', 'thất_thường', ',', 'có', 'nên', 'mua', '30', 'cổ_phiếu', 'ssi', 'giá', '24.5']
+
+intent:
+{'entities': {'price': '24.5', 'quantity': '30', 'side': 'B', 'symbol': 'ssi'}, 'intent': 'trade', 'text': 'với thị trường hiện tại đang lên xuống thất thường, có nên mua 30 cổ phiếu ssi giá 24.5'}
+
+9) với thị trường hiện tại có nên mua ssi không ?
+y pred: [['O', 'O', 'symbol-prefix', 'symbol', 'O', 'side-B', 'O', 'O', 'O']]
+y test: [['O', 'O', 'O', 'O', 'O', 'side-B', 'symbol', 'O', 'O']]
+
+
+{'entities': {'price': '', 'quantity': '', 'side': 'B', 'symbol': 'có'}, 'intent': 'market', 'text': 'với thị trường hiện tại có nên mua ssi không ?'} đang ra la adivce
+10)
+{'entities': {'price': '', 'quantity': '', 'side': 'S', 'symbol': ''}, 'intent': 'market', 'text': 'với thị trường hiện tại, có nên bán ssi không ?'}
+11)  tôi muốn mua 30 cổ phiếu ssi giá 34.5 nghìn đồng nên hay không
+y pred: [['O', 'O', 'side-B', 'quantity', 'symbol-prefix', 'symbol', 'O', 'price', 'O', 'O', 'O', 'O', 'O']]
+y test: [['O', 'O', 'side-B', 'quantity', 'symbol-prefix', 'symbol', 'O', 'price', 'O', 'O', 'O', 'O', 'O']]
+['tôi', 'muốn', 'mua', '30', 'cổ_phiếu', 'ssi', 'giá', '34.5', 'nghìn', 'đồng', 'nên', 'hay', 'không']
+
+intent
+{'entities': {'price': '34.5', 'quantity': '30', 'side': 'B', 'symbol': 'ssi'}, 'intent': 'trade', 'text': 'tôi muốn mua 30 cổ phiếu ssi giá 34.5 nghìn đồng nên hay không'}
+
+12) string: tôi muốn mua ssi nên hay không
+intent:
+['tôi', 'muốn', 'mua', 'ssi', 'nên', 'hay', 'không']
+sd:  {'entities': {'price': '', 'quantity': '', 'side': 'B', 'symbol': ''}, 'intent': 'trade', 'text': 'tôi muốn mua ssi nên hay không'}
+ner:
+
+y pred: [['O', 'O', 'side-B', 'O', 'O', 'O', 'O']]
+y test: [['O', 'O', 'side-B', 'symbol', 'O', 'O', 'O']]
+['tôi', 'muốn', 'mua', 'ssi', 'nên', 'hay', 'không']
+
+13)['tôi', 'muốn', 'giao_dịch', 'vào', 'lúc', 'này', 'nên', 'hay', 'không']
+sd:  {'entities': {'price': '', 'quantity': '', 'side': '', 'symbol': ''}, 'intent': 'trade', 'text': 'tôi muốn giao dịch vào lúc này  nên hay không'}
+
+14){'entities': {'price': '', 'quantity': '', 'side': '', 'symbol': ''}, 'intent': 'stock_balance', 'text': 'thi trường như thế này nên giao dịch không'}
+
+15)['có', 'nên', 'giao_dịch', 'vào', 'lúc', 'này', 'khi', 'thị_trường', 'đang', 'biến_động', 'không']
+sd:  {'entities': {'price': '', 'quantity': '', 'side': '', 'symbol': ''}, 'intent': 'market', 'text': 'có nên giao dịch vào lúc này khi thị trường đang biến động không'}
+
+16) có nên mua ssi lúc này không:
+{'price': '', 'quantity': '', 'side': 'B', 'symbol': 'lúc'}, 'intent': 'advice', 'text': 'có nên mua ssi lúc này không'} chuẩn
+
+17) với thị trường này,có nên mua ssi giá 39 khối lượng 34 lúc này không?
+'entities': {'price': '39', 'quantity': '34', 'side': 'B', 'symbol': 'ssi'}, 'intent': 'trade', 'text': 'với thị trường này,có nên mua ssi giá 39 khối lượng 34 lúc này không?'}
+
+18)với thị trường này,có nên mua 300 cổ phiếu ssi không?
+
+{'entities': {'price': '', 'quantity': '300', 'side': 'B', 'symbol': 'ssi'}, 'intent': 'market', 'text': 'với thị trường này,có nên mua 300 cổ phiếu ssi không?'}
+
+19) giá cố phiếu ssi như thế nào so với ttp:
+ner:
+#sai ner chỗ price: 1 phần do train quá nhiều với từ giá sau từ giá sẽ là giá trị hơn nữa tokenize cũng sai tách cổ vs phiếu riêng
+y pred: [['O', 'price', 'symbol-prefix', 'symbol', 'O', 'O', 'O', 'O', 'O']]
+y test: [['O', 'O', 'O', 'symbol', 'O', 'O', 'O', 'O', 'symbol']]
+['giá', 'cố', 'phiếu', 'ssi', 'như', 'thế_nào', 'so', 'với', 'ttp']
+
+{'entities': {'price': 'cố', 'quantity': '', 'side': '', 'symbol': 'ssi'}, 'intent': 'stock_balance', 'text': 'giá cố phiếu ssi như thế nào so với ttp'}
+
+20)tôi còn bao nhiêu cổ phiếu ssi:
+intent:
+['tôi', 'còn', 'bao_nhiêu', 'cổ_phiếu', 'ssi']
+sd:  {'entities': {'price': '', 'quantity': '', 'side': '', 'symbol': 'ssi'}, 'intent': 'cash_balance', 'text': 'tôi còn bao nhiêu cổ phiếu ssi'}
+ner:
+y pred: [['O', 'O', 'O', 'symbol-prefix', 'symbol']]
+y test: [['O', 'O', 'O', 'symbol-prefix', 'symbol']]
+['tôi', 'còn', 'bao_nhiêu', 'cổ_phiếu', 'ssi']
+
+
+
+

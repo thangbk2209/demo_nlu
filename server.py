@@ -53,6 +53,7 @@ def text_classify(content):
         print (sess.run(index))
         intent = int2intent[sess.run(index)[0]]
     return intent
+
 def named_entity_reconignition(content,intent):
     content = content.lower()
     ner = read_ner_model()
