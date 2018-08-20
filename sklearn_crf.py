@@ -25,8 +25,10 @@ train_sents = vn_gen.gen_data(num_ex=100)
 test_sents = vn_gen.gen_data(num_ex=20)
 class NerCrf:
     def __init__(self,num_train,num_test):
-        self.train_sents = vn_gen.gen_data(num_train)
-        self.test_sents  = vn_gen.gen_data(num_test)
+        self.file_read = "./data/ner_data.csv"
+        self.train_sents = vn_gen.read_raw_data(self.file_read)#vn_gen.gen_data(num_train)
+        self.test_sents  = vn_gen.read_raw_data(self.file_read)#n_gen.gen_data(num_test)
+        print("train",self.train_sents[:3])
         self.crf = None
         self.label = []
     def word2features(self,sent, i):
@@ -100,6 +102,7 @@ class NerCrf:
         self.labels = list(self.crf.classes_)
         self.labels.remove('O')
         self.save_model('./ner/crf_model.pkl')
+        self.trans = Counter(self.crf.transition_features_).most_common()
     def test(self,string):
        # y_pred = crf.predict(X_test)
         test_s = []
@@ -113,20 +116,66 @@ class NerCrf:
         print("y test:",self.y_test)
         s = ViPosTagger.postagging(ViTokenizer.tokenize(string))[0]
         print(s)
+        
+        sorted_labels = sorted(self.labels, key=lambda name: (name[1:], name[0]))
+        print(metrics.flat_classification_report( self.y_test, y_pred, labels=sorted_labels, digits=3))
         return y_pred,self.y_test 
     def save_model(self,file_name):
         pk.dump(self,open(file_name,'wb'))
     def read_model(self,file_name):
         return pk.load(open(file_name,'rb'))
-    def print_f1_score(self):
-        a = 0
+    def print_f1_score(self,y_pred):
+        f1 = metrics.flat_f1_score(self.y_test, y_pred,average='weighted', labels = self.labels)
+        print("f1=",f1)
+    def print_transitions(self,trans_features):
+        for (label_from, label_to), weight in trans_features:
+          print("%-6s -> %-7s %0.6f" % (label_from, label_to, weight))
+        
+
+    def print_tran(self):
+        print("Top likely transitions:")
+        self.print_transitions(Counter(self.crf.transition_features_).most_common(20))
+
+        print("\nTop unlikely transitions:")
+        self.print_transitions(Counter(self.crf.transition_features_).most_common())
+    def print_all_trans(self):
+        print("all trans:")
+        self.print_transitions(Counter(self.crf.transition_features_).most_common())
+    def calculate_most_likely_transitions_chain(self,y_pred):
+        sum = 0
+        print("transition and score :")
+        for i in range(len(y_pred)-1):
+            #print("dsf",self.find_score_transition(y_pred[i],y_pred[i+1]))
+            temp = float(self.find_score_transition(y_pred[i],y_pred[i+1]))
+            sum += temp
+            print(y_pred[i],"->",y_pred[i+1],":",temp)
+        print("score of most likely transition chain:", sum)
+        return sum
+    def find_score_transition(self,entity1,entity2):
+        #print("entity 1",entity1)
+        k = 0
+        for i in range(len(self.trans)):
+            if (entity1,entity2) == self.trans[i][0]:
+                k = self.trans[i][1]
+                break
+        return k
+            
+    
 if __name__ == '__main__':
-    k = NerCrf(2000,20)
+    try :
+        k = pk.load(open('./ner/crf_model1.pkl','rb'))
+    except FileNotFoundError:
+        print("File not found, retrain")
+        k = NerCrf(5000,20)
     k.train()
-    string = ' cho anh cổ  phiếu hcm giá 29 100 cổ  mua nhé'
+    string = 'ssi biến động như thế nào'
     string = string.lower()
     print(string)
-    k.test(string)
+    y_p,y_t = k.test(string)
+    #k.print_f1_score(y_p)
+   # k.print_tran()
+    #k.print_all_trans()
+    k.calculate_most_likely_transitions_chain(y_p[0])
 """
     #print("x test",test_sents[1])
     #print("y_pred:",y_pred[1])
