@@ -16,7 +16,7 @@ from vn_gen import VnGen
 from collections import Counter
 from pyvi import ViPosTagger,ViTokenizer
 import pickle as pk
-nltk.corpus.conll2002.fileids()
+# nltk.corpus.conll2002.fileids()
 #%%time
 #train_sents = list(nltk.corpus.conll2002.iob_sents('esp.train'))
 #test_sents = list(nltk.corpus.conll2002.iob_sents('esp.testb'))
