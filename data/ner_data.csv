@@ -1,958 +1,661 @@
-tình_hình N O
-cổ_phiếu N symbol-prefix
-hgw A symbol
+mình P O
+muốn V O
+bán V side-S
+số_lượng N O
+568 M quantity
+cái Nc O
+mã N symbol-prefix
+pla V symbol
+giá N O
+1 M price
+nghìn M O
+đồng Nu O
 
-tình_hình N O
-mã V symbol-prefix
+tôi P O
+có V O
+nhu_cầu N O
+sang_tên V O
+số_lượng N O
+972 M quantity
+cái Nc O
+arm N symbol
+giá N O
+23 M price
+vnđ N O
+
+nhận_định N O
+mã A symbol-prefix
 cổ_phiếu N symbol-prefix
-bvn V symbol
+cig V symbol
+
+thông_tin N O
+mã_chứng_khoán V symbol-prefix
+eci N symbol
+
+qlt N symbol
+biến_động V O
+
+bán V side-S
+khối_lượng N O
+647 M quantity
+mã N symbol-prefix
+lai A symbol
+giá N O
+10.26 M price
+nghìn M O
+đồng Nu O
+
+nhận_định V O
+cổ_phiếu N symbol-prefix
+dxg V symbol
+
+pdv N symbol
+biến_động V O
+
+dpp N symbol
+biến_động V O
 
 mua V side-B
-mã N symbol-prefix
-vn30f1808 N symbol
-951 M quantity
+706 M quantity
 cổ_phiếu N symbol-prefix
+mtm V symbol
 giá N O
-17.57 M price
-
-sang_tên V O
-khối_lượng N O
-886 M quantity
-cổ_phiếu N symbol-prefix
-abt V symbol
-giá N O
-8.1 M price
+23.79 M price
+vnđ N O
 
 tôi P O
 có V O
 nhu_cầu N O
 mua V side-B
-mã N symbol-prefix
-dc2 N symbol
-số_lượng N O
-662 M quantity
-giá N O
-9.34 M price
-vnđ N O
-
-chuyển_nhượng N O
-260 M quantity
-cổ_phiếu N symbol-prefix
-sfc V symbol
-giá N O
-24.57 M price
-
-chuyển_nhượng V O
 khối_lượng N O
-160 M quantity
-mã N symbol-prefix
-nbw V symbol
+355 M quantity
+cái Nc O
+pia N symbol
 giá N O
-15.07 M price
+3 M price
+nghìn M O
+đồng Nu O
+
+tao P O
+muốn V O
+sang_tên V O
+314 M quantity
+cái Nc O
+mã N symbol-prefix
+gcb V symbol
+giá N O
+22.34 M price
+nghìn M O
+đồng Nu O
+
+cx8 N symbol
+biến_động V O
 
 mình P O
-muốn V O
-bán V side-S
+cần V O
+sang_tên V O
+mã N symbol-prefix
+tdb V symbol
 khối_lượng N O
-594 M quantity
-cái Nc O
-b82 N symbol
+101 M quantity
+cổ_phiếu N symbol-prefix
 giá N O
-20.16 M price
-vnđ N O
+13 M price
+nghìn M O
+đồng Nu O
+
+thông_tin N O
+mã_icn V O
 
 tình_hình N O
 mã_chứng_khoán N symbol-prefix
-spp A symbol
+cvt A symbol
 
-tôi P O
-cần V O
-mua V side-B
-294 M quantity
-mã N symbol-prefix
-dht V symbol
-giá N O
-23 M price
-
-tình_hình N O
-mã_szl A O
-
-tôi P O
-có V O
-nhu_cầu N O
-chuyển_nhượng V O
-số_lượng N O
-36 M quantity
-mã N symbol-prefix
-ndc V symbol
-giá N O
-23.34 M price
-vnđ N O
-
-tôi P O
-có V O
-nhu_cầu N O
-sang_tên V O
-khối_lượng N O
-473 M quantity
+thông_tin N O
 cổ_phiếu N symbol-prefix
-dc1 V symbol
-giá N O
-3.31 M price
-vnđ N O
-
-mua V side-B
-số_lượng N O
-797 M quantity
-mã N symbol-prefix
-cid V symbol
-giá N O
-14.89 M price
-nghìn M quantity
-đồng Nu O
-
-tao P O
-muốn V O
-mua V side-B
-379 M quantity
-mã N symbol-prefix
-nhh V symbol
-giá N O
-8 M price
-vnđ N O
-
-tôi P O
-cần V O
-chuyển_nhượng V O
-mã N symbol-prefix
-mch V symbol
-khối_lượng N O
-354 M quantity
-cái Nc O
-giá N O
-11.51 M price
-vnđ N O
+ptg V symbol
 
 mình P O
-cần V O
+muốn V O
 mua V side-B
-khối_lượng N O
-360 M quantity
+số_lượng N O
+901 M quantity
 cổ_phiếu N symbol-prefix
 mã N symbol-prefix
-hlr V symbol
+scd V symbol
 giá N O
-17.2 M price
+8.41 M price
+nghìn M O
+đồng Nu O
 
-tôi P O
-cần V O
-bán V side-S
-mã N symbol-prefix
-ctd V symbol
-khối_lượng N O
-199 M quantity
+nhận_định V O
 cổ_phiếu N symbol-prefix
+glt V symbol
+
+mình P O
+muốn V O
+bán V side-S
+878 M quantity
+cái Nc O
+swc N symbol
 giá N O
 19 M price
-vnđ N O
-
-ctt N symbol
-biến_động V O
-
-yeg N symbol
-biến_động V O
-
-chuyển_nhượng N O
-660 M quantity
-cái Nc O
-cmv N symbol
-giá N O
-5.35 M price
-
-tình_hình N O
-mã_pvh A O
-
-tao P O
-muốn V O
-mua V side-B
-khối_lượng N O
-823 M quantity
-ihk Nu symbol
-giá N O
-15.79 M price
-vnđ N O
-
-tôi P O
-cần V O
-sang_tên V O
-902 M quantity
-mã N symbol-prefix
-cll V symbol
-giá N O
-13.4 M price
-nghìn M quantity
-đồng Nu O
-
-tôi P O
-có V O
-nhu_cầu N O
-sang_tên V O
-71 M quantity
-mã N symbol-prefix
-tmx V symbol
-giá N O
-13 M price
-vnđ N O
-
-hab N symbol
-biến_động V O
-
-skv N symbol
-biến_động V O
-
-thông_tin N O
-mã V symbol-prefix
-cổ_phiếu N symbol-prefix
-dcm V symbol
-
-nhận_định N O
-mã_btp A O
-
-tao P O
-muốn V O
-sang_tên V O
-396 M quantity
-cổ_phiếu N symbol-prefix
-mã N symbol-prefix
-ham V symbol
-giá N O
-15 M price
-
-mình P O
-cần V O
-mua V side-B
-449 M quantity
-cái Nc O
-mã N symbol-prefix
-nhp V symbol
-giá N O
-11 M price
-
-thông_tin N O
-mã V symbol-prefix
-cổ_phiếu N symbol-prefix
-hes V symbol
-
-tôi P O
-có V O
-nhu_cầu N O
-chuyển_nhượng V O
-mã N symbol-prefix
-dp2 V symbol
-khối_lượng N O
-117 M quantity
-cái Nc O
-giá N O
-24.92 M price
-nghìn M quantity
-đồng Nu O
-
-mình P O
-muốn V O
-bán V side-S
-474 M quantity
-cổ_phiếu N symbol-prefix
-sbl V symbol
-giá N O
-9 M price
-vnđ N O
-
-tôi P O
-có V O
-nhu_cầu N O
-chuyển_nhượng V O
-số_lượng N O
-812 M quantity
-cổ_phiếu N symbol-prefix
-mã N symbol-prefix
-sco V symbol
-giá N O
-12 M price
-vnđ N O
-
-mình P O
-muốn V O
-mua V side-B
-712 M quantity
-mã N symbol-prefix
-dhm V symbol
-giá N O
-9 M price
-nghìn M quantity
-đồng Nu O
-
-nhận_định N O
-mã_gmx A O
-
-mình P O
-cần V O
-chuyển_nhượng V O
-số_lượng N O
-907 M quantity
-mã N symbol-prefix
-bal V symbol
-giá N O
-9.7 M price
-vnđ N O
-
-tình_hình N O
-mã V symbol-prefix
-cổ_phiếu N symbol-prefix
-vit V symbol
-
-tôi P O
-có V O
-nhu_cầu N O
-bán V side-S
-mã N symbol-prefix
-plc N symbol
-67 M quantity
-cổ_phiếu Nu symbol-prefix
-giá N O
-25.13 M price
-nghìn M quantity
-đồng Nu O
-
-bán V side-S
-số_lượng N O
-720 M quantity
-mã N symbol-prefix
-jos V symbol
-giá N O
-4.98 M price
-vnđ N O
-
-tôi P O
-có V O
-nhu_cầu N O
-mua V side-B
-số_lượng N O
-213 M quantity
-cổ_phiếu N symbol-prefix
-ned V symbol
-giá N O
-15 M price
-vnđ N O
-
-tao P O
-muốn V O
-mua V side-B
-mã N symbol-prefix
-rdp N symbol
-khối_lượng N O
-522 M quantity
-giá N O
-19.28 M price
-vnđ N O
-
-mình P O
-muốn V O
-bán V side-S
-mã N symbol-prefix
-jos N symbol
-578 M quantity
-giá N O
-25 M price
-
-mình P O
-muốn V O
-bán V side-S
-khối_lượng N O
-413 M quantity
-cái Nc O
-mã N symbol-prefix
-vdl V symbol
-giá N O
-8 M price
-
-l12 N symbol
-biến_động V O
-
-mình P O
-muốn V O
-sang_tên V O
-khối_lượng N O
-647 M quantity
-cái Nc O
-mã N symbol-prefix
-bvg V symbol
-giá N O
-5.88 M price
-vnđ N O
-
-thông_tin N O
-mã V symbol-prefix
-cổ_phiếu N symbol-prefix
-plx V symbol
-
-tôi P O
-có V O
-nhu_cầu N O
-bán V side-S
-mã N symbol-prefix
-acm V symbol
-khối_lượng N O
-94 M quantity
-cổ_phiếu N symbol-prefix
-giá N O
-22 M price
-nghìn M quantity
-đồng Nu O
-
-tôi P O
-có V O
-nhu_cầu N O
-bán V side-S
-mã N symbol-prefix
-pjc V symbol
-số_lượng N O
-266 M quantity
-cái Nc O
-giá N O
-19.56 M price
-vnđ N O
-
-bhc N symbol
-biến_động V O
-
-mình P O
-muốn V O
-chuyển_nhượng V O
-số_lượng N O
-638 M quantity
-vpk Nu symbol
-giá N O
-15.45 M price
-
-tình_hình N O
-mã_agx A O
-
-sang_tên V O
-số_lượng N O
-620 M quantity
-mã N symbol-prefix
-ntr V symbol
-giá N O
-19.6 M price
-
-tình_hình N O
-mã V symbol-prefix
-cổ_phiếu N symbol-prefix
-szl V symbol
-
-mình P O
-muốn V O
-mua V side-B
-mã N symbol-prefix
-dc4 N symbol
-927 M quantity
-cổ_phiếu N symbol-prefix
-giá N O
-4 M price
-vnđ N O
-
-mình P O
-cần V O
-bán V side-S
-khối_lượng N O
-195 M quantity
-cái Nc O
-sha N symbol
-giá N O
-11.53 M price
 vnđ N O
 
 skh N symbol
 biến_động V O
 
-mình P O
-cần V O
-sang_tên V O
-khối_lượng N O
-473 M quantity
-cổ_phiếu N symbol-prefix
-mã N symbol-prefix
-mas V symbol
-giá N O
-16.46 M price
+tlh N symbol
+biến_động V O
 
-tao P O
-muốn V O
-mua V side-B
-khối_lượng N O
-737 M quantity
+cnh N symbol
+biến_động V O
+
+thông_tin N O
 cổ_phiếu N symbol-prefix
-ltc V symbol
-giá N O
-24 M price
-nghìn M quantity
-đồng Nu O
+bmj V symbol
 
 tôi P O
 cần V O
-bán V side-S
-719 M quantity
-cổ_phiếu N symbol-prefix
-mã N symbol-prefix
-dar V symbol
+sang_tên V O
+số_lượng N O
+98 M quantity
+vnd Nu symbol
 giá N O
-11 M price
+3 M price
+nghìn M O
+đồng Nu O
 
 mình P O
 muốn V O
 mua V side-B
-khối_lượng N O
-351 M quantity
-cái Nc O
 mã N symbol-prefix
-ndn V symbol
+dpg N symbol
+số_lượng N O
+50 M quantity
+cổ_phiếu Nu symbol-prefix
 giá N O
-1 M price
-vnđ N O
+20.98 M price
 
-mình P O
-cần V O
-mua V side-B
-mã N symbol-prefix
-gts N symbol
-189 M quantity
-cổ_phiếu N symbol-prefix
-giá N O
-5.09 M price
-nghìn M quantity
-đồng Nu O
-
-mình P O
-cần V O
+tao P O
+muốn V O
 bán V side-S
-602 M quantity
-cổ_phiếu N symbol-prefix
-ag1 V symbol
+mã N symbol-prefix
+hnt N symbol
+771 M quantity
 giá N O
 25 M price
-vnđ N O
 
+sfg N symbol
+biến_động V O
+
+hnf N symbol
+biến_động V O
+
+kpf N symbol
+biến_động V O
+
+tôi P O
+có V O
+nhu_cầu N O
 chuyển_nhượng V O
-số_lượng N O
-216 M quantity
+978 M quantity
 cái Nc O
-mã N symbol-prefix
-ead V symbol
-giá N O
-18 M price
-vnđ N O
-
-thông_tin N O
-mã_vhh V O
-
-sang_tên V O
-mã N symbol-prefix
-cdg V symbol
-số_lượng N O
-121 M quantity
-cổ_phiếu N symbol-prefix
-giá N O
-14 M price
-nghìn M quantity
-đồng Nu O
-
-sang_tên V O
-mã N symbol-prefix
-pvy V symbol
-số_lượng N O
-833 M quantity
-cổ_phiếu N symbol-prefix
-giá N O
-20.01 M price
-
-mình P O
-muốn V O
-chuyển_nhượng V O
-số_lượng N O
-28 M quantity
-mã N symbol-prefix
-blt V symbol
-giá N O
-16.74 M price
-
-mình P O
-muốn V O
-bán V side-S
-số_lượng N O
-945 M quantity
-cổ_phiếu N symbol-prefix
-mã N symbol-prefix
-vdp V symbol
+fdg N symbol
 giá N O
 13 M price
-nghìn M quantity
-đồng Nu O
-
-bán V side-S
-mã N symbol-prefix
-h11 V symbol
-số_lượng N O
-270 M quantity
-giá N O
-1.68 M price
-
-nhận_định N O
-mã_chứng_khoán A symbol-prefix
-pvp N symbol
+vnđ N O
 
 mình P O
 muốn V O
-chuyển_nhượng V O
-mã N symbol-prefix
-haf V symbol
+mua V side-B
 khối_lượng N O
-347 M quantity
+318 M quantity
 cổ_phiếu N symbol-prefix
+vc1 V symbol
 giá N O
-1 M price
-nghìn M quantity
-đồng Nu O
-
-tình_hình N O
-cổ_phiếu N symbol-prefix
-hu6 A symbol
-
-nhận_định N O
-mã_tig A O
-
-psl N symbol
-biến_động V O
-
-thông_tin N O
-      12.1 M price
+4.99 M price
 vnđ N O
-
-tôi P O
-cần V O
-bán V side-S
-số_lượng N O
-303 M quantity
-cổ_phiếu N symbol-prefix
-chs V symbol
-giá N O
-3.18 M price
-
-sdn N symbol
-biến_động V O
-
-cx8 N symbol
-biến_động V O
-
-th1 N symbol
-biến_động V O
 
 tao P O
 muốn V O
 chuyển_nhượng V O
-804 M quantity
+326 M quantity
 cái Nc O
-mã N symbol-prefix
-lkw V symbol
+hkp N symbol
 giá N O
-15.67 M price
+24 M price
 vnđ N O
 
-mình P O
-muốn V O
-chuyển_nhượng V O
-mã_nfc N O
-462 M quantity
+tình_hình N O
 cổ_phiếu N symbol-prefix
+sbl A symbol
+
+mình P O
+cần V O
+mua V side-B
+140 M quantity
+cái Nc O
+ntc N symbol
 giá N O
 21.26 M price
-nghìn M quantity
+nghìn M O
 đồng Nu O
 
 mình P O
 muốn V O
-chuyển_nhượng V O
-575 M quantity
+sang_tên V O
 mã N symbol-prefix
-tvg V symbol
-giá N O
-9.65 M price
-nghìn M quantity
-đồng Nu O
-
-mình P O
-muốn V O
-bán V side-S
-số_lượng N O
-89 M quantity
-cái Nc O
-mã N symbol-prefix
-pmt V symbol
-giá N O
-2.98 M price
-nghìn M quantity
-đồng Nu O
-
-ta3 N symbol
-biến_động V O
-
-nhận_định V O
-cổ_phiếu N symbol-prefix
-ceg V symbol
-
-bán V side-S
-846 M quantity
-cổ_phiếu N symbol-prefix
-mã N symbol-prefix
-hdm V symbol
-giá N O
-19.46 M price
-nghìn M quantity
-đồng Nu O
-
-tôi P O
-cần V O
-mua V side-B
-mã N symbol-prefix
-ctr N symbol
+tap V symbol
 khối_lượng N O
-215 M quantity
-cổ_phiếu N symbol-prefix
+932 M quantity
+cái Nc O
 giá N O
-23 M price
+13.7 M price
+nghìn M O
+đồng Nu O
 
-mình P O
+thông_tin N O
+mã_nqb V O
+
+tôi P O
 cần V O
-chuyển_nhượng V O
-mã N symbol-prefix
-dst V symbol
-số_lượng N O
-477 M quantity
-cổ_phiếu N symbol-prefix
-giá N O
-10 M price
-
-pvv N symbol
-biến_động V O
-
 bán V side-S
-mã N symbol-prefix
-dnp V symbol
-số_lượng N O
-80 M quantity
-cái Nc O
-giá N O
-1 M price
-nghìn M quantity
-đồng Nu O
-
-tình_hình N O
-mã_chứng_khoán N symbol-prefix
-ptg A symbol
-
-tao P O
-muốn V O
-mua V side-B
-780 M quantity
-cổ_phiếu N symbol-prefix
-sgn V symbol
-giá N O
-9.85 M price
-vnđ N O
-
-tao P O
-muốn V O
-mua V side-B
-số_lượng N O
-770 M quantity
-mã N symbol-prefix
-tth V symbol
-giá N O
-3.52 M price
-nghìn M quantity
-đồng Nu O
-
-tôi P O
-có V O
-nhu_cầu N O
-sang_tên V O
-số_lượng N O
-451 M quantity
-mã N symbol-prefix
-pdb V symbol
-giá N O
-16 M price
-
-tình_hình N O
-mã_chứng_khoán N symbol-prefix
-ksa A symbol
-
-mình P O
-muốn V O
-chuyển_nhượng V O
-269 M quantity
-cổ_phiếu N symbol-prefix
-mã N symbol-prefix
-pow V symbol
-giá N O
-4.82 M price
-
-tôi P O
-có V O
-nhu_cầu N O
-chuyển_nhượng V O
-số_lượng N O
-992 M quantity
-cổ_phiếu N symbol-prefix
-mã N symbol-prefix
-sd2 V symbol
-giá N O
-21.05 M price
-
-sang_tên V O
-530 M quantity
-cổ_phiếu N symbol-prefix
-mã N symbol-prefix
-thu V symbol
-giá N O
-24 M price
-
-spa N symbol
-biến_động V O
-
-pdr N symbol
-biến_động V O
-
-tình_hình N O
-mã_hbd A O
-
-mình P O
-cần V O
-chuyển_nhượng V O
-mã N symbol-prefix
-vt8 V symbol
 khối_lượng N O
-857 M quantity
+381 M quantity
 cái Nc O
-giá N O
-24 M price
-nghìn M quantity
-đồng Nu O
-
-sang_tên V O
-382 M quantity
-cái Nc O
-stp N symbol
+mã N symbol-prefix
+gsm V symbol
 giá N O
 20 M price
-vnđ N O
 
-thr N symbol
-biến_động V O
+thông_tin N O
+mã_cnt V O
 
-spm N symbol
-biến_động V O
+tao P O
+muốn V O
+sang_tên V O
+mã N symbol-prefix
+top N symbol
+428 M quantity
+cái Nc O
+giá N O
+10.59 M price
+nghìn M O
+đồng Nu O
 
 tôi P O
-cần V O
+có V O
+nhu_cầu N O
 mua V side-B
 mã N symbol-prefix
-das N symbol
-khối_lượng N O
-751 M quantity
-cổ_phiếu N symbol-prefix
+cvn N symbol
+số_lượng N O
+215 M quantity
 giá N O
-10 M price
-vnđ N O
-
-nhận_định N O
-mã_hhs A O
-
-mình P O
-muốn V O
-chuyển_nhượng V O
-755 M quantity
-icg Nu symbol
-giá N O
-12.3 M price
-vnđ N O
-
-mình P O
-muốn V O
-mua V side-B
-17 M quantity
-cái Nc O
-mã N symbol-prefix
-mkv V symbol
-giá N O
-10.43 M price
-
-nhận_định N O
-mã_chứng_khoán A symbol-prefix
-ntb N symbol
+17 M price
+nghìn M O
+đồng Nu O
 
 nhận_định N O
 mã A symbol-prefix
 cổ_phiếu N symbol-prefix
-cmk V symbol
+dhm V symbol
+
+tao P O
+muốn V O
+chuyển_nhượng V O
+khối_lượng N O
+585 M quantity
+cổ_phiếu N symbol-prefix
+mã N symbol-prefix
+l18 V symbol
+giá N O
+3 M price
+nghìn M O
+đồng Nu O
+
+mình P O
+muốn V O
+mua V side-B
+133 M quantity
+cổ_phiếu N symbol-prefix
+ct6 V symbol
+giá N O
+4 M price
+vnđ N O
+
+nct N symbol
+biến_động V O
+
+tôi P O
+cần V O
+bán V side-S
+mã N symbol-prefix
+pvp V symbol
+khối_lượng N O
+336 M quantity
+cái Nc O
+giá N O
+4 M price
+vnđ N O
+
+tình_hình N O
+mã_bwa A O
+
+bed N symbol
+biến_động V O
+
+thông_tin N O
+mã_sep V O
+
+thông_tin N O
+mã V symbol-prefix
+cổ_phiếu N symbol-prefix
+icc V symbol
+
+mình P O
+muốn V O
+bán V side-S
+khối_lượng N O
+810 M quantity
+cái Nc O
+tdg N symbol
+giá N O
+10 M price
+vnđ N O
+
+tao P O
+muốn V O
+mua V side-B
+318 M quantity
+ndf Nu symbol
+giá N O
+1 M price
+
+thông_tin N O
+mã_dsn V O
+
+tình_hình N O
+mã_chứng_khoán N symbol-prefix
+ppi A symbol
+
+pnj N symbol
+biến_động V O
 
 tôi P O
 có V O
 nhu_cầu N O
 chuyển_nhượng V O
-340 M quantity
-cái Nc O
-cmk N symbol
+số_lượng N O
+884 M quantity
+cổ_phiếu N symbol-prefix
+mã N symbol-prefix
+tmb V symbol
 giá N O
-8.07 M price
+9 M price
+nghìn M O
+đồng Nu O
+
+bcp N symbol
+biến_động V O
 
 tôi P O
 cần V O
-mua V side-B
-số_lượng N O
-863 M quantity
-cổ_phiếu N symbol-prefix
-dnd V symbol
-giá N O
-2 M price
-nghìn M quantity
-đồng Nu O
-
-tình_hình N O
-cổ_phiếu N symbol-prefix
-icf A symbol
-
-thông_tin N O
-cổ_phiếu N symbol-prefix
-sdu V symbol
-
-bán V side-S
+sang_tên V O
 mã N symbol-prefix
-haindex V symbol
+hrg V symbol
 khối_lượng N O
-194 M quantity
+463 M quantity
 cái Nc O
 giá N O
 22 M price
+
+snz N symbol
+biến_động V O
+
+tôi P O
+có V O
+nhu_cầu N O
+bán V side-S
+số_lượng N O
+815 M quantity
+sdk Nu symbol
+giá N O
+12.2 M price
+
+mình P O
+cần V O
+sang_tên V O
+khối_lượng N O
+32 M quantity
+cái Nc O
+cia N symbol
+giá N O
+6.75 M price
+nghìn M O
+đồng Nu O
+
+tôi P O
+có V O
+nhu_cầu N O
+chuyển_nhượng V O
+số_lượng N O
+327 M quantity
+mã N symbol-prefix
+ros V symbol
+giá N O
+11.81 M price
+nghìn M O
+đồng Nu O
+
+tôi P O
+có V O
+nhu_cầu N O
+chuyển_nhượng V O
+số_lượng N O
+791 M quantity
+cổ_phiếu N symbol-prefix
+vnx V symbol
+giá N O
+6 M price
+nghìn M O
+đồng Nu O
+
+dsn N symbol
+biến_động V O
+
+nst N symbol
+biến_động V O
+
+tv4 N symbol
+biến_động V O
+
+tôi P O
+cần V O
+sang_tên V O
+mã N symbol-prefix
+api V symbol
+khối_lượng N O
+57 M quantity
+cổ_phiếu N symbol-prefix
+giá N O
+5.41 M price
+
+tình_hình N O
+mã V symbol-prefix
+cổ_phiếu N symbol-prefix
+dhc V symbol
+
+hnm N symbol
+biến_động V O
+
+sang_tên V O
+mã N symbol-prefix
+pto V symbol
+khối_lượng N O
+611 M quantity
+cổ_phiếu N symbol-prefix
+giá N O
+14.99 M price
+
+chuyển_nhượng V O
+khối_lượng N O
+19 M quantity
+cổ_phiếu N symbol-prefix
+sgo N symbol
+giá N O
+21 M price
+
+tôi P O
+có V O
+nhu_cầu N O
+bán V side-S
+mã N symbol-prefix
+scj V symbol
+khối_lượng N O
+917 M quantity
+cái Nc O
+giá N O
+7.08 M price
+
+mua V side-B
+số_lượng N O
+324 M quantity
+mã N symbol-prefix
+adp V symbol
+giá N O
+9.64 M price
+
+bt1 N symbol
+biến_động V O
+
+tình_hình N O
+mã_bdw A O
+
+tôi P O
+cần V O
+bán V side-S
+331 M quantity
+mã N symbol-prefix
+jos V symbol
+giá N O
+3 M price
+nghìn M O
+đồng Nu O
+
+mình P O
+muốn V O
+chuyển_nhượng V O
+số_lượng N O
+467 M quantity
+cái Nc O
+mã N symbol-prefix
+dxg V symbol
+giá N O
+25.43 M price
 vnđ N O
 
+nhận_định N O
+mã_ssn A O
+
 thông_tin N O
-mã_chứng_khoán V symbol-prefix
-dsg N symbol
+mã V symbol-prefix
+cổ_phiếu N symbol-prefix
+mgg V symbol
+
+mch N symbol
+biến_động V O
+
+tao P O
+muốn V O
+chuyển_nhượng V O
+số_lượng N O
+139 M quantity
+cổ_phiếu N symbol-prefix
+c47 V symbol
+giá N O
+2.44 M price
+vnđ N O
+
+bán V side-S
+889 M quantity
+cái Nc O
+mã N symbol-prefix
+sjc V symbol
+giá N O
+0.42 M price
+nghìn M O
+đồng Nu O
+
+mình P O
+muốn V O
+mua V side-B
+772 M quantity
+cổ_phiếu N symbol-prefix
+gtn V symbol
+giá N O
+9 M price
+nghìn M O
+đồng Nu O
+
+mình P O
+cần V O
+bán V side-S
+276 M quantity
+cổ_phiếu N symbol-prefix
+tmb V symbol
+giá N O
+10.07 M price
+
+tôi P O
+cần V O
+bán V side-S
+mã N symbol-prefix
+hav N symbol
+472 M quantity
+giá N O
+13.0 M price
+
+mình P O
+cần V O
+mua V side-B
+khối_lượng N O
+691 M quantity
+cái Nc O
+mã N symbol-prefix
+bbt V symbol
+giá N O
+11 M price
+vnđ N O
+
+trs N symbol
+biến_động V O
+
+nhận_định N O
+mã_chứng_khoán A symbol-prefix
+qsp N symbol
 
 tình_hình N O
 cổ_phiếu N symbol-prefix
-pc1 A symbol
+dqc A symbol
 
-one N symbol
-biến_động V O
+mình P O
+muốn V O
+bán V side-S
+mã N symbol-prefix
+itc V symbol
+khối_lượng N O
+830 M quantity
+cổ_phiếu N symbol-prefix
+giá N O
+20 M price
+nghìn M O
+đồng Nu O
 
+tôi P O
+có V O
+nhu_cầu N O
+mua V side-B
+906 M quantity
+cái Nc O

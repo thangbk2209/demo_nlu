@@ -64,11 +64,7 @@ class VnGen:
                         if r :
                             word = word[:i]
                         
-<<<<<<< HEAD
-                           # print("word",word)
-=======
                             #print("word",word)
->>>>>>> d035dd214c5b1a88c34377343ec8fb9555e630ca
                         break                  
             else :
                 entity_name = 'O'
@@ -122,17 +118,11 @@ class VnGen:
             string1 = subject+" "+action+" "+self.words[2]+" "+self.stock_code[stock_code_index]+" "+amount+" "+quantity+" "+sub_amount+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]  
             string2 = subject+" "+action+" "+amount+" "+quantity+" "+sub_amount+" "+self.words[2]+" "+self.stock_code[stock_code_index]+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]
             string3 = subject+" "+action+" "+amount+" "+quantity+" "+sub_amount+" "+self.stock_code[stock_code_index]+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]
-<<<<<<< HEAD
             string4 = self.prefix[random.randint(0,len(self.prefix)-1)] +" "+ self.infix[random.randint(0,len(self.infix)-1)]+" "+self.stock_code[stock_code_index] #+" "+self.quesword[1]#self.suffix[random.randint(0,len(self.suffix)-1)]
             string5 = self.stock_code[stock_code_index]+" " +self.suffix[random.randint(0,len(self.suffix)-1)]
             #print('string 4:',string4)
             s = random.randint(0,4)
             
-=======
-            string4 = self.prefix[random.randint(0,len(self.prefix)-1)] +" "+ self.infix[random.randint(0,len(self.infix)-1)]+" "+self.stock_code[stock_code_index] +" "+self.quesword[1]#self.suffix[random.randint(0,len(self.suffix)-1)]
-          #  print('string 4:',string4)
-            s = random.randint(0,1)
->>>>>>> d035dd214c5b1a88c34377343ec8fb9555e630ca
             
             strings.append(string1)
             strings.append(string2)
@@ -140,11 +130,7 @@ class VnGen:
             strings.append(string4)
             strings.append(string5)
             string = strings[s]
-<<<<<<< HEAD
             #print("string 1:",string)
-=======
-           # print("string 1:",string)
->>>>>>> d035dd214c5b1a88c34377343ec8fb9555e630ca
             raw = ViPosTagger.postagging(ViTokenizer.tokenize(string))
             data = self.make_train_data(raw)
             self.raw.write("\n")
@@ -154,7 +140,6 @@ class VnGen:
             #                       [(w1,p1,e1),(w1,p1,e2)]
             #                      ]
        # print(train_data)
-<<<<<<< HEAD
         return train_data
 # k 0= VnGen()
 # print(k.gen_data(5))u
@@ -163,6 +148,3 @@ if __name__ == "__main__":
     gen.gen_data(5000)
     gen.raw.close()
 
-=======
-        return train_data
->>>>>>> d035dd214c5b1a88c34377343ec8fb9555e630ca

@@ -168,7 +168,7 @@ if __name__ == '__main__':
         print("File not found, retrain")
         k = NerCrf(5000,20)
     k.train()
-    string = 'ssi biến động như thế nào'
+    string = 'nên hay không khi mua mã chứng khoáng ssi giá 34 30 cổ phiếu'
     string = string.lower()
     print(string)
     y_p,y_t = k.test(string)

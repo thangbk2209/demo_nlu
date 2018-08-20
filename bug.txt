@@ -1,0 +1,16 @@
+1) nên hay không khi mua mã chứng khoáng ssi giá 34 30 cổ phiếu
+lỗi:
+File "/home/hoangbao/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/hoangbao/KSTN/demo_nlu/server.py", line 105, in postContent
+    intent = text_classify(content)
+  File "/home/hoangbao/KSTN/demo_nlu/server.py", line 30, in text_classify
+    data_x_raw.append(vectors[word2int[word]])
+KeyError: 'chứng_khoáng'
+
+2)nên hay không khi mua ssi giá 34 30 cổ phiếu:
+['nên', 'hay', 'không', 'khi', 'mua', 'ssi', 'giá', '34', '30', 'cổ_phiếu']
+
+sd:  {'entities': {'price': '34', 'quantity': '30', 'side': 'B', 'symbol': 'ssi'}, 'intent': 'trade', 'text': 'nên hay không khi mua ssi giá 34 30 cổ phiếu'}
+
+3)
