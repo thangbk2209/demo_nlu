@@ -21,13 +21,16 @@ import pickle as pk
 #train_sents = list(nltk.corpus.conll2002.iob_sents('esp.train'))
 #test_sents = list(nltk.corpus.conll2002.iob_sents('esp.testb'))
 vn_gen = VnGen()
-train_sents = vn_gen.gen_data(num_ex=100)
-test_sents = vn_gen.gen_data(num_ex=20)
+
+# train_sents = vn_gen.gen_data(num_ex=100)
+# test_sents = vn_gen.gen_data(num_ex=20)
+# vn_gen.close_file
 class NerCrf:
     def __init__(self,num_train,num_test):
         self.file_read = "./data/ner_data.csv"
         self.train_sents = vn_gen.read_raw_data(self.file_read)#vn_gen.gen_data(num_train)
         self.test_sents  = vn_gen.read_raw_data(self.file_read)#n_gen.gen_data(num_test)
+       # vn_gen.close_file()
         print("train",self.train_sents[:3])
         self.crf = None
         self.label = []
@@ -118,7 +121,7 @@ class NerCrf:
         print(s)
         
         sorted_labels = sorted(self.labels, key=lambda name: (name[1:], name[0]))
-        print(metrics.flat_classification_report( self.y_test, y_pred, labels=sorted_labels, digits=3))
+       # print(metrics.flat_classification_report( self.y_test, y_pred, labels=sorted_labels, digits=3))
         return y_pred,self.y_test 
     def save_model(self,file_name):
         pk.dump(self,open(file_name,'wb'))
@@ -167,6 +170,7 @@ if __name__ == '__main__':
     except FileNotFoundError:
         print("File not found, retrain")
         k = NerCrf(5000,20)
+        
     k.train()
     string = 'ssi biến động như thế nào'
     string = string.lower()
