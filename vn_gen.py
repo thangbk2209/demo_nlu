@@ -1,6 +1,7 @@
 import random
 from pyvi import ViTokenizer,ViPosTagger
 import re
+from data_cleaner import DataCleaner
 class VnGen:
     """
     lop tao du lieu cho crf sk learn
@@ -25,7 +26,7 @@ class VnGen:
         self.stock_name = []
         self.help_subject = ["xem","xem cho tôi","cho tôi xem"]
         self.chu_ngu = ["tôi có nhu cầu ","tao muốn","","mình cần","tôi cần","mình muốn","đặt lênh"]
-        self.actions = ["mua","bán","chuyển nhượng","sang tên","đầu tư","gom"]
+        self.actions = ["mua","bán","chuyển nhượng","sang tên","đầu tư thêm","gom","thêm","mua thêm"]
         self.amounts = ["","khối lượng ","số lượng"]
         self.sub_amounts = ["","cái","cổ phiếu","cổ"]
         self.words = ["tôi muốn","bán","mã","khối lương","giá"]
@@ -36,50 +37,54 @@ class VnGen:
         self.infix = ["mã chứng khoán","mã","cổ phiếu","mã cổ phiếu"]
         self.balance_word = ["","còn dư"]
         self.stock_prefix = ["","mã"]
-        
+        self.conjunction = ["","và"]
+        self.check_stopword = DataCleaner()
     def pos_tagging(self,string):
         return ViPosTagger.postagging(ViTokenizer.tokenize(string))
     def make_train_data(self,raw,raw_file=None):
         
         data = []
+        sent = []
     #  print(raw[1],"-------\n",raw)
     #  word1 = re.sub('_'," ",word)
         for i in range(len(raw[1])):
-
             word = raw[0][i]
             pos = raw[1][i]
-            entity_name = ""
-            if word == 'bán':
-                entity_name = 'side-S'
-            elif word == 'mua'or word == 'đầu tư'or word =='gom':
-                entity_name = 'side-B'
-            elif word in self.stock_code :
-                entity_name = "symbol"
-            elif word == "cổ_phiếu" or word == "chứng_khoán" or word == "mã" or word == "mã_chứng_khoán" or word == "mã_cổ_phiếu" or word =="cổ" :
-                entity_name = 'symbol-prefix'
-            elif pos == 'M' and word[0].isdigit() :
+            if 1:
                 
-                entity_name = 'quantity'
-                for i in range(len(word)) :
-                    if word[i] == "." :
-                        entity_name = 'price'
-                        r = random.randint(0,1)
-                        if r :
-                            word = word[:i]
-                        
-                           # print("word",word)
-                        break                  
-            else :
-                entity_name = 'O'
-            #word1 = re.sub("_"," ",word)
-            try:
-                raw_file.write(word+" "+pos+" "+entity_name+"\n")
-            except AttributeError:
-                a = 0
-            data.append((word,pos,entity_name))
+                entity_name = ""
+                if word == 'bán':
+                    entity_name = 'side-S'
+                elif word == 'mua'or word == 'đầu_tư'or word =='gom' :
+                    entity_name = 'side-B'
+                elif word in self.stock_code :
+                    entity_name = "symbol"
+                elif word == "cổ_phiếu" or word == "chứng_khoán" or word == "mã" or word == "mã_chứng_khoán" or word == "mã_cổ_phiếu" or word =="cổ" :
+                    entity_name = 'symbol-prefix'
+                elif pos == 'M' and word[0].isdigit() :
+                    
+                    entity_name = 'quantity'
+                    for i in range(len(word)) :
+                        if word[i] == "." :
+                            entity_name = 'price'
+                            r = random.randint(0,1)
+                            if r :
+                                word = word[:i]
+                            
+                            # print("word",word)
+                            break                  
+                else :
+                    entity_name = 'O'
+                #word1 = re.sub("_"," ",word)
+                try:
+                    raw_file.write(word+" "+pos+" "+entity_name+"\n")
+                except AttributeError:
+                    a = 0
+                data.append((word,pos,entity_name))
+                sent.append(word)
        # print(data)
 
-        return data
+        return data,sent
     def read_stock_data(self,file_name):
         stock_file = open(file_name,"r")
         for line in stock_file:
@@ -113,16 +118,16 @@ class VnGen:
         train_data = [] 
         for i in range(num_ex):
             subject = self.chu_ngu[random.randint(0,len(self.chu_ngu)-1)]
-            action = self.actions[int(random.random()*4)]
+            action = self.actions[random.randint(0,len(self.actions)-1)]
             price = str(round(random.random()*26,2))
             quantity = str(int(random.random()*1000))
-            amount = self.amounts[int(random.random()*3)]
-            sub_amount = self.sub_amounts[int(random.random()*3)]
+            amount = self.amounts[random.randint(0,len(self.amounts)-1)]
+            sub_amount = self.sub_amounts[random.randint(0,len(self.sub_amounts)-1)]
             help_subject = self.help_subject[random.randint(0,len(self.help_subject)-1)]
             stock_code_index = int(random.random()*len(self.stock_code))
             strings = []
             #trade 
-            string1 = subject+" "+action+" "+self.stock_prefix[random.randint(0,len(self.stock_prefix)-1)]+" "+self.stock_code[stock_code_index]+" "+amount+" "+quantity+" "+sub_amount+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]  
+            string1 = subject+" "+action+" "+self.stock_prefix[random.randint(0,len(self.stock_prefix)-1)]+" "+self.stock_code[stock_code_index]+" "+amount+" "+quantity+" "+sub_amount+" "+self.conjunction[random.randint(0,len(self.conjunction)-1)]+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]  
             string2 = subject+" "+action+" "+amount+" "+quantity+" "+sub_amount+" "+self.words[2]+" "+self.stock_code[stock_code_index]+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]
             string3 = subject+" "+action+" "+amount+" "+quantity+" "+sub_amount+" "+self.stock_code[stock_code_index]+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]
             string4 = self.prefix[random.randint(0,len(self.prefix)-1)] +" "+ self.infix[random.randint(0,len(self.infix)-1)]+" "+self.stock_code[stock_code_index] #+" "+self.quesword[1]#self.suffix[random.randint(0,len(self.suffix)-1)]

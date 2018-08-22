@@ -56,8 +56,13 @@ def text_classify(content):
 
 def named_entity_reconignition(content,intent):
     content = content.lower()
+    print("content = ",content)
+    check_sw = DataCleaner()
     ner = read_ner_model()
     y_pred,y_test = ner.test(content)
+    #print("content before",content)
+   # content = check_sw.remove_stopword_sent(content)
+    #print("after",content)
     s = ViPosTagger.postagging(ViTokenizer.tokenize(content))[0]
     print (s)
     data = []

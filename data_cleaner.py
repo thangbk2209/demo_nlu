@@ -1239,6 +1239,8 @@ thật_thà
 thật_tốt
 thật_vậy
 thế
+thêm
+bớt
 thế_chuẩn_bị
 thế_là
 thế_lại
@@ -1918,3 +1920,13 @@ xệp
                     if word not in symbol_arr:
                         all_words.append(word)
         return all_words
+    def remove_stopword_sent(self,sent):
+        s = ViPosTagger.postagging(ViTokenizer.tokenize(sent))[0]
+        for i in range(len(s)):
+            if self.is_stop_word(s[i]):
+                print("S[i]",s[i])
+                s[i] = ""
+        new_sent = ""
+        for i in range(len(s)):
+            new_sent += s[i]+" "
+        return new_sent
