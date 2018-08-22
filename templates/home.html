@@ -23,7 +23,11 @@
     <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   </head>
-
+  <style>
+  table {
+    margin: 0 auto; /* or margin: 0 auto 0 auto */
+  }
+  </style>
   <body id="page-top" ng-app="nluApp">
 
     <!-- Navigation -->
@@ -69,8 +73,8 @@
             <h2 class="text-white mb-4">Intent classification and named entities recognition</h2>
           </div>
         </div>
-        <!-- <form  action = "http://localhost:5000/submit" method="post">  -->
-        <form role="form" ng-submit="getResults()" method="POST">
+        <form  action = "http://localhost:5000/submit" method="post"> 
+        <!-- <form role="form" ng-submit="getResults()" method="POST"> -->
           <div class= "rows">
                 <div class="form-group">
                     <label>User says</label>
@@ -80,23 +84,32 @@
             </div>
         </form>
         <!-- </form>d -->
-        <div class="text-white" >
-          {{all_words}}
-          {{content}},{{intent}}
-          
-        </div>
-        
+          <div class="text-white" id="myTextarea" >
+            <!-- {{all_words}}
+            {{content}},
+            
+            {{a}} -->
+            <!-- {{outputs}} -->
+            <b>Text:</b> {{content}} <br>
+            <hr>
+            <b>Intent:</b> {{intent}}
+            <hr>
+            <!-- aloooooooooooooooooooooooooooooooooooo -->
+            <!-- {{a}} -->
+          </div>
+       
+        <!-- <button ng-click = "pretrain()"></button> -->
         
         <!-- <img src="{{url_for('static', filename='img/ipad.png')}}" class="img-fluid" alt=""> -->
       </div>
-      <div class="text-white">
-          <table border = 1>
+      <div class=" text-white text-center" style="margin-bottom: 25px;">
+          <b>Named entities recognition:</b>
+          <table class="col-md-offset-2" border = 1>
             <tr>
               <th> token </th>
               <th> predicted entity</th>
-              <th> output entity</th> 
             </tr>
-            {% for key in data %}
+            {% for key in outputs %}
             
               <tr>
                   <th> {{ key[0] }} </th>
@@ -255,7 +268,10 @@
     <script src="{{url_for('static', filename='js/grayscale.min.js') }}"></script>
     <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-   
+   <!-- <script>
+      var textedJson = JSON.stringify(outputs, undefined, 4);
+      $('#myTextarea').text(textedJson);
+   </script> -->
 
   </body>
 
