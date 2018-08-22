@@ -21,14 +21,17 @@ import pickle as pk
 #train_sents = list(nltk.corpus.conll2002.iob_sents('esp.train'))
 #test_sents = list(nltk.corpus.conll2002.iob_sents('esp.testb'))
 vn_gen = VnGen()
-train_sents = vn_gen.gen_data(num_ex=100)
-test_sents = vn_gen.gen_data(num_ex=20)
+
+# train_sents = vn_gen.gen_data(num_ex=100)
+# test_sents = vn_gen.gen_data(num_ex=20)
+# vn_gen.close_file
 class NerCrf:
     def __init__(self,num_train,num_test):
         self.file_read = "./data/ner_data.csv"
         self.train_sents = vn_gen.read_raw_data(self.file_read)#vn_gen.gen_data(num_train)
         self.test_sents  = vn_gen.read_raw_data(self.file_read)#n_gen.gen_data(num_test)
-        
+       # vn_gen.close_file()
+        print("train",self.train_sents[:3])
         self.crf = None
         self.label = []
         self.stock_code = []
@@ -125,20 +128,12 @@ class NerCrf:
         s = ViPosTagger.postagging(ViTokenizer.tokenize(string))[0]
         print(s)
         
-        sorted_labels = sorted(self.labels, key=lambda name: (name[1:], name[0]))
-      #  print(metrics.flat_classification_report( self.y_test, y_pred, labels=sorted_labels, digits=3))
-        print("y pred before",y_pred[0])
-        y_pred_af = self.double_check(y_pred[0],s)
-        
-        print("y_pred after ",y_pred_af)
-        for i in range (len(y_pred_af)):
-            if y_pred_af[i] != y_pred[0][i]:
-                print(1)
-                print("y pred before",y_pred[0])
-                print("y_pred after ",y_pred_af)
-                break
-        
-        return [y_pred_af],self.y_test 
+       # sorted_labels = sorted(self.labels, key=lambda name: (name[1:], name[0]))
+       # print(metrics.flat_classification_report( self.y_test, y_pred, labels=sorted_labels, digits=3))
+        print("before double check:",y_pred)
+        y_pred = self.double_check(y_pred[0],s)
+        print("after double check:",y_pred)
+        return y_pred,self.y_test
     def double_check(self,y_pred,tokens):
         #print("y_pred",y_pred)
         #print("tokens",tokens)
@@ -150,9 +145,10 @@ class NerCrf:
             
                 if not tokens[i] in self.stock_code:
                     y_pred[i] = 'O'
-        return y_pred
-
-
+            elif y_pred == "O":
+                if tokens[i] in self.stock_code:
+                    y_pred = "symbol"
+        return [y_pred]
     def save_model(self,file_name):
         pk.dump(self,open(file_name,'wb'))
     def read_model(self,file_name):
@@ -200,6 +196,7 @@ if __name__ == '__main__':
     except FileNotFoundError:
         print("File not found, retrain")
         k = NerCrf(5000,20)
+        
     k.train()
     string = 'nên hay không khi mua mã chứng khoáng ssi giá 34 30 cổ phiếu'
     string = string.lower()
