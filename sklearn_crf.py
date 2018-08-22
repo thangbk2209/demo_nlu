@@ -34,6 +34,14 @@ class NerCrf:
         print("train",self.train_sents[:3])
         self.crf = None
         self.label = []
+        self.stock_code = []
+        self.read_stock_data("./data/stockslist.txt")
+    def read_stock_data(self,file_name):
+        stock_file = open(file_name,"r")
+        for line in stock_file:
+            temp = line.split(",")
+            self.stock_code.append(temp[0].lower())
+            # self.stock_name.append(temp[1])
     def word2features(self,sent, i):
         word = sent[i][0]
         postag = sent[i][1]
@@ -103,7 +111,7 @@ class NerCrf:
         #print(len(X_train))
         self.crf.fit(self.X_train, self.y_train)
         self.labels = list(self.crf.classes_)
-        self.labels.remove('O')
+      #  self.labels.remove('O')
         self.save_model('./ner/crf_model.pkl')
         self.trans = Counter(self.crf.transition_features_).most_common()
     def test(self,string):
@@ -172,14 +180,14 @@ if __name__ == '__main__':
         k = NerCrf(5000,20)
         
     k.train()
-    string = 'ssi biến động như thế nào'
+    string = 'nên hay không khi mua mã chứng khoáng ssi giá 34 30 cổ phiếu'
     string = string.lower()
     print(string)
     y_p,y_t = k.test(string)
     #k.print_f1_score(y_p)
-   # k.print_tran()
+   # k.print_tran()g
     #k.print_all_trans()
-    k.calculate_most_likely_transitions_chain(y_p[0])
+   #k.calculate_most_likely_transitions_chain(y_p[0])
 """
     #print("x test",test_sents[1])
     #print("y_pred:",y_pred[1])
