@@ -23,8 +23,9 @@ class VnGen:
     def __init__(self):
         self.stock_code = []
         self.stock_name = []
-        self.chu_ngu = ["tôi có nhu cầu ","tao muốn","","mình cần","tôi cần","mình muốn"]
-        self.actions = ["mua","bán","chuyển nhượng","sang tên"]
+        self.help_subject = ["xem","xem cho tôi","cho tôi xem"]
+        self.chu_ngu = ["tôi có nhu cầu ","tao muốn","","mình cần","tôi cần","mình muốn","đặt lênh"]
+        self.actions = ["mua","bán","chuyển nhượng","sang tên","đầu tư","gom"]
         self.amounts = ["","khối lượng ","số lượng"]
         self.sub_amounts = ["","cái","cổ phiếu","cổ"]
         self.words = ["tôi muốn","bán","mã","khối lương","giá"]
@@ -33,6 +34,8 @@ class VnGen:
         self.suffix = ["biến động","lên xuống"]
         self.quesword = ["thế nào","ra sao",""]
         self.infix = ["mã chứng khoán","mã","cổ phiếu","mã cổ phiếu"]
+        self.balance_word = ["","còn dư"]
+        self.stock_prefix = ["","mã"]
         
     def pos_tagging(self,string):
         return ViPosTagger.postagging(ViTokenizer.tokenize(string))
@@ -48,7 +51,7 @@ class VnGen:
             entity_name = ""
             if word == 'bán':
                 entity_name = 'side-S'
-            elif word == 'mua':
+            elif word == 'mua'or word == 'đầu tư'or word =='gom':
                 entity_name = 'side-B'
             elif word in self.stock_code :
                 entity_name = "symbol"
@@ -115,17 +118,21 @@ class VnGen:
             quantity = str(int(random.random()*1000))
             amount = self.amounts[int(random.random()*3)]
             sub_amount = self.sub_amounts[int(random.random()*3)]
-            
+            help_subject = self.help_subject[random.randint(0,len(self.help_subject)-1)]
             stock_code_index = int(random.random()*len(self.stock_code))
             strings = []
             #trade 
-            string1 = subject+" "+action+" "+self.words[2]+" "+self.stock_code[stock_code_index]+" "+amount+" "+quantity+" "+sub_amount+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]  
+            string1 = subject+" "+action+" "+self.stock_prefix[random.randint(0,len(self.stock_prefix)-1)]+" "+self.stock_code[stock_code_index]+" "+amount+" "+quantity+" "+sub_amount+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]  
             string2 = subject+" "+action+" "+amount+" "+quantity+" "+sub_amount+" "+self.words[2]+" "+self.stock_code[stock_code_index]+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]
             string3 = subject+" "+action+" "+amount+" "+quantity+" "+sub_amount+" "+self.stock_code[stock_code_index]+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]
             string4 = self.prefix[random.randint(0,len(self.prefix)-1)] +" "+ self.infix[random.randint(0,len(self.infix)-1)]+" "+self.stock_code[stock_code_index] #+" "+self.quesword[1]#self.suffix[random.randint(0,len(self.suffix)-1)]
+            #string7 = subject+" "+action+" "+self.stock_code[stock_code_index]+" "
+            #market
             string5 = self.stock_code[stock_code_index]+" " +self.suffix[random.randint(0,len(self.suffix)-1)]
-            #print('string 4:',string4)
-            string6 = 
+            #stock balance and cash balance:
+            #vd cho toi xem thong tin( nhan dinh ) ma co phieu ssi con du 
+            string6  = help_subject +  self.prefix[random.randint(0,len(self.prefix)-1)] + self.stock_prefix[random.randint(0,len(self.stock_prefix)-1)]+self.stock_code[stock_code_index]+self.balance_word[random.randint(0,len(self.balance_word)-1)]
+            #string6 = "môt con vịt"
             s = random.randint(0,4)
             
             

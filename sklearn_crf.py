@@ -128,9 +128,27 @@ class NerCrf:
         s = ViPosTagger.postagging(ViTokenizer.tokenize(string))[0]
         print(s)
         
-        sorted_labels = sorted(self.labels, key=lambda name: (name[1:], name[0]))
+       # sorted_labels = sorted(self.labels, key=lambda name: (name[1:], name[0]))
        # print(metrics.flat_classification_report( self.y_test, y_pred, labels=sorted_labels, digits=3))
-        return y_pred,self.y_test 
+        print("before double check:",y_pred)
+        y_pred = self.double_check(y_pred[0],s)
+        print("after double check:",y_pred)
+        return y_pred,self.y_test
+    def double_check(self,y_pred,tokens):
+        #print("y_pred",y_pred)
+        #print("tokens",tokens)
+        for i in range(len(tokens)):
+            if y_pred[i] == 'price' or y_pred[i] == 'quantity':
+                if not tokens[i][0].isdigit():
+                    y_pred[i]  = 'O'
+            elif y_pred[i] == 'symbol':
+            
+                if not tokens[i] in self.stock_code:
+                    y_pred[i] = 'O'
+            elif y_pred == "O":
+                if tokens[i] in self.stock_code:
+                    y_pred = "symbol"
+        return [y_pred]
     def save_model(self,file_name):
         pk.dump(self,open(file_name,'wb'))
     def read_model(self,file_name):
