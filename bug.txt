@@ -111,4 +111,7 @@ y test: [['O', 'O', 'O', 'symbol-prefix', 'symbol']]
 
 
 
-
+21)
+string: xem ssi tốt không
+y pred: [['symbol', 'O', 'O', 'O']]
+y test: [['O', 'symbol', 'O', 'O']]

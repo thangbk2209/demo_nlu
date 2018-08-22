@@ -160,6 +160,7 @@ bởi_thế
 bởi_thế_cho_nên
 bởi_tại
 bởi_đâu
+bớt
 bức
 cao_lâu
 cao_ráo
@@ -1183,6 +1184,7 @@ tháng
 tháng_ngày
 tháng_năm
 tháng_tháng
+thêm
 thêm_chuyện
 thêm_giờ
 thêm_vào

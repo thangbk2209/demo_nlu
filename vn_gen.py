@@ -29,10 +29,10 @@ class VnGen:
         self.sub_amounts = ["","cái","cổ phiếu"]
         self.words = ["tôi muốn","bán","mã","khối lương","giá"]
         self.currency_unit = ["","nghìn đồng","vnđ","nghìn"] 
-        self.prefix = ["nhận định","tình hình","thông tin"]
+        self.prefix = ["xem","nhận định","tình hình","thông tin"]
         self.suffix = ["biến động"]
         self.quesword = ["thế nào","ra sao",""]
-        self.infix = ["mã chứng khoán","mã","cổ phiếu","mã cổ phiếu"]
+        self.infix = ["mã chứng khoán","mã","cổ phiếu","mã cổ phiếu",""]
         self.raw = open("./data/ner_data.csv",'w')
     def pos_tagging(self,string):
         return ViPosTagger.postagging(ViTokenizer.tokenize(string))
@@ -114,12 +114,16 @@ class VnGen:
             
             stock_code_index = int(random.random()*len(self.stock_code))
             strings = []
-            
+            #trade
             string1 = subject+" "+action+" "+self.words[2]+" "+self.stock_code[stock_code_index]+" "+amount+" "+quantity+" "+sub_amount+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]  
             string2 = subject+" "+action+" "+amount+" "+quantity+" "+sub_amount+" "+self.words[2]+" "+self.stock_code[stock_code_index]+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]
             string3 = subject+" "+action+" "+amount+" "+quantity+" "+sub_amount+" "+self.stock_code[stock_code_index]+" "+self.words[4]+" "+price+" "+self.currency_unit[int(random.random()*3)]
+            #market 
             string4 = self.prefix[random.randint(0,len(self.prefix)-1)] +" "+ self.infix[random.randint(0,len(self.infix)-1)]+" "+self.stock_code[stock_code_index] #+" "+self.quesword[1]#self.suffix[random.randint(0,len(self.suffix)-1)]
+            #market
             string5 = self.stock_code[stock_code_index]+" " +self.suffix[random.randint(0,len(self.suffix)-1)]
+            #advice 
+          #  string6 = self.stock_code[]
             #print('string 4:',string4)
             s = random.randint(0,4)
             

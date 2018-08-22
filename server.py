@@ -1,5 +1,5 @@
 from flask import Flask, abort, request, redirect, url_for
-from flask import render_template
+from flask import render_template,jsonify
 from data_cleaner import DataCleaner
 import tensorflow as tf
 import pickle as pk 
@@ -20,8 +20,8 @@ def text_classify(content):
     input_size = 16
     window_size = 2
     embedding_dim = 32
-    batch_size_word2vec = 4
-    file_to_save_word2vec_data = 'word2vec_ver2/ws-' + str(window_size) + '-embed-' + str(embedding_dim) + 'batch_size-' + str(batch_size_word2vec) + '.pkl'
+    batch_size_word2vec = 8
+    file_to_save_word2vec_data = 'word2vec_ver3/ws-' + str(window_size) + '-embed-' + str(embedding_dim) + 'batch_size-' + str(batch_size_word2vec) + '.pkl'
     data_cleaner = DataCleaner(content)
     all_words = data_cleaner.separate_sentence()     
     vectors, word2int, int2word = read_trained_data(file_to_save_word2vec_data)
@@ -36,8 +36,8 @@ def text_classify(content):
     int2intent = {0: 'end', 1: 'trade', 2: 'cash_balance', 3: 'advice', 4: 'order_status', 5: 'stock_balance', 6: 'market',7: 'cancel'}
     with tf.Session() as sess:
         #First let's load meta graph and restore weights
-        saver = tf.train.import_meta_graph('ANN_2layers_320-64/ws-2-embed-32batch_size_w2c-4batch_size_cl16.meta')
-        saver.restore(sess,tf.train.latest_checkpoint('ANN_2layers_320-64/'))
+        saver = tf.train.import_meta_graph('ANN_ver3/ws-2-embed-32batch_size_w2c-8batch_size_cl4.meta')
+        saver.restore(sess,tf.train.latest_checkpoint('ANN_ver3/'))
         # Access and create placeholders variables and
         # print (sess.run ('x:0'))
         graph = tf.get_default_graph()
@@ -80,37 +80,34 @@ def named_entity_reconignition(content,intent):
             symbol = s[i]
         data.append([s[i],y_pred[0][i]])
     
-    json_data = {
+    # json_data = {
         
-        "entities":{
-            "price":price,
-            "quantity":quantity,
-            "side":side,
-            "symbol":symbol,
-        },
-        "intent": intent,
-        "text" : content
-    }  
-    return json_data
+    #     "entities":{
+    #         "price":price,
+    #         "quantity":quantity,
+    #         "side":side,
+    #         "symbol":symbol,
+    #     },
+    #     "intent": intent,
+    #     "text" : content
+    # }  
+    # return json_data
+    return data
 @app.route('/')
 def index():
     # name = request.args.get('name')
     return render_template('home.html')
-@app.route('/postContent', methods = ['POST'])
-def postContent():
-    # content = request.form['content']
-    # print (content)
+@app.route('/submit', methods=['POST'])
+def nlu():    
     print ('call API OK')
-    data = json.loads(request.data.decode())
-    content = data["content"]
+    content = request.form['content']
+    print (content)
+    content = content.lower()
+    print (content)
     intent = text_classify(content)
-    json_data = named_entity_reconignition(content,intent)
-    json_data = str(json_data)
-    print("sd: ",json_data)
-    # print (entities)
-    
-
-    return json_data
+    outputs = named_entity_reconignition(content,intent)
+    # hehe = jsonify(outputs=outputs)
+    return render_template('home.html', content= content,intent = intent, outputs = outputs)
 def read_ner_model():
     ner = pk.load(open('./ner/crf_model.pkl','rb'))
     return ner
