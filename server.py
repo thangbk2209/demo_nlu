@@ -52,7 +52,7 @@ def text_classify(content):
         print (sess.run(corr_pred))
         print (sess.run(index))
         intent = int2intent[sess.run(index)[0]]
-    return intent
+    return intent,all_words
 
 def named_entity_reconignition(content,intent):
     content = content.lower()
@@ -104,10 +104,10 @@ def nlu():
     print (content)
     content = content.lower()
     print (content)
-    intent = text_classify(content)
+    intent,all_words = text_classify(content)
     outputs = named_entity_reconignition(content,intent)
     # hehe = jsonify(outputs=outputs)
-    return render_template('home.html', content= content,intent = intent, outputs = outputs)
+    return render_template('home.html', content= content,intent = intent, outputs = outputs, all_words = all_words)
 def read_ner_model():
     ner = pk.load(open('./ner/crf_model.pkl','rb'))
     return ner
