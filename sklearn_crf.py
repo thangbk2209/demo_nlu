@@ -30,6 +30,7 @@ class NerCrf:
     def __init__(self,num_train,num_test):
         self.file_read = "./data/ner_data.csv"
         self.train_sents = vn_gen.read_raw_data(self.file_read)#vn_gen.gen_data(num_train)
+        print("len train",len(self.train_sents))
         self.test_sents  = vn_gen.read_raw_data(self.file_read)#n_gen.gen_data(num_test)
        # vn_gen.close_file()
         print("train",self.train_sents[:3])
@@ -113,18 +114,21 @@ class NerCrf:
         self.crf.fit(self.X_train, self.y_train)
         self.labels = list(self.crf.classes_)
       #  self.labels.remove('O')
+        print("label:",self.labels)
         self.save_model('./ner/crf_model.pkl')
         self.trans = Counter(self.crf.transition_features_).most_common()
-    def test(self,string):
+    def test(self,tokens):
        # y_pred = crf.predict(X_test)
         test_s = []
-        test_sent,sent = vn_gen.make_train_data(vn_gen.pos_tagging(string))
+        test_sent,sent = vn_gen.make_train_data(tokens)
+        
         test_s.append(test_sent)
-        #  print("test_s",test_s)
+
+        print("test_s",test_s)
         self.X_test = [self.sent2features(s) for s in test_s]
         self.y_test = [self.sent2labels(s) for s in test_s]
         y_pred = self.crf.predict(self.X_test)
-        print("string:",string)
+        print("string:",tokens)
         print("y pred:", y_pred)
         print("y test:",self.y_test)
        # s = ViPosTagger.postagging(ViTokenizer.tokenize(string))[0]
@@ -198,8 +202,7 @@ if __name__ == '__main__':
     except FileNotFoundError:
         print("File not found, retrain")
         k = NerCrf(5000,20)
-        
-   # k.train()
+        k.train()
     #string = 'nên hay không khi mua mã chứng khoáng ssi giá 34 30 cổ phiếu'
  #  string = string.lower()
    # print(string)

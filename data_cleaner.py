@@ -19,7 +19,8 @@ in corpus and in sentence
 class DataCleaner:
     def __init__(self, data = None):
         self.data = data
-        # stop words set
+        self.stock_code = []
+        self.read_stock_data("./data/stockslist.txt")
         self.STOP_WORDS = set("""
 a_lô
 a_ha
@@ -1897,6 +1898,12 @@ xệp
             all_sentences_split.append(sentencei)
         all_words = set(all_words)
         return all_words, all_sentences_split
+    def read_stock_data(self,file_name):
+        stock_file = open(file_name,"r")
+        for line in stock_file:
+            temp = line.split(",")
+            self.stock_code.append(temp[0].lower())
+            
     def separate_sentence (self):
         # this file include financial symbols
         symbol_arr = []
@@ -1923,12 +1930,19 @@ xệp
                         all_words.append(word)
         return all_words
     def remove_stopword_sent(self,sent):
-        s = ViPosTagger.postagging(ViTokenizer.tokenize(sent))[0]
-        for i in range(len(s)):
-            if self.is_stop_word(s[i]):
-                print("S[i]",s[i])
-                s[i] = ""
-        new_sent = ""
-        for i in range(len(s)):
-            new_sent += s[i]+" "
-        return new_sent
+        new_tokens = []
+        new_pos = []
+        s = ViPosTagger.postagging(ViTokenizer.tokenize(sent))
+        for i in range(len(s[0])):
+            if s[0][i] in self.stock_code:
+                new_tokens.append(s[0][i])
+                new_pos.append("Np")
+            elif self.is_stop_word(s[0][i]):
+                if (s[0][i]=="như"):
+                   print("S[i]",s[0][i])
+                   a = 0
+            else:
+                new_tokens.append(s[0][i])
+                new_pos.append(s[1][i])
+        
+        return (new_tokens,new_pos)

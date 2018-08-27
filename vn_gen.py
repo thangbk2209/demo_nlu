@@ -2,6 +2,20 @@ import random
 from pyvi import ViTokenizer,ViPosTagger
 import re
 from data_cleaner import DataCleaner
+def tokenize_tunning(tokens):
+        new_tokens = []
+        new_pos = []
+        for i in range(len(tokens[0])):
+            if re.search("_dư",tokens[0][i]):
+                sym,word = tokens[0][i].split("_") 
+                new_tokens.append(sym)
+                new_tokens.append(word)
+                new_pos.append("Np")
+                new_pos.append("V")
+            else:
+                new_tokens.append(tokens[0][i])
+                new_pos.append(tokens[1][i])
+        return (new_tokens,new_pos)
 class VnGen:
     """
     lop tao du lieu cho crf sk learn
@@ -31,13 +45,16 @@ class VnGen:
         self.sub_amounts = ["","cái","cổ phiếu","cổ"]
         self.words = ["tôi muốn","bán","mã","khối lương","giá"]
         self.currency_unit = ["","nghìn đồng","vnđ","nghìn"] 
-        self.prefix = ["nhận định","tình hình","thông tin"]
+        self.prefix = ["nhận định","tình hình","thông tin",""]
         self.suffix = ["biến động","lên xuống"]
         self.quesword = ["thế nào","ra sao",""]
         self.infix = ["mã chứng khoán","mã","cổ phiếu","mã cổ phiếu"]
-        self.balance_word = ["","còn dư"]
-        self.stock_prefix = ["","mã"]
+        self.balance_word = ["","còn dư","dư"]
+        self.stock_prefix = ["","mã","số"]
         self.conjunction = ["","và"]
+        self.advice_prefix = ["có","nên","có nên"]
+
+    
         self.check_stopword = DataCleaner()
     def pos_tagging(self,string):
         return ViPosTagger.postagging(ViTokenizer.tokenize(string))
@@ -59,7 +76,10 @@ class VnGen:
                     entity_name = 'side-B'
                 elif word in self.stock_code :
                     entity_name = "symbol"
+                    pos = "Np"
                 elif word == "cổ_phiếu" or word == "chứng_khoán" or word == "mã" or word == "mã_chứng_khoán" or word == "mã_cổ_phiếu" or word =="cổ" :
+                    #entity_name = "O"
+                    
                     entity_name = 'symbol-prefix'
                 elif pos == 'M' and word[0].isdigit() :
                     
@@ -75,6 +95,7 @@ class VnGen:
                             break                  
                 else :
                     entity_name = 'O'
+                    
                 #word1 = re.sub("_"," ",word)
                 try:
                     raw_file.write(word+" "+pos+" "+entity_name+"\n")
@@ -137,20 +158,25 @@ class VnGen:
             string5 = self.stock_code[stock_code_index]+" " +self.suffix[random.randint(0,len(self.suffix)-1)]
             #stock balance and cash balance:
             #vd cho toi xem thong tin( nhan dinh ) ma co phieu ssi con du 
-            string6  = help_subject +  self.prefix[random.randint(0,len(self.prefix)-1)] + self.stock_prefix[random.randint(0,len(self.stock_prefix)-1)]+self.stock_code[stock_code_index]+self.balance_word[random.randint(0,len(self.balance_word)-1)]
+            string6  = help_subject + " "+ self.prefix[random.randint(0,len(self.prefix)-1)]+" " + self.stock_prefix[random.randint(0,len(self.stock_prefix)-1)]+" "+self.stock_code[stock_code_index]+" "+self.balance_word[random.randint(0,len(self.balance_word)-1)]
             #string6 = "môt con vịt"
-            s = random.randint(0,4)
-            
+            #advice
+            string7 = self.advice_prefix[random.randint(0,len(self.advice_prefix)-1)] +" "+ action+" " + self.stock_prefix[random.randint(0,len(self.stock_prefix)-1)] +" "+self.stock_code[stock_code_index] + " không?"
+            s = random.randint(0,6)            
             
             strings.append(string1)
             strings.append(string2)
             strings.append(string3)
             strings.append(string4)
             strings.append(string5)
+            strings.append(string6)
+            strings.append(string7)
             string = strings[s]
             #print("string 1:",string)
-            raw = ViPosTagger.postagging(ViTokenizer.tokenize(string))
-            data = self.make_train_data(raw,raw_file)
+           # raw = ViPosTagger.postagging(ViTokenizer.tokenize(string))
+            tokens = self.check_stopword.remove_stopword_sent(string)
+            new_raw = tokenize_tunning(tokens)
+            data = self.make_train_data(new_raw,raw_file)
             raw_file.write("\n")
             train_data.append(data)
             
@@ -160,11 +186,26 @@ class VnGen:
        # print(train_data)
         raw_file.close()
         return train_data
+    def tokenize_tunning(self,tokens):
+        new_tokens = []
+        new_pos = []
+        for i in range(len(tokens[0])):
+            if re.search("_dư",tokens[0][i]):
+                sym,word = tokens[0][i].split("_") 
+                new_tokens.append(sym)
+                new_tokens.append(word)
+                new_pos.append("Np")
+                new_pos.append("V")
+            else:
+                new_tokens.append(tokens[0][i])
+                new_pos.append(tokens[1][i])
+        return (new_tokens,new_pos)
     
+
 # k 0= VnGen()
 # print(k.gen_data(5))u
 if __name__ == "__main__":
     gen = VnGen()
-    gen.gen_data(5000)
+    gen.gen_data(10000)
     
 
