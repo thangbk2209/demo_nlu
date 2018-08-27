@@ -107,7 +107,7 @@ def nlu():
     intent,all_words = text_classify(content)
     outputs = named_entity_reconignition(content,intent)
     # hehe = jsonify(outputs=outputs)
-    return render_template('home.html', content= content,intent = intent, outputs = outputs, all_words = all_words)
+    return render_template('home.html', content = content,intent = intent, outputs = outputs, all_words = all_words)
 def read_ner_model():
     ner = pk.load(open('./ner/crf_model.pkl','rb'))
     return ner
@@ -115,4 +115,4 @@ def read_ner_model():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host= '0.0.0.0',port=5000)
