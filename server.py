@@ -1,6 +1,7 @@
 from flask import Flask, abort, request, redirect, url_for
 from flask import render_template,jsonify
 from data_cleaner import DataCleaner
+from vn_gen import tokenize_tunning
 import tensorflow as tf
 import pickle as pk 
 import numpy as np 
@@ -56,29 +57,38 @@ def text_classify(content):
 
 def named_entity_reconignition(content,intent):
     content = content.lower()
+   # print("content = ",content)
+    check_sw = DataCleaner()
     ner = read_ner_model()
-    y_pred,y_test = ner.test(content)
-    s = ViPosTagger.postagging(ViTokenizer.tokenize(content))[0]
-    print (s)
+    raw = check_sw.remove_stopword_sent(content)
+    tokens = tokenize_tunning(raw)
+    y_pred,y_test = ner.test(tokens)
+    #print("content before",content)
+   # content = check_sw.remove_stopword_sent(content)
+    #print("after",content)
+    #s = ViPosTagger.postagging(ViTokenizer.tokenize(content))[0]
+  #  print ("tokens",tokens)
     data = []
     side = ""
     price = "" 
     quantity = ""
     symbol = ""
 
-    for i in range(len(s)):
+    for i in range(len(tokens[0])):
         if y_pred[0][i] == 'side-B':
             side = 'B'
         elif y_pred[0][i] == 'side-S':
             side = 'S'
         elif y_pred[0][i] == 'price':
-            price = s[i]
+            price = tokens[0][i]
         elif y_pred[0][i] == 'quantity':
-            quantity = s[i]
+            quantity = tokens[0][i]
             
         elif y_pred[0][i] == 'symbol':
-            symbol = s[i]
-        data.append([s[i],y_pred[0][i]])
+            symbol = tokens[0][i]
+       # print(1)
+        data.append([tokens[0][i],y_pred[0][i]])
+    #print("data",data)
     
     # json_data = {
         
