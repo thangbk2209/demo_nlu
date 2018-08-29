@@ -107,7 +107,7 @@ def named_entity_reconignition(content,intent):
         "intent": intent,
         "text" : content
     }  
-    return json_data
+    return json_data,data
     # return data
 @app.route('/')
 def index():
@@ -122,9 +122,9 @@ def nlu():
     content = content.lower()
     print (content)
     intent,all_words = text_classify(content)
-    outputs = named_entity_reconignition(content,intent)
+    outputs,data = named_entity_reconignition(content,intent)
     # return jsonify(outputs=outputs)
-    return render_template('home.html', content = content,intent = intent, outputs = outputs, all_words = all_words)
+    return render_template('home.html', content = content,intent = intent, outputs = data, all_words = all_words)
 @app.route('/nlu', methods=['POST'])
 def understand_language():    
     print ('call API OK')
@@ -139,7 +139,9 @@ def understand_language():
     content = content.lower()
     print (content)
     intent,all_words = text_classify(content)
-    outputs = named_entity_reconignition(content,intent)
+    outputs,data = named_entity_reconignition(content,intent)
+    print ('data')
+    print (data)
     return jsonify(outputs=outputs)
     # return render_template('home.html', content = content,intent = intent, outputs = outputs, all_words = all_words)
 
