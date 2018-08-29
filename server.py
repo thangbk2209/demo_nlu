@@ -43,8 +43,8 @@ def text_classify(content):
     int2intent = {0: 'end', 1: 'trade', 2: 'cash_balance', 3: 'advice', 4: 'order_status', 5: 'stock_balance', 6: 'market',7: 'cancel'}
     with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
         #First let's load meta graph and restore weights
-        saver = tf.train.import_meta_graph('ANN_ver5/ws-2-embed-32batch_size_w2c-8batch_size_cl16.meta')
-        saver.restore(sess,tf.train.latest_checkpoint('ANN_ver5/'))
+        saver = tf.train.import_meta_graph('ANN_ver6/ws-2-embed-32batch_size_w2c-8batch_size_cl16.meta')
+        saver.restore(sess,tf.train.latest_checkpoint('ANN_ver6/'))
         # Access and create placeholders variables and
         # print (sess.run ('x:0'))
         graph = tf.get_default_graph()
