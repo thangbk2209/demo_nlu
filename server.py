@@ -28,7 +28,7 @@ def text_classify(content):
     window_size = 2
     embedding_dim = 32
     batch_size_word2vec = 8
-    file_to_save_word2vec_data = 'word2vec_ver3/ws-' + str(window_size) + '-embed-' + str(embedding_dim) + 'batch_size-' + str(batch_size_word2vec) + '.pkl'
+    file_to_save_word2vec_data = 'word2vec_ver5/ws-' + str(window_size) + '-embed-' + str(embedding_dim) + 'batch_size-' + str(batch_size_word2vec) + '.pkl'
     data_cleaner = DataCleaner(content)
     all_words = data_cleaner.separate_sentence()     
     vectors, word2int, int2word = read_trained_data(file_to_save_word2vec_data)
@@ -41,10 +41,10 @@ def text_classify(content):
     data_x =[]
     data_x.append(data_x_raw)
     int2intent = {0: 'end', 1: 'trade', 2: 'cash_balance', 3: 'advice', 4: 'order_status', 5: 'stock_balance', 6: 'market',7: 'cancel'}
-    with tf.Session() as sess:
+    with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
         #First let's load meta graph and restore weights
-        saver = tf.train.import_meta_graph('ANN_ver3/ws-2-embed-32batch_size_w2c-8batch_size_cl4.meta')
-        saver.restore(sess,tf.train.latest_checkpoint('ANN_ver3/'))
+        saver = tf.train.import_meta_graph('ANN_ver5/ws-2-embed-32batch_size_w2c-8batch_size_cl16.meta')
+        saver.restore(sess,tf.train.latest_checkpoint('ANN_ver5/'))
         # Access and create placeholders variables and
         # print (sess.run ('x:0'))
         graph = tf.get_default_graph()
