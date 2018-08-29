@@ -8,21 +8,27 @@ import numpy as np
 from sklearn_crf import NerCrf
 from pyvi import ViPosTagger,ViTokenizer
 import json
+from flask_pymongo import PyMongo
+from pymongo import MongoClient
 def read_trained_data(file_trained_data):
     with open(file_trained_data,'rb') as input_file :
         vectors = pk.load(input_file)
         word2int = pk.load(input_file)
         int2word = pk.load(input_file)
     return vectors, word2int, int2word
-
+client = MongoClient('mongodb://localhost:27017/')
+mydb = client.test_database_1
 app = Flask(__name__)
+app.config['MONGO_DBNAME'] = 'FinancialBotDb'
+app.config["MONGO_URI"] = "mongodb://localhost:27017/FinancialBotDb"
+mongo = PyMongo(app)
 def text_classify(content):
     content = content.lower()
     input_size = 16
     window_size = 2
     embedding_dim = 32
     batch_size_word2vec = 8
-    file_to_save_word2vec_data = 'word2vec_ver3/ws-' + str(window_size) + '-embed-' + str(embedding_dim) + 'batch_size-' + str(batch_size_word2vec) + '.pkl'
+    file_to_save_word2vec_data = 'word2vec_ver5/ws-' + str(window_size) + '-embed-' + str(embedding_dim) + 'batch_size-' + str(batch_size_word2vec) + '.pkl'
     data_cleaner = DataCleaner(content)
     all_words = data_cleaner.separate_sentence()     
     vectors, word2int, int2word = read_trained_data(file_to_save_word2vec_data)
@@ -35,10 +41,10 @@ def text_classify(content):
     data_x =[]
     data_x.append(data_x_raw)
     int2intent = {0: 'end', 1: 'trade', 2: 'cash_balance', 3: 'advice', 4: 'order_status', 5: 'stock_balance', 6: 'market',7: 'cancel'}
-    with tf.Session() as sess:
+    with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
         #First let's load meta graph and restore weights
-        saver = tf.train.import_meta_graph('ANN_ver3/ws-2-embed-32batch_size_w2c-8batch_size_cl4.meta')
-        saver.restore(sess,tf.train.latest_checkpoint('ANN_ver3/'))
+        saver = tf.train.import_meta_graph('ANN_ver5/ws-2-embed-32batch_size_w2c-8batch_size_cl16.meta')
+        saver.restore(sess,tf.train.latest_checkpoint('ANN_ver5/'))
         # Access and create placeholders variables and
         # print (sess.run ('x:0'))
         graph = tf.get_default_graph()
@@ -88,21 +94,21 @@ def named_entity_reconignition(content,intent):
             symbol = tokens[0][i]
        # print(1)
         data.append([tokens[0][i],y_pred[0][i]])
-    #print("data",data)
+    print("data",data)
     
-    # json_data = {
+    json_data = {
         
-    #     "entities":{
-    #         "price":price,
-    #         "quantity":quantity,
-    #         "side":side,
-    #         "symbol":symbol,
-    #     },
-    #     "intent": intent,
-    #     "text" : content
-    # }  
-    # return json_data
-    return data
+        "entities":{
+            "price":price,
+            "quantity":quantity,
+            "side":side,
+            "symbol":symbol,
+        },
+        "intent": intent,
+        "text" : content
+    }  
+    return json_data
+    # return data
 @app.route('/')
 def index():
     # name = request.args.get('name')
@@ -110,14 +116,36 @@ def index():
 @app.route('/submit', methods=['POST'])
 def nlu():    
     print ('call API OK')
+    # print (request.json)
     content = request.form['content']
     print (content)
     content = content.lower()
     print (content)
     intent,all_words = text_classify(content)
     outputs = named_entity_reconignition(content,intent)
-    # hehe = jsonify(outputs=outputs)
+    # return jsonify(outputs=outputs)
     return render_template('home.html', content = content,intent = intent, outputs = outputs, all_words = all_words)
+@app.route('/nlu', methods=['POST'])
+def understand_language():    
+    print ('call API OK')
+    my_collection = mydb.test_col1
+    data = {'data':'content'}
+    my_collection.insert(data)
+    content = mongo.db.content
+    # name = request.json['name']
+    print (request.json)
+    content = request.json['content']
+    print (content)
+    content = content.lower()
+    print (content)
+    intent,all_words = text_classify(content)
+    outputs = named_entity_reconignition(content,intent)
+    return jsonify(outputs=outputs)
+    # return render_template('home.html', content = content,intent = intent, outputs = outputs, all_words = all_words)
+
+def save_to_database():
+    print ("start storing")
+    content = mongo.db.content
 def read_ner_model():
     ner = pk.load(open('./ner/crf_model.pkl','rb'))
     return ner
@@ -125,4 +153,5 @@ def read_ner_model():
 
 
 if __name__ == '__main__':
-    app.run(debug=True,host= '0.0.0.0',port=5000)
+    
+    app.run(host= '0.0.0.0',port=5000)
