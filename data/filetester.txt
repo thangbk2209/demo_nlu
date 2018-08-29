@@ -11,7 +11,7 @@ stock_balance,tổng số cổ phiếu SSI
 stock_balance,tổng số SSI tôi nắm giữ
 stock_balance,mã SSI có bao nhiêu cổ phiếu
 stock_balance,SSI có bao nhiêu cổ
-stock_balance,tình trạng cố phiếu SSI trong tài khoản
+stock_balance,tình trạng cổ phiếu SSI trong tài khoản
 stock_balance,số lượng cổ phiếu SSI trong tài khoản
 stock_balance,số lượng mã SSI trong tài khoản
 stock_balance,tôi muốn kiểm tra số cổ phiếu SSI

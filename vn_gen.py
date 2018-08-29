@@ -38,6 +38,8 @@ class VnGen:
     def __init__(self):
         self.stock_code = []
         self.stock_name = []
+        file_name = './data/stockslist.txt'
+        self.read_stock_data(file_name)
         self.help_subject = ["xem","xem cho tôi","cho tôi xem"]
         self.chu_ngu = ["tôi có nhu cầu ","tao muốn","","mình cần","tôi cần","mình muốn","đặt lênh"]
         self.actions = ["mua","bán","chuyển nhượng","sang tên","đầu tư thêm","gom","thêm","mua thêm"]
@@ -55,6 +57,8 @@ class VnGen:
         self.conjunction = ["","và"]
         self.advice_prefix = ["có","nên","có nên"]
 
+        self.cash_prefix = ["tài khoản"]
+        self.cash_infix = ["đuôi"]
     
         self.check_stopword = DataCleaner()
     def pos_tagging(self,string):
@@ -83,17 +87,19 @@ class VnGen:
                     
                     entity_name = 'symbol-prefix'
                 elif pos == 'M' and word[0].isdigit() :
-                    
-                    entity_name = 'quantity'
-                    for i in range(len(word)) :
-                        if word[i] == "." :
-                            entity_name = 'price'
-                            r = random.randint(0,1)
-                            if r :
-                                word = word[:i]
-                            
-                            # print("word",word)
-                            break                  
+                    if i > 0 and raw[0][i-1] == "đuôi":
+                        entity_name = "0"
+                    else:    
+                        entity_name = 'quantity'
+                        for i in range(len(word)) :
+                            if word[i] == "." :
+                                entity_name = 'price'
+                                r = random.randint(0,1)
+                                if r :
+                                    word = word[:i]
+                                
+                                # print("word",word)
+                                break                  
                 else :
                     entity_name = 'O'
                     
@@ -135,8 +141,8 @@ class VnGen:
 
     def gen_data(self,num_ex):
         raw_file = open("./data/ner_data.csv",'w')
-        file_name = './data/stockslist.txt'
-        self.read_stock_data(file_name)
+        
+        
         train_data = [] 
         for i in range(num_ex):
             subject = self.chu_ngu[random.randint(0,len(self.chu_ngu)-1)]
@@ -147,6 +153,7 @@ class VnGen:
             sub_amount = self.sub_amounts[random.randint(0,len(self.sub_amounts)-1)]
             help_subject = self.help_subject[random.randint(0,len(self.help_subject)-1)]
             stock_code_index = int(random.random()*len(self.stock_code))
+            account_id = str(random.randint(0,100))
             strings = []
             #trade 
             string1 = subject+" "+action+" "+self.stock_prefix[random.randint(0,len(self.stock_prefix)-1)]+" "+self.stock_code[stock_code_index]+" "+amount+" "+quantity+" "+sub_amount+" "+self.conjunction[random.randint(0,len(self.conjunction)-1)]+" "+self.price_prefix[random.randint(0,len(self.price_prefix)-1)]+" "+price+" "+self.currency_unit[int(random.random()*3)]  
@@ -163,7 +170,10 @@ class VnGen:
             #string6 = "môt con vịt"
             #advice
             string7 = self.advice_prefix[random.randint(0,len(self.advice_prefix)-1)] +" "+ action+" " + self.stock_prefix[random.randint(0,len(self.stock_prefix)-1)] +" "+self.stock_code[stock_code_index] + " không?"
-            s = random.randint(0,6)            
+            #cash_balance 
+            string8 = self.cash_prefix[random.randint(0,len(self.cash_prefix)-1)] + " " + self.cash_infix[random.randint(0,len(self.cash_infix)-1)] + " " + account_id + " còn bao tiền ?"
+
+                       
             
             strings.append(string1)
             strings.append(string2)
@@ -172,6 +182,9 @@ class VnGen:
             strings.append(string5)
             strings.append(string6)
             strings.append(string7)
+            strings.append(string8)
+            s = random.randint(0,len(strings)-1) 
+            
             string = strings[s]
             #print("string 1:",string)
            # raw = ViPosTagger.postagging(ViTokenizer.tokenize(string))
@@ -197,6 +210,18 @@ class VnGen:
                 new_tokens.append(word)
                 new_pos.append("Np")
                 new_pos.append("V")
+            elif re.search("mã_",token[0][i]):
+                word,sym = tokens[0][i].split("_",1)
+                if sym == "cổ_phiếu" or sym == "chứng_khoán":
+                    new_tokens.append(word) #them chu 'ma' vao 
+                    new_tokens.append(word) #them chu 'co_phieu' vao
+                    new_pos.append("N")
+                    new_pos.append("N")
+                else:#sau ma la ma co phieu : ma_ssi
+                    new_tokens.append(word) #them chu 'ma' vao 
+                    new_tokens.append(word) #them chu 'ssi' vao
+                    new_pos.append("N")
+                    new_pos.append("Np")
             else:
                 new_tokens.append(tokens[0][i])
                 new_pos.append(tokens[1][i])
@@ -207,7 +232,7 @@ class VnGen:
         with open(file_name) as input:
             for line in input:
                 if line != "\n":
-                    temp = line.split(",")[1]
+                    temp = line.split(",")[1].lower()
                     token  = self.check_stopword.remove_stopword_sent(temp)
                     new_raw = tokenize_tunning(token)
                     data = self.make_train_data(new_raw,raw_file)
@@ -217,6 +242,6 @@ class VnGen:
 # print(k.gen_data(5))u
 if __name__ == "__main__":
     gen = VnGen()
-    # gen.gen_data(10000)
+    gen.gen_data(10000)
     gen.make_train_data_from_file("./data/filetester.txt")
 

@@ -123,6 +123,7 @@ def nlu():
     print (content)
     intent,all_words = text_classify(content)
     outputs = named_entity_reconignition(content,intent)
+    print("outputs",outputs)
     # return jsonify(outputs=outputs)
     return render_template('home.html', content = content,intent = intent, outputs = outputs, all_words = all_words)
 @app.route('/nlu', methods=['POST'])
