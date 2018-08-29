@@ -1,0 +1,589 @@
+tài_khoản N O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+mã N symbol-prefix
+SSI Np O
+
+trong E O
+tài_khoản N O
+bao_nhiêu P O
+mã N symbol-prefix
+SSI Np O
+
+mã N symbol-prefix
+SSI Ny O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+trong E O
+tài_khoản N O
+
+cổ_phiếu N symbol-prefix
+SSI Ny O
+
+cổ_phiếu N symbol-prefix
+SSI Ny O
+trong E O
+tài_khoản N O
+
+tài_khoản V O
+đuôi N O
+1 M quantity
+có V O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+mã N symbol-prefix
+SSI Np O
+
+cổ_phiếu N symbol-prefix
+SSI Ny O
+trong E O
+tài_khoản N O
+
+mã N symbol-prefix
+SSI Ny O
+có V O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+
+tổng_số N O
+cổ_phiếu N symbol-prefix
+SSI Np O
+
+tổng_số N O
+SSI Ny O
+nắm V O
+
+mã N symbol-prefix
+SSI Ny O
+có V O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+
+SSI Ny O
+có V O
+bao_nhiêu P O
+cổ A symbol-prefix
+
+tình_trạng N O
+cố V O
+phiếu V O
+SSI Ny O
+trong E O
+tài_khoản N O
+
+số_lượng N O
+cổ_phiếu N symbol-prefix
+SSI Ny O
+trong E O
+tài_khoản N O
+
+số_lượng N O
+mã N symbol-prefix
+SSI Ny O
+trong E O
+tài_khoản N O
+
+muốn V O
+kiểm_tra V O
+cổ_phiếu N symbol-prefix
+SSI Np O
+
+kiểm_tra V O
+cổ_phiếu N symbol-prefix
+SSI Ny O
+trong E O
+tài_khoản N O
+
+danh_mục N O
+có V O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+SSI Np O
+
+kiểm_tra V O
+cổ_phiếu N symbol-prefix
+SSI Ny O
+trong E O
+danh_mục N O
+
+nắm V O
+bao_nhiêu P O
+cp N O
+SSI Np O
+
+tổng_mã N O
+SSI Ny O
+có V O
+
+tổng_cp N O
+SSI Ny O
+sở_hữu V O
+
+sở_hữu V O
+bn_cp N O
+SSI Np O
+
+kiểm_tra V O
+số_lượng N O
+mã N symbol-prefix
+SSI Np O
+
+kiểm_tra V O
+số_lượng_cp N O
+SSI Np O
+
+kiểm_tra V O
+mã N symbol-prefix
+SSI Np O
+
+danh_mục N O
+
+mua V side-B
+SSI Ny O
+giá N O
+10 M price
+không R O
+
+mua V side-B
+SSI Ny O
+giá N O
+
+bán V side-S
+SSI Ny O
+không R O
+
+bán V side-S
+SSI Ny O
+không R O
+
+có V O
+bán V side-S
+SSI Ny O
+
+mua V side-B
+SSI Ny O
+không R O
+
+mua V side-B
+SSI Ny O
+giá N O
+
+mua V side-B
+SSI Ny O
+giá N O
+
+đầu_tư V side-B
+SSI Ny O
+ổn A O
+không R O
+
+đầu_tư V side-B
+mã N symbol-prefix
+SSI Ny O
+giá N O
+bao_nhiêu N O
+
+đầu_tư V side-B
+bn V O
+SSI Np O
+
+nắm V O
+hay C O
+bán V side-S
+mã N symbol-prefix
+SSI Np O
+
+nắm V O
+hay C O
+bán V side-S
+SSI Ny O
+
+bán V side-S
+toàn_bộ N O
+SSI Ny O
+không R O
+
+mua V side-B
+SSI Ny O
+giá N O
+10.5 M price
+ổn N O
+không R O
+
+bán V side-S
+SSI Ny O
+giá N O
+12 M quantity
+không R O
+
+giao_dịch V O
+SSI Ny O
+
+giá N O
+mua V side-B
+SSI Np O
+
+giá N O
+bán V side-S
+SSI Np O
+
+đầu_tư V side-B
+SSI Ny O
+không R O
+
+bán V side-S
+tất_cả P O
+co V O
+SSI Ny O
+
+có V O
+nắm V O
+SSI Ny O
+giai_đoạn N O
+
+có V O
+ổn A O
+nắm V O
+SSI Ny O
+
+có V O
+mua V side-B
+SSI Ny O
+không R O
+
+mua V side-B
+mã N symbol-prefix
+SSI Np O
+
+bán V side-S
+SSI Np O
+
+mã N symbol-prefix
+SSI Ny O
+mua V side-B
+hay C O
+bán V side-S
+
+kiểm_tra V O
+tiền N O
+dư A O
+
+kiểm_tra V O
+tiền N O
+dư A O
+trong E O
+tài_khoản N O
+
+kiểm_tra V O
+tiền N O
+
+bao_nhiêu P O
+tiền N O
+trong E O
+tài_khoản N O
+
+tài_khoản N O
+bao_nhiêu P O
+tiền N O
+
+muốn V O
+tiền N O
+trong E O
+tài_khoản N O
+
+số Np O
+dư V O
+tiền N O
+tìa N O
+khoản N O
+đuôi N O
+1 M quantity
+
+tài_khoản N O
+bao_nhiêu P O
+tiền N O
+
+số Np O
+dư V O
+tài_khoản V O
+
+dư A O
+tiền N O
+trong E O
+tài_khoản N O
+
+cho E O
+tiền N O
+trong E O
+tài_khoản N O
+
+tiền N O
+dư A O
+trong E O
+tài_khoản N O
+
+số Np O
+dư V O
+tiền N O
+trong E O
+tài_khoản N O
+
+số Np O
+dư V O
+tiền N O
+
+dư A O
+bao_nhiêu P O
+tiền N O
+
+dư A O
+tiền N O
+
+tiền N O
+không R O
+
+dư A O
+bao_nhiêu P O
+tiền N O
+
+số Np O
+dư V O
+tiền_tài_khoản V O
+bao_nhiêu N O
+
+tiền N O
+dư A O
+trong E O
+tài_khoản N O
+
+tổng_số N O
+tiền N O
+có V O
+
+tổng_số N O
+tiền N O
+
+tổng_số N O
+tiền N O
+dư A O
+
+khoảng A O
+bao_nhiêu P O
+tiền N O
+trong E O
+tài_khoản N O
+
+dư A O
+tiền_tài_khoản V O
+
+tiền N O
+dư A O
+tài_khoản V O
+
+mua V side-B
+SSI Ny O
+100 M quantity
+cổ_phiếu N symbol-prefix
+giá N O
+9 M price
+
+mua V side-B
+SSI Ny O
+giá N O
+21.5 M price
+100 M quantity
+cổ_phiếu N symbol-prefix
+
+muốn V O
+bán V side-S
+100 M quantity
+SSI Nu O
+giá N O
+25 M quantity
+
+muốn V O
+mua V side-B
+SSI Ny O
+khối_lượng N O
+1000 M quantity
+giá N O
+21 M quantity
+
+bán V side-S
+100 M quantity
+cổ N symbol-prefix
+giá N O
+21 M quantity
+mã N symbol-prefix
+SSI Np O
+
+mua V side-B
+100 M quantity
+cổ N symbol-prefix
+SSI Ny O
+giá N O
+21 M price
+
+bán V side-S
+100 M quantity
+cp N O
+SSI Ny O
+giá N O
+20.1 M price
+
+bán V side-S
+100 M quantity
+SSI Nu O
+giá N O
+19 M price
+
+mua V side-B
+50 M quantity
+cổ N symbol-prefix
+SSI Ny O
+giá N O
+20 M quantity
+
+mua V side-B
+cổ N symbol-prefix
+SSI Ny O
+số_lượng N O
+50 M quantity
+giá N O
+21 M quantity
+
+bán V side-S
+giá N O
+21 M quantity
+mã N symbol-prefix
+SSI Ny O
+100 M quantity
+cổ_phiếu N symbol-prefix
+
+bán V side-S
+toàn_bộ N O
+mã N symbol-prefix
+SSI Ny O
+giá N O
+19 M price
+
+mua V side-B
+giá N O
+21 M quantity
+khối_lượng N O
+100 M quantity
+mã N symbol-prefix
+SSI Np O
+
+bán V side-S
+toàn_bộ N O
+giá N O
+10 M price
+mã N symbol-prefix
+SSI Np O
+
+đầu_tư V side-B
+SSI Ny O
+giá N O
+10 M quantity
+1000 M quantity
+cổ_phiếu N symbol-prefix
+
+đầu_tư V side-B
+1000 M quantity
+cp N O
+SSI Ny O
+giá N O
+12 M quantity
+
+muốn V O
+đầu_tư V side-B
+120 M quantity
+mã_cp N O
+SSI Ny O
+giá N O
+21 M quantity
+
+lệnh N O
+bán V side-S
+SSI Ny O
+100 M quantity
+cổ_phiếu N symbol-prefix
+giá N O
+12 M quantity
+
+lệnh N O
+mua V side-B
+1000 M quantity
+cp N O
+SSI Ny O
+giá N O
+25 M quantity
+
+lệnh N O
+mua V side-B
+1000 M quantity
+co V O
+gái N O
+21 M quantity
+mã N symbol-prefix
+SSI Np O
+
+tình_hình N O
+lên V O
+xuống V O
+mã N symbol-prefix
+SSI Np O
+
+thông_tin N O
+SSI Ny O
+hôm_nay N O
+
+hôm_nay N O
+SSI Ny O
+
+giá N O
+mở_cửa V O
+SSI Np O
+
+SSI N O
+hôm_qua N O
+đóng_cửa V O
+giá N O
+bao_nhiêu N O
+
+giá N O
+mở_cửa V O
+SSI Ny O
+bao_nhiêu P O
+
+cho E O
+thông_tin N O
+SSI Np O
+
+hiển_thị V O
+thông_tin N O
+mã N symbol-prefix
+SSI Np O
+
+SSI V O
+lên V O
+xuống V O
+
+mã N symbol-prefix
+SSI Ny O
+hôm_nay N O
+
+thông_tin N O
+SSI Np O
+
+hôm_nay N O
+SSI Ny O
+hoạt_động V O
+
+mã N symbol-prefix
+SSI Ny O
+
