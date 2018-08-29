@@ -125,7 +125,6 @@ bệt
 bị
 bị_chú
 bị_vì
-bỏ
 bỏ_bà
 bỏ_cha
 bỏ_cuộc
@@ -306,7 +305,6 @@ cái_ấy
 câu_hỏi
 cây
 cây_nước
-còn
 còn_như
 còn_nữa
 còn_thời_gian
@@ -461,7 +459,6 @@ giờ_lâu
 giờ_đi
 giờ_đây
 giờ_đến
-giữ
 giữ_lấy
 giữ_ý
 giữa_lúc
@@ -632,7 +629,6 @@ lại_quả
 lại_thôi
 lại_ăn
 lại_đây
-lấy
 lấy_có
 lấy_cả
 lấy_giống
@@ -664,6 +660,7 @@ mang_mang
 mang_nặng
 mang_về
 mà
+mày
 mà_cả
 mà_không
 mà_lại
@@ -790,6 +787,7 @@ nhanh_lên
 nhanh_tay
 nhau
 nhiên_hậu
+nhiều
 nhiều_ít
 nhiệt_liệt
 nhung_nhăng
@@ -807,7 +805,6 @@ nhé
 nhìn
 nhìn_chung
 nhìn_lại
-nhìn_nhận
 nhìn_theo
 nhìn_thấy
 nhìn_xuống
@@ -888,7 +885,6 @@ nào_đâu
 nào_đó
 này
 này_nọ
-nên
 nên_chi
 nên_chăng
 nên_làm
@@ -923,7 +919,6 @@ năm
 năm_tháng
 nơi
 nơi_nơi
-nước
 nước_bài
 nước_cùng
 nước_lên
@@ -1043,7 +1038,6 @@ ra_lại
 ra_lời
 ra_ngôi
 ra_người
-ra_sao
 ra_tay
 ra_vào
 ra_ý
@@ -1140,13 +1134,13 @@ sự
 sự_thế
 tanh
 tanh_tanh
+tao
 tay
 tay_quay
 tha_hồ
 tha_hồ_chơi
 tha_hồ_ăn
 than_ôi
-thanh
 thanh_ba
 thanh_chuyển
 thanh_không
@@ -1154,7 +1148,6 @@ thanh_thanh
 thanh_tính
 thanh_điều_kiện
 thanh_điểm
-thay_đổi
 thay_đổi_tình_trạng
 theo
 theo_bước
@@ -1242,13 +1235,10 @@ thật_thà
 thật_tốt
 thật_vậy
 thế
-thêm
-bớt
 thế_chuẩn_bị
 thế_là
 thế_lại
 thế_mà
-thế_nào
 thế_nên
 thế_ra
 thế_sự
@@ -1277,7 +1267,6 @@ thứ
 thứ_bản
 thứ_đến
 thửa
-thực_hiện
 thực_hiện_đúng
 thực_ra
 thực_sự
@@ -1412,7 +1401,6 @@ tỏ_ra
 tỏ_vẻ
 tốc_tả
 tối_ư
-tốt
 tốt_bạn
 tốt_bộ
 tốt_hơn
@@ -1545,7 +1533,6 @@ xa_tanh
 xa_tắp
 xa_xa
 xa_xả
-xem
 xem_lại
 xem_ra
 xem_số
@@ -1645,7 +1632,6 @@ xệp
 đáng_lý
 đáng_lẽ
 đáng_số
-đánh_giá
 đánh_đùng
 đáo_để
 đâu
@@ -1703,7 +1689,6 @@ xệp
 đầy_phè
 đầy_tuổi
 đặc_biệt
-đặt
 đặt_làm
 đặt_mình
 đặt_mức
