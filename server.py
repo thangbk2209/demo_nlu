@@ -148,7 +148,7 @@ def understand_language():
 def save_to_database():
     print ("start storing")
     content = mongo.db.content
-def pretrain():
+# def pretrain():
     
 def read_ner_model():
     ner = pk.load(open('./ner/crf_model.pkl','rb'))
