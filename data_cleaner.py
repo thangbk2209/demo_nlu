@@ -1884,7 +1884,7 @@ xệp
         all_words = set(all_words)
         return all_words, all_sentences_split
     def read_stock_data(self,file_name):
-        stock_file = open(file_name,"r")
+        stock_file = open(file_name,"r",encoding = 'utf-8')
         for line in stock_file:
             temp = line.split(",")
             self.stock_code.append(temp[0].lower())
