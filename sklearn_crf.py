@@ -16,6 +16,7 @@ from vn_gen import VnGen
 from collections import Counter
 from pyvi import ViPosTagger,ViTokenizer
 import pickle as pk
+from data_cleaner import DataCleaner
 # nltk.corpus.conll2002.fileids()
 #%%time
 #train_sents = list(nltk.corpus.conll2002.iob_sents('esp.train'))
@@ -29,6 +30,7 @@ class NerCrf:
     def __init__(self,num_train,num_test):
         self.file_read = "./data/ner_data.csv"
         self.train_sents = vn_gen.read_raw_data(self.file_read)#vn_gen.gen_data(num_train)
+        print("len train",len(self.train_sents))
         self.test_sents  = vn_gen.read_raw_data(self.file_read)#n_gen.gen_data(num_test)
        # vn_gen.close_file()
         print("train",self.train_sents[:3])
@@ -112,26 +114,30 @@ class NerCrf:
         self.crf.fit(self.X_train, self.y_train)
         self.labels = list(self.crf.classes_)
       #  self.labels.remove('O')
+        print("label:",self.labels)
         self.save_model('./ner/crf_model.pkl')
         self.trans = Counter(self.crf.transition_features_).most_common()
-    def test(self,string):
+    def test(self,tokens):
        # y_pred = crf.predict(X_test)
         test_s = []
-        test_s.append(vn_gen.make_train_data(vn_gen.pos_tagging(string)))
-        #  print("test_s",test_s)
+        test_sent,sent = vn_gen.make_train_data(tokens)
+        
+        test_s.append(test_sent)
+
+        print("test_s",test_s)
         self.X_test = [self.sent2features(s) for s in test_s]
         self.y_test = [self.sent2labels(s) for s in test_s]
         y_pred = self.crf.predict(self.X_test)
-        print("string:",string)
+        print("string:",tokens)
         print("y pred:", y_pred)
         print("y test:",self.y_test)
-        s = ViPosTagger.postagging(ViTokenizer.tokenize(string))[0]
-        print(s)
+       # s = ViPosTagger.postagging(ViTokenizer.tokenize(string))[0]
+        print(sent)
         
        # sorted_labels = sorted(self.labels, key=lambda name: (name[1:], name[0]))
        # print(metrics.flat_classification_report( self.y_test, y_pred, labels=sorted_labels, digits=3))
         print("before double check:",y_pred)
-        y_pred = self.double_check(y_pred[0],s)
+        y_pred = self.double_check(y_pred[0],sent)
         print("after double check:",y_pred)
         return y_pred,self.y_test
     def double_check(self,y_pred,tokens):
@@ -196,12 +202,11 @@ if __name__ == '__main__':
     except FileNotFoundError:
         print("File not found, retrain")
         k = NerCrf(5000,20)
-        
-    k.train()
-    string = 'nên hay không khi mua mã chứng khoáng ssi giá 34 30 cổ phiếu'
-    string = string.lower()
-    print(string)
-    y_p,y_t = k.test(string)
+        k.train()
+    #string = 'nên hay không khi mua mã chứng khoáng ssi giá 34 30 cổ phiếu'
+ #  string = string.lower()
+   # print(string)
+   # y_p,y_t = k.test(string)
     #k.print_f1_score(y_p)
    # k.print_tran()g
     #k.print_all_trans()
