@@ -12,6 +12,18 @@ def tokenize_tunning(tokens):
                 new_tokens.append(word)
                 new_pos.append("Np")
                 new_pos.append("V")
+            elif re.search("mã_",tokens[0][i]):
+                word,sym = tokens[0][i].split("_",1)
+                if sym == "cổ_phiếu" or sym == "chứng_khoán":
+                    new_tokens.append(word) #them chu 'ma' vao 
+                    new_tokens.append(sym) #them chu 'co_phieu' vao
+                    new_pos.append("N")
+                    new_pos.append("N")
+                else:#sau ma la ma co phieu : ma_ssi
+                    new_tokens.append(word) #them chu 'ma' vao 
+                    new_tokens.append(sym) #them chu 'ssi' vao
+                    new_pos.append("N")
+                    new_pos.append("Np")
             else:
                 new_tokens.append(tokens[0][i])
                 new_pos.append(tokens[1][i])

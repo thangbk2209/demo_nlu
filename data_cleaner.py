@@ -1884,7 +1884,7 @@ xệp
         all_words = set(all_words)
         return all_words, all_sentences_split
     def read_stock_data(self,file_name):
-        stock_file = open(file_name,"r")
+        stock_file = open(file_name,"r",encoding = 'utf-8')
         for line in stock_file:
             temp = line.split(",")
             self.stock_code.append(temp[0].lower())
@@ -1898,6 +1898,7 @@ xệp
                 symboli = line.rstrip().split(',')
                 symbol_arr.append(symboli[0].lower())
         self.data = self.execute_special_character(self.data)
+        print("")
         sentences = self.data.split('\n')
         new_sentences = []
         for sentence in sentences:
@@ -1908,7 +1909,8 @@ xệp
                 new_sentences.append(part)
         all_words = []
         for sentence in new_sentences:
-            words = ViPosTagger.postagging(ViTokenizer.tokenize(sentence))[0]
+            words = ViPosTagger.postagging(ViTokenizer.tokenize(sentence))
+            words = self.tokenizer_tunning(words)
             for i , word in enumerate(words):
                 if(self.is_stop_word(word) == False):
                     if word not in symbol_arr:
@@ -1931,3 +1933,25 @@ xệp
                 new_pos.append(s[1][i])
         
         return (new_tokens,new_pos)
+    def tokenizer_tunning(self,tokens):
+        new_tokens = []
+        for i in range(len(tokens[0])):
+            if re.search("_dư",tokens[0][i]):
+                sym,word = tokens[0][i].split("_") 
+                new_tokens.append(sym)
+                new_tokens.append(word)
+                
+            elif re.search("mã_",tokens[0][i]):
+                word,sym = tokens[0][i].split("_",1)
+                if sym == "cổ_phiếu" or sym == "chứng_khoán":
+                    new_tokens.append(word) #them chu 'ma' vao 
+                    new_tokens.append(sym) #them chu 'co_phieu' vao
+                    
+                else:#sau ma la ma co phieu : ma_ssi
+                    new_tokens.append(word) #them chu 'ma' vao 
+                    new_tokens.append(sym) #them chu 'ssi' vao
+                    
+            else:
+                new_tokens.append(tokens[0][i])
+               
+        return new_tokens

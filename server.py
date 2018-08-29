@@ -30,7 +30,9 @@ def text_classify(content):
     batch_size_word2vec = 8
     file_to_save_word2vec_data = 'word2vec_ver5/ws-' + str(window_size) + '-embed-' + str(embedding_dim) + 'batch_size-' + str(batch_size_word2vec) + '.pkl'
     data_cleaner = DataCleaner(content)
+    print("data_cleaner",data_cleaner)
     all_words = data_cleaner.separate_sentence()     
+    print("all_words",all_words)
     vectors, word2int, int2word = read_trained_data(file_to_save_word2vec_data)
     data_x_raw = []
     for word in all_words:
@@ -43,8 +45,8 @@ def text_classify(content):
     int2intent = {0: 'end', 1: 'trade', 2: 'cash_balance', 3: 'advice', 4: 'order_status', 5: 'stock_balance', 6: 'market',7: 'cancel'}
     with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
         #First let's load meta graph and restore weights
-        saver = tf.train.import_meta_graph('ANN_ver5/ws-2-embed-32batch_size_w2c-8batch_size_cl16.meta')
-        saver.restore(sess,tf.train.latest_checkpoint('ANN_ver5/'))
+        saver = tf.train.import_meta_graph('ANN_ver6/ws-2-embed-32batch_size_w2c-8batch_size_cl16.meta')
+        saver.restore(sess,tf.train.latest_checkpoint('ANN_ver6/'))
         # Access and create placeholders variables and
         # print (sess.run ('x:0'))
         graph = tf.get_default_graph()
@@ -107,7 +109,7 @@ def named_entity_reconignition(content,intent):
         "intent": intent,
         "text" : content
     }  
-    return json_data
+    return json_data,data
     # return data
 @app.route('/')
 def index():
@@ -122,10 +124,9 @@ def nlu():
     content = content.lower()
     print (content)
     intent,all_words = text_classify(content)
-    outputs = named_entity_reconignition(content,intent)
-    print("outputs",outputs)
+    outputs,data = named_entity_reconignition(content,intent)
     # return jsonify(outputs=outputs)
-    return render_template('home.html', content = content,intent = intent, outputs = outputs, all_words = all_words)
+    return render_template('home.html', content = content,intent = intent, outputs = data, all_words = all_words)
 @app.route('/nlu', methods=['POST'])
 def understand_language():    
     print ('call API OK')
@@ -140,7 +141,9 @@ def understand_language():
     content = content.lower()
     print (content)
     intent,all_words = text_classify(content)
-    outputs = named_entity_reconignition(content,intent)
+    outputs,data = named_entity_reconignition(content,intent)
+    print ('data')
+    print (data)
     return jsonify(outputs=outputs)
     # return render_template('home.html', content = content,intent = intent, outputs = outputs, all_words = all_words)
 
@@ -155,4 +158,4 @@ def read_ner_model():
 
 if __name__ == '__main__':
     
-    app.run(host= '0.0.0.0',port=5000)
+    app.run(debug=True, host= '0.0.0.0',port=5000)
