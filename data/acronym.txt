@@ -1,4 +1,5 @@
 ttck, thị trường chứng khoán 
+bn, bao nhiêu
 ubcknn, ủy ban chứng khoán nhà nước 
 tbtcvn, thời báo tài chính việt nam 
  pv , phóng viên 
@@ -47,6 +48,7 @@ bctc, ngân hàng thương mại
 cmcn, cách mạng công nghiệp 
 cntt, công nghệ thông tin 
  tp , thành phố 
+ntn, như thế nào
 nhtmcp, ngân hàng thương mại cổ phần 
 cstt, chính sách tiền tệ 
 đttc, đầu tư tài chính 

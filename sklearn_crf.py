@@ -39,7 +39,7 @@ class NerCrf:
         self.stock_code = []
         self.read_stock_data("./data/stockslist.txt")
     def read_stock_data(self,file_name):
-        stock_file = open(file_name,"r")
+        stock_file = open(file_name,"r",encoding='utf8')
         for line in stock_file:
             temp = line.split(",")
             self.stock_code.append(temp[0].lower())

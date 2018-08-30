@@ -126,7 +126,7 @@ class VnGen:
 
         return data,sent
     def read_stock_data(self,file_name):
-        stock_file = open(file_name,"r")
+        stock_file = open(file_name,"r",encoding='utf8')
         for line in stock_file:
             temp = line.split(",")
             self.stock_code.append(temp[0].lower())
@@ -135,7 +135,7 @@ class VnGen:
         for line in raw[0]:
             a= 0
     def read_raw_data(self,file_name):
-        f = open(file_name)
+        f = open(file_name,encoding='utf8')
         data  = []
         sent = []
         for line in f :
@@ -152,7 +152,7 @@ class VnGen:
         return data
 
     def gen_data(self,num_ex):
-        raw_file = open("./data/ner_data.csv",'w')
+        raw_file = open("./data/ner_data.csv",'w',encoding='utf8')
         
         
         train_data = [] 
@@ -185,6 +185,7 @@ class VnGen:
             #cash_balance 
             string8 = self.cash_prefix[random.randint(0,len(self.cash_prefix)-1)] + " " + self.cash_infix[random.randint(0,len(self.cash_infix)-1)] + " " + account_id + " còn bao tiền ?"
 
+            string9 = "còn bao nhiêu tiền trong " + self.cash_prefix[random.randint(0,len(self.cash_prefix)-1)] + " " + self.cash_infix[random.randint(0,len(self.cash_infix)-1)] + " " + account_id 
                        
             
             strings.append(string1)
@@ -195,8 +196,9 @@ class VnGen:
             strings.append(string6)
             strings.append(string7)
             strings.append(string8)
+            strings.append(string9)
             s = random.randint(0,len(strings)-1) 
-            np.random.randint()
+            
             
             string = strings[s]
             #print("string 1:",string)
@@ -241,8 +243,8 @@ class VnGen:
         return (new_tokens,new_pos)
     def make_train_data_from_file(self,file_name):
         text = []
-        raw_file = open("./data/ner_test_data.txt","w")
-        with open(file_name) as input:
+        raw_file = open("./data/ner_test_data.txt","w",encoding='utf8')
+        with open(file_name,encoding='utf8') as input:  
             for line in input:
                 if line != "\n":
                     temp = line.split(",")[1].lower()

@@ -150,7 +150,7 @@ nên C O
 mua V side-B
 ssi Np symbol
 giá N O
-10 M price
+10.5 M price
 không R O
 
 nên C O
@@ -226,7 +226,7 @@ không R O
 mua V side-B
 ssi Np symbol
 giá N O
-10.5 M price
+10 M price
 ổn N O
 không R O
 
@@ -432,7 +432,7 @@ ssi Np symbol
 100 M quantity
 cổ_phiếu N symbol-prefix
 giá N O
-9 M price
+9.5 M price
 
 mua V side-B
 ssi Np symbol
@@ -469,7 +469,7 @@ mua V side-B
 cổ N symbol-prefix
 ssi Np symbol
 giá N O
-21.5 M price
+21 M price
 
 đặt V O
 bán V side-S
@@ -477,7 +477,7 @@ bán V side-S
 cp N O
 ssi Np symbol
 giá N O
-20 M price
+20.1 M price
 
 đặt V O
 bán V side-S
@@ -518,7 +518,7 @@ toàn_bộ N O
 mã N symbol-prefix
 ssi Np symbol
 giá N O
-19 M price
+19.5 M price
 
 đặt V O
 mua V side-B

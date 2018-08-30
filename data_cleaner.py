@@ -1897,7 +1897,9 @@ xệp
             for line in lines:
                 symboli = line.rstrip().split(',')
                 symbol_arr.append(symboli[0].lower())
+     #   print("------before ex--------:",self.data)
         self.data = self.execute_special_character(self.data)
+      #  print("-------after ex--------:",self.data)
         print("")
         sentences = self.data.split('\n')
         new_sentences = []
@@ -1919,6 +1921,9 @@ xệp
     def remove_stopword_sent(self,sent):
         new_tokens = []
         new_pos = []
+        print("before res:",sent)
+        sent = self.restore_acronym(sent)
+        print("after res:",sent)
         s = ViPosTagger.postagging(ViTokenizer.tokenize(sent))
         for i in range(len(s[0])):
             if s[0][i] in self.stock_code:
@@ -1955,3 +1960,20 @@ xệp
                 new_tokens.append(tokens[0][i])
                
         return new_tokens
+    def restore_acronym(self,text):
+        text = regex.sub(' vn-index ', ' vnindex ', text)
+        text = regex.sub('vn-index ', 'vnindex ', text)
+        text = regex.sub(' vn-index', ' vnindex', text)
+        text = regex.sub(' cp ', ' cổ phiếu ', text)
+        text = regex.sub('cp ', 'cổ phiếu ', text)
+        text = regex.sub(' cp', ' cổ phiếu', text)
+        acronym_arr = []
+        with open ('data/acronym.txt',encoding = 'utf-8') as acro_file:
+            lines = acro_file.readlines()
+            for line in lines:
+                acroi = line.rstrip().split(',')
+                acronym_arr.append(acroi)
+        # print (acronym_arr)
+        for i in range(len(acronym_arr)):
+            text = regex.sub(r'%s' % acronym_arr[i][0], r'%s' % acronym_arr[i][1], text)
+        return text 
