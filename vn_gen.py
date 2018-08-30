@@ -196,6 +196,7 @@ class VnGen:
             strings.append(string7)
             strings.append(string8)
             s = random.randint(0,len(strings)-1) 
+            np.random.randint()
             
             string = strings[s]
             #print("string 1:",string)
