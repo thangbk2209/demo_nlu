@@ -122,6 +122,7 @@ def nlu():
     content = content.lower()
     print (content)
     intent,all_words = text_classify(content)
+    print ('all_words: ',all_words)
     outputs,data = named_entity_reconignition(content,intent)
     # return jsonify(outputs=outputs)
     return render_template('home.html', content = content,intent = intent, outputs = data, all_words = all_words)
