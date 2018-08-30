@@ -6,13 +6,15 @@ cổ_phiếu N symbol-prefix
 còn R O
 bao_nhiêu P O
 cổ_phiếu N symbol-prefix
-mã_ssi V O
+mã N symbol-prefix
+ssi Np symbol
 
 trong E O
 tài_khoản N O
 còn C O
 bao_nhiêu P O
-mã_ssi N O
+mã N symbol-prefix
+ssi Np symbol
 
 mã N symbol-prefix
 ssi Np symbol
@@ -36,7 +38,8 @@ tài_khoản V O
 có V O
 bao_nhiêu P O
 cổ_phiếu N symbol-prefix
-mã_ssi V O
+mã N symbol-prefix
+ssi Np symbol
 
 cổ_phiếu N symbol-prefix
 ssi Np symbol
@@ -130,14 +133,16 @@ ssi Np symbol
 
 kiểm_tra V O
 số_lượng N O
-mã_ssi N O
+mã N symbol-prefix
+ssi Np symbol
 
 kiểm_tra V O
 số_lượng_cp N O
 ssi Np symbol
 
 kiểm_tra V O
-mã_ssi N O
+mã N symbol-prefix
+ssi Np symbol
 
 danh_mục N O
 
@@ -145,7 +150,7 @@ nên C O
 mua V side-B
 ssi Np symbol
 giá N O
-10.5 M price
+10 M price
 không R O
 
 nên C O
@@ -202,7 +207,8 @@ nắm V O
 giữ V O
 hay C O
 bán V side-S
-mã_ssi V O
+mã N symbol-prefix
+ssi Np symbol
 
 nên C O
 nắm V O
@@ -275,7 +281,8 @@ không R O
 
 mua V side-B
 thế_nào X O
-mã_ssi N O
+mã N symbol-prefix
+ssi Np symbol
 
 bán V side-S
 thế_nào X O
@@ -425,12 +432,12 @@ ssi Np symbol
 100 M quantity
 cổ_phiếu N symbol-prefix
 giá N O
-9.5 M price
+9 M price
 
 mua V side-B
 ssi Np symbol
 giá N O
-21 M price
+21.5 M price
 100 M quantity
 cổ_phiếu N symbol-prefix
 
@@ -454,14 +461,15 @@ bán V side-S
 cổ N symbol-prefix
 giá N O
 21 M quantity
-mã_ssi N O
+mã N symbol-prefix
+ssi Np symbol
 
 mua V side-B
 100 M quantity
 cổ N symbol-prefix
 ssi Np symbol
 giá N O
-21 M price
+21.5 M price
 
 đặt V O
 bán V side-S
@@ -469,7 +477,7 @@ bán V side-S
 cp N O
 ssi Np symbol
 giá N O
-20 M price
+20.1 M price
 
 đặt V O
 bán V side-S
@@ -510,7 +518,7 @@ toàn_bộ N O
 mã N symbol-prefix
 ssi Np symbol
 giá N O
-19 M price
+19.5 M price
 
 đặt V O
 mua V side-B
@@ -518,14 +526,16 @@ giá N O
 21 M quantity
 khối_lượng N O
 100 M quantity
-mã_ssi N O
+mã N symbol-prefix
+ssi Np symbol
 
 đặt V O
 bán V side-S
 toàn_bộ N O
 giá N O
-10 M price
-mã_ssi N O
+10.5 M price
+mã N symbol-prefix
+ssi Np symbol
 
 đầu_tư V side-B
 ssi Np symbol
@@ -544,7 +554,8 @@ giá N O
 muốn V O
 đầu_tư V side-B
 120 M quantity
-mã_cp N O
+mã N symbol-prefix
+cp Np O
 ssi Np symbol
 giá N O
 21 M quantity
@@ -574,12 +585,14 @@ mua V side-B
 co V O
 gái N O
 21 M quantity
-mã_ssi N O
+mã N symbol-prefix
+ssi Np symbol
 
 tình_hình N O
 lên V O
 xuống V O
-mã_ssi N O
+mã N symbol-prefix
+ssi Np symbol
 
 thông_tin N O
 ssi Np symbol
@@ -611,7 +624,8 @@ ssi Np symbol
 
 hiển_thị V O
 thông_tin N O
-mã_ssi V O
+mã N symbol-prefix
+ssi Np symbol
 
 ssi Np symbol
 lên V O
