@@ -1,5 +1,5 @@
 ttck, thị trường chứng khoán 
-bn, bao nhiêu
+bn,bao nhiêu
 ubcknn, ủy ban chứng khoán nhà nước 
 tbtcvn, thời báo tài chính việt nam 
  pv , phóng viên 
