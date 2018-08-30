@@ -30,7 +30,9 @@ def text_classify(content):
     batch_size_word2vec = 8
     file_to_save_word2vec_data = 'word2vec_ver5/ws-' + str(window_size) + '-embed-' + str(embedding_dim) + 'batch_size-' + str(batch_size_word2vec) + '.pkl'
     data_cleaner = DataCleaner(content)
+    print("data_cleaner",data_cleaner)
     all_words = data_cleaner.separate_sentence()     
+    print("all_words",all_words)
     vectors, word2int, int2word = read_trained_data(file_to_save_word2vec_data)
     data_x_raw = []
     for word in all_words:

@@ -1800,6 +1800,7 @@ xệp
     output: document was replaced special characters
     """
     def execute_special_character(self, text):
+
         text = regex.sub(' vn-index ', ' vnindex ', text)
         text = regex.sub('vn-index ', 'vnindex ', text)
         text = regex.sub(' vn-index', ' vnindex', text)
@@ -1897,7 +1898,12 @@ xệp
             for line in lines:
                 symboli = line.rstrip().split(',')
                 symbol_arr.append(symboli[0].lower())
+     #   print("------before ex--------:",self.data)
+        print("data before being executed",self.data)
         self.data = self.execute_special_character(self.data)
+        print("data after being executed",self.data)
+      #  print("-------after ex--------:",self.data)
+        print("")
         sentences = self.data.split('\n')
         new_sentences = []
         for sentence in sentences:
@@ -1908,7 +1914,9 @@ xệp
                 new_sentences.append(part)
         all_words = []
         for sentence in new_sentences:
-            words = ViPosTagger.postagging(ViTokenizer.tokenize(sentence))[0]
+            words = ViPosTagger.postagging(ViTokenizer.tokenize(sentence))
+            print("word:",words)
+            words = self.tokenizer_tunning(words)
             for i , word in enumerate(words):
                 if(self.is_stop_word(word) == False):
                     if word not in symbol_arr:
@@ -1917,6 +1925,9 @@ xệp
     def remove_stopword_sent(self,sent):
         new_tokens = []
         new_pos = []
+        print("before res:",sent)
+        sent = self.restore_acronym(sent)
+        print("after res:",sent)
         s = ViPosTagger.postagging(ViTokenizer.tokenize(sent))
         for i in range(len(s[0])):
             if s[0][i] in self.stock_code:
@@ -1931,3 +1942,60 @@ xệp
                 new_pos.append(s[1][i])
         
         return (new_tokens,new_pos)
+    def tokenizer_tunning(self,tokens):
+        new_tokens = []
+        for i in range(len(tokens[0])):
+            if re.search("_dư",tokens[0][i]):
+                sym,word = tokens[0][i].split("_") 
+                new_tokens.append(sym)
+                new_tokens.append(word)
+                
+            elif re.search("mã_",tokens[0][i]):
+                word,sym = tokens[0][i].split("_",1)
+                if sym == "cổ_phiếu" or sym == "chứng_khoán":
+                    new_tokens.append(word) #them chu 'ma' vao 
+                    new_tokens.append(sym) #them chu 'co_phieu' vao
+                    
+                else:#sau ma la ma co phieu : ma_ssi
+                    new_tokens.append(word) #them chu 'ma' vao 
+                    new_tokens.append(sym) #them chu 'ssi' vao
+                    
+            else:
+                new_tokens.append(tokens[0][i])
+               
+        return new_tokens
+    def restore_acronym(self,text):
+        text = regex.sub(' vn-index ', ' vnindex ', text)
+        text = regex.sub('vn-index ', 'vnindex ', text)
+        text = regex.sub(' vn-index', ' vnindex', text)
+        text = regex.sub(' cp ', ' cổ phiếu ', text)
+        text = regex.sub('cp ', 'cổ phiếu ', text)
+        text = regex.sub(' cp', ' cổ phiếu', text)
+        acronym_arr = []
+        with open ('data/acronym.txt',encoding = 'utf-8') as acro_file:
+            lines = acro_file.readlines()
+            for line in lines:
+                acroi = line.rstrip('\n').split(',')
+                acronym_arr.append(acroi)
+
+        print (acronym_arr[:10])
+        for i in range(len(acronym_arr)):
+            #if re.search(r'\A%s\s' % acronym_arr[i][0],string):
+             #  print("acr",acronym_arr[i][0])
+            text = re.sub(r'\A%s\s' % acronym_arr[i][0], r' %s ' % acronym_arr[i][1], text)
+              # print("text1:",text)
+           # if re.search(r'\s%s\Z' % acronym_arr[i][0],string):
+            text = re.sub(r'\s%s\Z' % acronym_arr[i][0], r' %s ' % acronym_arr[i][1], text)
+            #    print("text2:",text)
+           # if re.search(r'\s%s\s' % acronym_arr[i][0],string):
+            text = re.sub(r'\s%s\s' % acronym_arr[i][0], r' %s ' % acronym_arr[i][1], text)
+            #    print("text3:",text)
+           # if re.search(r'\s%s\W' % acronym_arr[i][0],string):
+            text = re.sub(r'\s%s\W' % acronym_arr[i][0], r' %s ' % acronym_arr[i][1], text)
+            #    print("text2:",text)
+        return text 
+if __name__ == "__main__" :
+    string = "bn còn bn cổ bnd lung bn?"
+    k = DataCleaner(string)
+    res = k.restore_acronym(string)
+    print("res",res)

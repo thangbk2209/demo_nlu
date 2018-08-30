@@ -1,0 +1,127 @@
+stock_balance,tài khoản của tôi còn bao nhiêu cổ phiếu
+stock_balance,tôi còn bao nhiêu cổ phiếu mã SSI
+stock_balance,trong tài khoản còn bao nhiêu mã SSI
+stock_balance,mã SSI còn bao nhiêu cổ phiếu trong tài khoản
+stock_balance,số cổ phiếu SSI của tôi
+stock_balance,số cổ phiếu SSI trong tài khoản
+stock_balance,tài khoản đuôi 1 có bao nhiêu cổ phiếu mã SSI
+stock_balance,số cổ phiếu SSI của tôi trong tài khoản
+stock_balance,mã SSI của tôi có bao nhiêu cổ phiếu
+stock_balance,tổng số cổ phiếu SSI
+stock_balance,tổng số SSI tôi nắm giữ
+stock_balance,mã SSI có bao nhiêu cổ phiếu
+stock_balance,SSI có bao nhiêu cổ
+stock_balance,tình trạng cổ phiếu SSI trong tài khoản
+stock_balance,số lượng cổ phiếu SSI trong tài khoản
+stock_balance,số lượng mã SSI trong tài khoản
+stock_balance,tôi muốn kiểm tra số cổ phiếu SSI
+stock_balance,kiểm tra cổ phiếu SSI trong tài khoản
+stock_balance,danh mục của tôi có bao nhiêu cổ phiếu SSI
+stock_balance,kiểm tra số cổ phiếu SSI trong danh mục
+stock_balance,tôi đang nắm giữ bao nhiêu cp SSI
+stock_balance,tổng mã SSI tôi đang có
+stock_balance,tổng cp SSI tôi sở hữu
+stock_balance,tôi đang sở hữu bn cp SSI
+stock_balance,kiểm tra số lượng mã SSI
+stock_balance,kiểm tra số lượng cp SSI
+stock_balance,kiểm tra mã SSI
+stock_balance,danh mục của tôi
+
+
+
+advice,nên mua SSI giá 10.5 không
+advice,nên mua SSI giá nào
+advice,bán SSI bây giờ được không
+advice,nên bán SSI thời điểm này không
+advice,có nên bán SSI lúc này
+advice,nên mua vào SSI không
+advice,mua vào SSI với giá nào
+advice,mua SSI với giá nào
+advice,đầu tư vào SSI ổn không
+advice,nên đầu tư mã SSI với giá bao nhiêu
+advice,nên đầu tư bn vào SSI
+advice,nên nắm giữ hay bán ra lúc này mã SSI
+advice,nên nắm giữ hay bán ra SSI lúc này
+advice,nên bán toàn bộ SSI thời điểm này không
+advice,mua SSI giá 10.5 ổn không
+advice,bán SSI giá 12 được không
+advice,nên giao dịch SSI thời điểm này chứ
+advice,với giá nào thì nên mua SSI
+advice,với giá nào thì bán SSI
+advice,nên đầu tư SSI lúc này không
+advice,nên bán tất cả co SSI chứ
+advice,tôi có nên nắm giữ SSI giai đoạn này
+advice,có ổn nếu nắm giữ SSI lúc này
+advice,tôi có nên mua SSI lúc này không nhỉ
+advice,mua thế nào với mã SSI
+advice,bán thế nào với SSI
+advice,mã SSI nên mua vào hay bán ra
+
+
+
+
+cash_balance,kiểm tra số tiền dư
+cash_balance,kiểm tra tiền dư trong tài khoản
+cash_balance,kiểm tra số tiền còn lại
+cash_balance,tôi còn bao nhiêu tiền trong tài khoản
+cash_balance,tài khoản của tôi còn bao nhiêu tiền
+cash_balance,tôi muốn xem tiền trong tài khoản
+cash_balance,số dư tiền tìa khoản đuôi 1
+cash_balance,tài khoản của tôi còn bao nhiêu tiền
+cash_balance,số dư tài khoản
+cash_balance,dư tiền trong tài khoản
+cash_balance,xem cho tôi tiền trong tài khoản
+cash_balance,xem tiền dư trong tài khoản của tôi
+cash_balance,xem số dư tiền trong tài khoản
+cash_balance,số dư tiền của tôi thế nào
+cash_balance,tôi còn dư bao nhiêu tiền
+cash_balance,tôi còn dư tiền chứ
+cash_balance,tôi còn tiền không
+cash_balance,tôi còn dư bao nhiêu tiền nhỉ
+cash_balance,số dư tiền tài khoản bao nhiêu
+cash_balance,tiền dư trong tài khoản của tôi
+cash_balance,tổng số tiền tôi có
+cash_balance,tổng số tiền tôi còn
+cash_balance,tổng số tiền tôi còn dư
+cash_balance,tôi còn khoảng bao nhiêu tiền trong tài khoản
+cash_balance,dư tiền tài khoản
+cash_balance,tiền dư tài khoản
+
+
+
+trade,mua SSI 100 cổ phiếu giá 9.5
+trade,mua SSI giá 21.5 100 cổ phiếu
+trade,tôi muốn bán 100 SSI giá 25
+trade,muốn mua SSI khối lượng 1000 giá 21
+trade,bán 100 cổ giá 21 mã SSI
+trade,mua 100 cổ SSI giá 21.5
+trade,đặt bán 100 cp SSI giá 20.1
+trade,đặt bán 100 SSI giá 19.5
+trade,đặt mua 50 cổ SSI giá 20
+trade,đặt mua cổ SSI số lượng 50 giá 21
+trade,đặt bán giá 21 mã SSI 100 cổ phiếu
+trade,đặt bán toàn bộ mã SSI giá 19.5
+trade,đặt mua giá 21 khối lượng 100 mã SSI
+trade,đặt bán toàn bộ giá 10.5 mã SSI
+trade,đầu tư vào SSI giá 10 với 1000 cổ phiếu
+trade,đầu tư 1000 cp SSI giá 12
+trade,tôi muốn đầu tư 120 mã cp SSI với giá 21
+trade,đặt lệnh bán SSI 100 cổ phiếu giá 12
+trade,đặt lệnh mua 1000 cp SSI giá 25
+trade,đặt lệnh mua 1000 co gái 21 mã SSI
+
+
+
+market,tình hình lên xuống của mã SSI
+market,thông tin về SSI hôm nay
+market,hôm nay SSI thế nào
+market,giá mở cửa SSI
+market,SSI hôm qua đóng cửa với giá bao nhiêu
+market,sáng nay giá mở cửa SSI bao nhiêu nhỉ
+market,cho tôi xem thông tin về SSI
+market,hiển thị thông tin mã SSI
+market,SSI lên xuống thế nào
+market,mã SSI hôm nay
+market,thông tin về SSI
+market,hôm nay SSI hoạt động thế nào
+market,mã SSI thế nào

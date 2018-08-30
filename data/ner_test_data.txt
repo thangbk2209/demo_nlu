@@ -1,0 +1,650 @@
+tài_khoản N O
+còn R O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+
+còn R O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+mã N symbol-prefix
+ssi Np symbol
+
+trong E O
+tài_khoản N O
+còn C O
+bao_nhiêu P O
+mã N symbol-prefix
+ssi Np symbol
+
+mã N symbol-prefix
+ssi Np symbol
+còn R O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+trong E O
+tài_khoản N O
+
+cổ_phiếu N symbol-prefix
+ssi Np symbol
+
+cổ_phiếu N symbol-prefix
+ssi Np symbol
+trong E O
+tài_khoản N O
+
+tài_khoản V O
+đuôi N O
+1 M 0
+có V O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+mã N symbol-prefix
+ssi Np symbol
+
+cổ_phiếu N symbol-prefix
+ssi Np symbol
+trong E O
+tài_khoản N O
+
+mã N symbol-prefix
+ssi Np symbol
+có V O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+
+tổng_số N O
+cổ_phiếu N symbol-prefix
+ssi Np symbol
+
+tổng_số N O
+ssi Np symbol
+nắm V O
+giữ V O
+
+mã N symbol-prefix
+ssi Np symbol
+có V O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+
+ssi Np symbol
+có V O
+bao_nhiêu P O
+cổ A symbol-prefix
+
+tình_trạng N O
+cổ_phiếu N symbol-prefix
+ssi Np symbol
+trong E O
+tài_khoản N O
+
+số_lượng N O
+cổ_phiếu N symbol-prefix
+ssi Np symbol
+trong E O
+tài_khoản N O
+
+số_lượng N O
+mã N symbol-prefix
+ssi Np symbol
+trong E O
+tài_khoản N O
+
+muốn V O
+kiểm_tra V O
+cổ_phiếu N symbol-prefix
+ssi Np symbol
+
+kiểm_tra V O
+cổ_phiếu N symbol-prefix
+ssi Np symbol
+trong E O
+tài_khoản N O
+
+danh_mục N O
+có V O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
+ssi Np symbol
+
+kiểm_tra V O
+cổ_phiếu N symbol-prefix
+ssi Np symbol
+trong E O
+danh_mục N O
+
+nắm V O
+giữ V O
+bao_nhiêu P O
+cp N O
+ssi Np symbol
+
+tổng_mã N O
+ssi Np symbol
+có V O
+
+tổng_cp N O
+ssi Np symbol
+sở_hữu V O
+
+sở_hữu V O
+bn_cp N O
+ssi Np symbol
+
+kiểm_tra V O
+số_lượng N O
+mã N symbol-prefix
+ssi Np symbol
+
+kiểm_tra V O
+số_lượng_cp N O
+ssi Np symbol
+
+kiểm_tra V O
+mã N symbol-prefix
+ssi Np symbol
+
+danh_mục N O
+
+nên C O
+mua V side-B
+ssi Np symbol
+giá N O
+10.5 M price
+không R O
+
+nên C O
+mua V side-B
+ssi Np symbol
+giá N O
+
+bán V side-S
+ssi Np symbol
+không R O
+
+nên C O
+bán V side-S
+ssi Np symbol
+không R O
+
+có V O
+nên C O
+bán V side-S
+ssi Np symbol
+
+nên C O
+mua V side-B
+ssi Np symbol
+không R O
+
+mua V side-B
+ssi Np symbol
+giá N O
+
+mua V side-B
+ssi Np symbol
+giá N O
+
+đầu_tư V side-B
+ssi Np symbol
+ổn A O
+không R O
+
+nên C O
+đầu_tư V side-B
+mã V symbol-prefix
+ssi Np symbol
+giá N O
+bao_nhiêu N O
+
+nên C O
+đầu_tư V side-B
+bn V O
+ssi Np symbol
+
+nên C O
+nắm V O
+giữ V O
+hay C O
+bán V side-S
+mã N symbol-prefix
+ssi Np symbol
+
+nên C O
+nắm V O
+giữ V O
+hay C O
+bán V side-S
+ssi Np symbol
+
+nên C O
+bán V side-S
+toàn_bộ N O
+ssi Np symbol
+không R O
+
+mua V side-B
+ssi Np symbol
+giá N O
+10 M price
+ổn N O
+không R O
+
+bán V side-S
+ssi Np symbol
+giá N O
+12 M quantity
+không R O
+
+nên C O
+giao_dịch V O
+ssi Np symbol
+
+giá N O
+nên C O
+mua V side-B
+ssi Np symbol
+
+giá N O
+bán V side-S
+ssi Np symbol
+
+nên C O
+đầu_tư V side-B
+ssi Np symbol
+không R O
+
+nên C O
+bán V side-S
+tất_cả P O
+co V O
+ssi Np symbol
+
+có V O
+nên C O
+nắm V O
+giữ V O
+ssi Np symbol
+giai_đoạn N O
+
+có V O
+ổn A O
+nắm V O
+giữ V O
+ssi Np symbol
+
+có V O
+nên C O
+mua V side-B
+ssi Np symbol
+không R O
+
+mua V side-B
+thế_nào X O
+mã N symbol-prefix
+ssi Np symbol
+
+bán V side-S
+thế_nào X O
+ssi Np symbol
+
+mã N symbol-prefix
+ssi Np symbol
+nên C O
+mua V side-B
+hay C O
+bán V side-S
+
+kiểm_tra V O
+tiền N O
+dư A O
+
+kiểm_tra V O
+tiền N O
+dư A O
+trong E O
+tài_khoản N O
+
+kiểm_tra V O
+tiền N O
+còn V O
+
+còn R O
+bao_nhiêu P O
+tiền N O
+trong E O
+tài_khoản N O
+
+tài_khoản N O
+còn R O
+bao_nhiêu P O
+tiền N O
+
+muốn V O
+xem V O
+tiền N O
+trong E O
+tài_khoản N O
+
+số Np O
+dư V O
+tiền N O
+tìa N O
+khoản N O
+đuôi N O
+1 M 0
+
+tài_khoản N O
+còn R O
+bao_nhiêu P O
+tiền N O
+
+số Np O
+dư V O
+tài_khoản V O
+
+dư A O
+tiền N O
+trong E O
+tài_khoản N O
+
+xem V O
+cho E O
+tiền N O
+trong E O
+tài_khoản N O
+
+xem V O
+tiền N O
+dư A O
+trong E O
+tài_khoản N O
+
+xem V O
+số Np O
+dư V O
+tiền N O
+trong E O
+tài_khoản N O
+
+số Np O
+dư V O
+tiền N O
+thế_nào V O
+
+còn R O
+dư A O
+bao_nhiêu P O
+tiền N O
+
+còn R O
+dư A O
+tiền N O
+
+còn V O
+tiền N O
+không R O
+
+còn R O
+dư A O
+bao_nhiêu P O
+tiền N O
+
+số Np O
+dư V O
+tiền_tài_khoản V O
+bao_nhiêu N O
+
+tiền N O
+dư A O
+trong E O
+tài_khoản N O
+
+tổng_số N O
+tiền N O
+có V O
+
+tổng_số N O
+tiền N O
+còn R O
+
+tổng_số N O
+tiền N O
+còn R O
+dư A O
+
+còn R O
+khoảng A O
+bao_nhiêu P O
+tiền N O
+trong E O
+tài_khoản N O
+
+dư A O
+tiền_tài_khoản V O
+
+tiền N O
+dư A O
+tài_khoản V O
+
+mua V side-B
+ssi Np symbol
+100 M quantity
+cổ_phiếu N symbol-prefix
+giá N O
+9.5 M price
+
+mua V side-B
+ssi Np symbol
+giá N O
+21 M price
+100 M quantity
+cổ_phiếu N symbol-prefix
+
+muốn V O
+bán V side-S
+100 M quantity
+ssi Np symbol
+giá N O
+25 M quantity
+
+muốn V O
+mua V side-B
+ssi Np symbol
+khối_lượng N O
+1000 M quantity
+giá N O
+21 M quantity
+
+bán V side-S
+100 M quantity
+cổ N symbol-prefix
+giá N O
+21 M quantity
+mã N symbol-prefix
+ssi Np symbol
+
+mua V side-B
+100 M quantity
+cổ N symbol-prefix
+ssi Np symbol
+giá N O
+21 M price
+
+đặt V O
+bán V side-S
+100 M quantity
+cp N O
+ssi Np symbol
+giá N O
+20.1 M price
+
+đặt V O
+bán V side-S
+100 M quantity
+ssi Np symbol
+giá N O
+19 M price
+
+đặt V O
+mua V side-B
+50 M quantity
+cổ N symbol-prefix
+ssi Np symbol
+giá N O
+20 M quantity
+
+đặt V O
+mua V side-B
+cổ N symbol-prefix
+ssi Np symbol
+số_lượng N O
+50 M quantity
+giá N O
+21 M quantity
+
+đặt V O
+bán V side-S
+giá N O
+21 M quantity
+mã N symbol-prefix
+ssi Np symbol
+100 M quantity
+cổ_phiếu N symbol-prefix
+
+đặt V O
+bán V side-S
+toàn_bộ N O
+mã N symbol-prefix
+ssi Np symbol
+giá N O
+19.5 M price
+
+đặt V O
+mua V side-B
+giá N O
+21 M quantity
+khối_lượng N O
+100 M quantity
+mã N symbol-prefix
+ssi Np symbol
+
+đặt V O
+bán V side-S
+toàn_bộ N O
+giá N O
+10.5 M price
+mã N symbol-prefix
+ssi Np symbol
+
+đầu_tư V side-B
+ssi Np symbol
+giá N O
+10 M quantity
+1000 M quantity
+cổ_phiếu N symbol-prefix
+
+đầu_tư V side-B
+1000 M quantity
+cp N O
+ssi Np symbol
+giá N O
+12 M quantity
+
+muốn V O
+đầu_tư V side-B
+120 M quantity
+mã N symbol-prefix
+cp Np O
+ssi Np symbol
+giá N O
+21 M quantity
+
+đặt V O
+lệnh N O
+bán V side-S
+ssi Np symbol
+100 M quantity
+cổ_phiếu N symbol-prefix
+giá N O
+12 M quantity
+
+đặt V O
+lệnh N O
+mua V side-B
+1000 M quantity
+cp N O
+ssi Np symbol
+giá N O
+25 M quantity
+
+đặt V O
+lệnh N O
+mua V side-B
+1000 M quantity
+co V O
+gái N O
+21 M quantity
+mã N symbol-prefix
+ssi Np symbol
+
+tình_hình N O
+lên V O
+xuống V O
+mã N symbol-prefix
+ssi Np symbol
+
+thông_tin N O
+ssi Np symbol
+hôm_nay N O
+
+hôm_nay N O
+ssi Np symbol
+thế_nào V O
+
+giá N O
+mở_cửa V O
+ssi Np symbol
+
+ssi Np symbol
+hôm_qua N O
+đóng_cửa V O
+giá N O
+bao_nhiêu N O
+
+giá N O
+mở_cửa V O
+ssi Np symbol
+bao_nhiêu P O
+
+cho E O
+xem V O
+thông_tin N O
+ssi Np symbol
+
+hiển_thị V O
+thông_tin N O
+mã N symbol-prefix
+ssi Np symbol
+
+ssi Np symbol
+lên V O
+xuống V O
+thế_nào N O
+
+mã V symbol-prefix
+ssi Np symbol
+hôm_nay N O
+
+thông_tin N O
+ssi Np symbol
+
+hôm_nay N O
+ssi Np symbol
+hoạt_động V O
+thế_nào A O
+
+mã V symbol-prefix
+ssi Np symbol
+thế_nào V O
+
