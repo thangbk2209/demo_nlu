@@ -6,8 +6,10 @@ def tokenize_tunning(tokens):
         new_tokens = []
         new_pos = []
         for i in range(len(tokens[0])):
+            print ('==================tokens[0]=======================')
+            print (tokens[0])
             if re.search("_dư",tokens[0][i]):
-                sym,word = tokens[0][i].split("_") 
+                sym,word = tokens[0][i].split("_",1) 
                 new_tokens.append(sym)
                 new_tokens.append(word)
                 new_pos.append("Np")

@@ -34,9 +34,14 @@ def text_classify(content):
     all_words = data_cleaner.separate_sentence()     
     print("all_words",all_words)
     vectors, word2int, int2word = read_trained_data(file_to_save_word2vec_data)
+    
     data_x_raw = []
     for word in all_words:
-        data_x_raw.append(vectors[word2int[word]])
+        if word in word2int:
+            data_x_raw.append(vectors[word2int[word]])
+        else:
+            intent = 'unknown'
+            return intent,all_words
     for k in range(input_size - len(data_x_raw)):
         padding = np.zeros(embedding_dim)
         data_x_raw.append(padding)
@@ -130,7 +135,10 @@ def submitError():
     # print (request.json)
     content = request.form['content']
     intent = request.form['intent']
-    save_to_database(content,intent)
+    if(intent == "unknown"):
+        save_to_database(1,content,intent)
+    else:
+        save_to_database(2,content,intent)
     texts = read_error()
     return render_template('home.html')
 
@@ -176,16 +184,23 @@ def check_understand_language():
     content = content.lower()
     print (content)
     intent,all_words = text_classify(content)
-    if (check == "False"):
+    if (check == "Sai"):
         print ('False 172')
-        save_to_database(content,intent)
+        if(intent == "unknown"):
+            save_to_database(1,content,intent)
+        else:
+            save_to_database(2,content,intent)
+        # save_to_database(content,intent)
     # outputs,data = named_entity_reconignition(content,intent)
     reply = "Cảm ơn bạn đã góp ý!"
     return jsonify(reply = reply)
 
-def save_to_database(sentence,intent):
+def save_to_database(index,sentence,intent):
     print ("start storing")
-    file = open('./fail.txt','a+', encoding="utf8")
+    if (index == 1):
+        file = open('./unknown.txt','a+', encoding="utf8")
+    else:
+        file = open('./fail.txt','a+', encoding="utf8")
     file.write(intent + ',' + sentence+'\n')
 def read_error():
     # file = open('./fail.txt','r', encoding="utf8")
