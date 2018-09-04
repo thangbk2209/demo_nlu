@@ -1,58 +1,63 @@
 ttck, thị trường chứng khoán 
-bn,bao nhiêu
 ubcknn, ủy ban chứng khoán nhà nước 
 tbtcvn, thời báo tài chính việt nam 
- pv , phóng viên 
-sgdck, sở giao dịch chứng khoán 
- dn , doanh nghiệp 
- ck , chứng khoán 
- hn , hà nội 
-tp hn, thành phố hà nội 
-tp hcm, thành phố hồ chí minh 
-tphcm, thành phố hồ chí minh 
-tphcm, thành phố hồ chí minh 
- tp , thành phố 
-tp.hcm, thành phố hồ chí minh 
- tk , tài khoản 
-ttckvn, thị trường chứng khoán việt nam 
-dnnn, doanh nghiệp nhà nước 
-tpcp, trái phiếu chính phủ 
-ttgdck, trung tâm giao dịch chứng khoán 
-ttlkck, trung tâm lưu ký chứng khoán 
-ubnd, ủy ban nhân dân 
- nđt , nhà đầu tư 
+sgdck,sở giao dịch chứng khoán
+gdck,giao dịch chứng khoán
+tp hn,thành phố hà nội
+tp hcm,thành phố hồ chí minh
+tphcm,thành phố hồ chí minh
+tphcm,thành phố hồ chí minh
+tp.hcm,thành phố hồ chí minh
+ttckvn,thị trường chứng khoán việt nam
+dnnn,doanh nghiệp nhà nước
+tpcp,trái phiếu chính phủ
+ttgdck,trung tâm giao dịch chứng khoán
+ttlkck,trung tâm lưu ký chứng khoán
+ubnd,ủy ban nhân dân
+nđt,nhà đầu tư
 ctck,công ty chứng khoán
-nhnn, ngân hàng nhà nước 
-hđqt, hội đồng quản trị 
-ctcp, công ty cổ phần 
-hđ, hợp đồng 
-ckps, chứng khoán phái sinh 
-tphcm, thành phố hồ chí minh 
- tp , thành phố 
-gtgd, giá trị giao dịch 
-bctc, báo cáo tài chính 
-bđs , bất động sản 
-kqkd, kết quả kinh doanh 
- nwc , net working capital 
-tmcp, thương mại cổ phần 
-hđtl, hợp đồng tương lai 
-hđqc, hợp đồng quyền chọn 
- fia , futures industry association 
- vn , việt nam 
-tpdn, trái phiếu doanh nghiệp 
-phtp, phát hành trái phiếu 
- cty , công ty 
-tctd, tổ chức tín dụng 
-đhcđ, đại hội cổ đông 
-bctc, ngân hàng thương mại 
-cmcn, cách mạng công nghiệp 
-cntt, công nghệ thông tin 
- tp , thành phố 
-ntn, như thế nào
-nhtmcp, ngân hàng thương mại cổ phần 
-cstt, chính sách tiền tệ 
-đttc, đầu tư tài chính 
-phó tgđ, phó tổng giám đốc 
-lnst, lợi nhuận sau thuế 
-đhđcđ, đại hội đồng cổ đông 
+nhnn,ngân hàng nhà nước
+hđqt,hội đồng quản trị
+ctcp,công ty cổ phần
+hđ,hợp đồng
+ckps,chứng khoán phái sinh
+tphcm,thành phố hồ chí minh
+gtgd,giá trị giao dịch
+bctc,báo cáo tài chính
+bđs,bất động sản
+ntn,như thế nào
+đk,được
+kqkd,kết quả kinh doanh
+tmcp,thương mại cổ phần
+hđtl,hợp đồng tương lai
+hđqc,hợp đồng quyền chọn
+tpdn,trái phiếu doanh nghiệp
+phtp,phát hành trái phiếu
+tctd,tổ chức tín dụng
+đhcđ,đại hội cổ đông
+bctc,ngân hàng thương mại
+cmcn,cách mạng công nghiệp
+cntt,công nghệ thông tin
+nhtmcp,ngân hàng thương mại cổ phần
+cstt,chính sách tiền tệ
+đttc,đầu tư tài chính
+phó tgđ,phó tổng giám đốc
+lnst,lợi nhuận sau thuế
+đhđcđ,đại hội đồng cổ đông
 đhcđcđ,đại hội đồng cổ đông 
+vn-index,vnindex
+pv,phóng viên
+dn,doanh nghiệp
+ck,chứng khoán
+hn,hà nội
+tp,thành phố
+tk,tài khoản
+tp,thành phố
+bn,bao nhiêu
+nwc,net working capital
+fia,futures industry association
+dk,được
+vn,việt nam
+cty,công ty
+tp,thành phố
+cp,cổ phiếu

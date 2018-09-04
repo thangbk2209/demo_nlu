@@ -26,9 +26,9 @@ def text_classify(content):
     content = content.lower()
     input_size = 16
     window_size = 2
-    embedding_dim = 32
+    embedding_dim = 50
     batch_size_word2vec = 8
-    file_to_save_word2vec_data = 'word2vec_ver5/ws-' + str(window_size) + '-embed-' + str(embedding_dim) + 'batch_size-' + str(batch_size_word2vec) + '.pkl'
+    file_to_save_word2vec_data = 'word2vec_ver6/ws-' + str(window_size) + '-embed-' + str(embedding_dim) + 'batch_size-' + str(batch_size_word2vec) + '.pkl'
     data_cleaner = DataCleaner(content)
     print("data_cleaner",data_cleaner)
     all_words = data_cleaner.separate_sentence()     
@@ -45,7 +45,7 @@ def text_classify(content):
     int2intent = {0: 'end', 1: 'trade', 2: 'cash_balance', 3: 'advice', 4: 'order_status', 5: 'stock_balance', 6: 'market',7: 'cancel'}
     with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
         #First let's load meta graph and restore weights
-        saver = tf.train.import_meta_graph('ANN_ver6/ws-2-embed-32batch_size_w2c-8batch_size_cl16.meta')
+        saver = tf.train.import_meta_graph('ANN_ver6/ws-2-embed-50batch_size_w2c-8batch_size_cl8.meta')
         saver.restore(sess,tf.train.latest_checkpoint('ANN_ver6/'))
         # Access and create placeholders variables and
         # print (sess.run ('x:0'))
