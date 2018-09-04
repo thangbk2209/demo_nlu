@@ -71,11 +71,6 @@ def named_entity_reconignition(content,intent):
     raw = check_sw.remove_stopword_sent(content)
     tokens = tokenize_tunning(raw)
     y_pred,y_test = ner.test(tokens)
-    #print("content before",content)
-   # content = check_sw.remove_stopword_sent(content)
-    #print("after",content)
-    #s = ViPosTagger.postagging(ViTokenizer.tokenize(content))[0]
-  #  print ("tokens",tokens)
     data = []
     side = ""
     price = "" 
@@ -117,7 +112,7 @@ def index():
     return render_template('home.html')
 @app.route('/submit', methods=['POST'])
 def nlu():    
-    print ('call API OK')
+    print ('call API submit OK')
     # print (request.json)
     content = request.form['content']
     print (content)
@@ -128,14 +123,31 @@ def nlu():
     outputs,data = named_entity_reconignition(content,intent)
     # return jsonify(outputs=outputs)
     return render_template('home.html', content = content,intent = intent, outputs = data, all_words = all_words)
+@app.route('/check', methods=['POST'])
+def checknlu():    
+    print ('call API check OK')
+    # print (request.json)
+    content = request.form['content']
+    intent = request.form['intent']
+    check_true = request.form['check_true']
+    check_false = request.form['check_false']
+
+    print (content)
+    print (intent)
+    print (check_true)
+    print (check_false)
+
+    # content = content.lower()
+    # print (content)
+    # intent,all_words = text_classify(content)
+    # print ('all_words: ',all_words)
+    # outputs,data = named_entity_reconignition(content,intent)
+    # # return jsonify(outputs=outputs)
+    return render_template('home.html')
+
 @app.route('/nlu', methods=['POST'])
 def understand_language():    
     print ('call API OK')
-    # my_collection = mydb.test_col1
-    # data = {'data':'content'}
-    # my_collection.insert(data)
-    # content = mongo.db.content
-    # name = request.json['name']
     print (request.json)
     content = request.json['content']
     print (content)
@@ -146,7 +158,18 @@ def understand_language():
     print ('data')
     print (data)
     return jsonify(outputs=outputs)
-    # return render_template('home.html', content = content,intent = intent, outputs = outputs, all_words = all_words)
+@app.route('/checknlu', methods=['POST'])
+def check_understand_language():    
+    print ('call API OK')
+    print (request.json)
+    content = request.json['content']
+    # check = request.json['check']
+    print (content)
+    content = content.lower()
+    print (content)
+    intent,all_words = text_classify(content)
+    # outputs,data = named_entity_reconignition(content,intent)
+    return jsonify(intent = intent)
 
 def save_to_database():
     print ("start storing")
