@@ -16,12 +16,12 @@ def read_trained_data(file_trained_data):
         word2int = pk.load(input_file)
         int2word = pk.load(input_file)
     return vectors, word2int, int2word
-client = MongoClient('mongodb://localhost:27017/')
-mydb = client.test_database_1
+# client = MongoClient('mongodb://localhost:27017/')
+# mydb = client.test_database_1
 app = Flask(__name__)
-app.config['MONGO_DBNAME'] = 'FinancialBotDb'
-app.config["MONGO_URI"] = "mongodb://localhost:27017/FinancialBotDb"
-mongo = PyMongo(app)
+# app.config['MONGO_DBNAME'] = 'FinancialBotDb'
+# app.config["MONGO_URI"] = "mongodb://localhost:27017/FinancialBotDb"
+# mongo = PyMongo(app)
 def text_classify(content):
     content = content.lower()
     input_size = 16
@@ -131,10 +131,10 @@ def nlu():
 @app.route('/nlu', methods=['POST'])
 def understand_language():    
     print ('call API OK')
-    my_collection = mydb.test_col1
-    data = {'data':'content'}
-    my_collection.insert(data)
-    content = mongo.db.content
+    # my_collection = mydb.test_col1
+    # data = {'data':'content'}
+    # my_collection.insert(data)
+    # content = mongo.db.content
     # name = request.json['name']
     print (request.json)
     content = request.json['content']
