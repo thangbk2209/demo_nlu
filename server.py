@@ -51,7 +51,7 @@ def text_classify(content):
         # print (sess.run ('x:0'))
         graph = tf.get_default_graph()
         x = graph.get_tensor_by_name("x:0")
-        # print (sess.graph.get_operations())
+        print (sess.graph.get_operations())
         # Access the op that you want to run. 
         prediction = graph.get_tensor_by_name("prediction/Softmax:0")
         pred = (sess.run(prediction,{x:data_x}))
@@ -119,31 +119,39 @@ def nlu():
     content = content.lower()
     print (content)
     intent,all_words = text_classify(content)
+    print ('intent: ',intent)
     print ('all_words: ',all_words)
     outputs,data = named_entity_reconignition(content,intent)
     # return jsonify(outputs=outputs)
     return render_template('home.html', content = content,intent = intent, outputs = data, all_words = all_words)
-@app.route('/check', methods=['POST'])
-def checknlu():    
+@app.route('/submitError', methods=['POST'])
+def submitError():    
     print ('call API check OK')
     # print (request.json)
     content = request.form['content']
     intent = request.form['intent']
-    check_true = request.form['check_true']
-    check_false = request.form['check_false']
-
-    print (content)
-    print (intent)
-    print (check_true)
-    print (check_false)
-
-    # content = content.lower()
-    # print (content)
-    # intent,all_words = text_classify(content)
-    # print ('all_words: ',all_words)
-    # outputs,data = named_entity_reconignition(content,intent)
-    # # return jsonify(outputs=outputs)
+    save_to_database(content,intent)
+    texts = read_error()
     return render_template('home.html')
+
+@app.route('/checkError', methods=['POST'])
+def checkError():    
+    print ('call API check OK')
+    # print (request.json)
+    content = request.form['content']
+    intent = request.form['intent']
+    save_to_database(content,intent)
+    texts = read_error()
+    return render_template('check.html',texts = texts)
+
+@app.route('/check')
+def checknlu():    
+    print ('call API check OK')
+    # print (request.json)
+    texts = read_error()
+
+    return render_template('check.html',texts = texts)
+
 
 @app.route('/nlu', methods=['POST'])
 def understand_language():    
@@ -158,24 +166,68 @@ def understand_language():
     print ('data')
     print (data)
     return jsonify(outputs=outputs)
-@app.route('/checknlu', methods=['POST'])
+@app.route('/submitNLUError', methods=['POST'])
 def check_understand_language():    
     print ('call API OK')
     print (request.json)
     content = request.json['content']
-    # check = request.json['check']
+    check = request.json['check']
     print (content)
     content = content.lower()
     print (content)
     intent,all_words = text_classify(content)
+    if (check == "False"):
+        print ('False 172')
+        save_to_database(content,intent)
     # outputs,data = named_entity_reconignition(content,intent)
-    return jsonify(intent = intent)
+    reply = "Cảm ơn bạn đã góp ý!"
+    return jsonify(reply = reply)
 
-def save_to_database():
+def save_to_database(sentence,intent):
     print ("start storing")
-    content = mongo.db.content
-# def pretrain():
-    
+    file = open('./fail.txt','a+', encoding="utf8")
+    file.write(intent + ',' + sentence+'\n')
+def read_error():
+    # file = open('./fail.txt','r', encoding="utf8")
+    texts = []
+    # intens_data = []
+    with open('./fail.txt', encoding="utf8") as file:
+        # inputFile.read().lower()
+        for line in file :
+            # print (line)
+            texti = []
+            temp = line.split(",",1)
+            temp[1] = temp[1].lower()
+            texti.append(temp[1])  #list of train_word
+            texti.append(temp[0])
+            texts.append(texti)
+    return texts
+def pretrain():
+    input_size = 16
+    window_size = 2
+    embedding_dim = 50
+    batch_size_word2vec = 8
+    file_to_save_word2vec_data = 'word2vec_ver6/ws-' + str(window_size) + '-embed-' + str(embedding_dim) + 'batch_size-' + str(batch_size_word2vec) + '.pkl'
+    vectors, word2int, int2word = read_trained_data(file_to_save_word2vec_data)
+    int2intent = {0: 'end', 1: 'trade', 2: 'cash_balance', 3: 'advice', 4: 'order_status', 5: 'stock_balance', 6: 'market',7: 'cancel'}
+    with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
+        #First let's load meta graph and restore weights
+        saver = tf.train.import_meta_graph('ANN_ver6/ws-2-embed-50batch_size_w2c-8batch_size_cl8.meta')
+        saver.restore(sess,tf.train.latest_checkpoint('ANN_ver6/'))
+        # Access and create placeholders variables and
+        # print (sess.run ('x:0'))
+        graph = tf.get_default_graph()
+        x = graph.get_tensor_by_name("x:0")
+        # print (sess.graph.get_operations())
+        # Access the op that you want to run. 
+        prediction = graph.get_tensor_by_name("prediction/Softmax:0")
+        pred = (sess.run(prediction,{x:data_x}))
+        corr_pred = tf.reduce_max(pred)
+        index = tf.argmax(pred, axis=1, name=None)
+        # print (sess.run(pred))
+        print (sess.run(corr_pred))
+        print (sess.run(index))
+        intent = int2intent[sess.run(index)[0]]
 def read_ner_model():
     ner = pk.load(open('./ner/crf_model.pkl','rb'))
     return ner
