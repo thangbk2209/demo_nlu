@@ -21,19 +21,19 @@
     <!-- Custom styles for this template -->
     <link href="{{ url_for('static', filename='css/grayscale.min.css') }}" rel="stylesheet">
     <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
   <style>
   table {
     margin: 0 auto; /* or margin: 0 auto 0 auto */
   }
+  
   </style>
-  <body id="page-top" ng-app="nluApp">
-
+  <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">FDM</a>
+        <a class="navbar-brand js-scroll-trigger" href="/">FDM</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -50,7 +50,7 @@
               <a class="nav-link js-scroll-trigger" href="/check/fail">Check fail</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/check/unknown">Check unknown</a>
+                <a class="nav-link js-scroll-trigger" href="/check/unknown">Check unknown</a>
             </li>
           </ul>
         </div>
@@ -69,79 +69,31 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about-section text-center" ng-controller="nluController">
+    <section id="about" class="about-section text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h2 class="text-white mb-4">Intent classification and named entities recognition</h2>
+            <h2 class="text-white mb-4">Check word not in vocabulary</h2>
           </div>
         </div>
-        <form  action = "http://localhost:5000/genIntent" method="post"> 
-        <!-- <form role="form" ng-submit="getResults()" method="POST"> -->
-          <div class= "rows">
-                <div class="form-group">
-                    <label>User says</label>
-                    <input type="text" class="form-control" name = "text" ng-model = "content" placeholder="User says!!!">
-                </div>
-                <input class = "btn btn-primary" type="submit" value = "Classify"> 
-            </div>
-        </form>
-        <!-- </form>d -->
-        {% if intent %}
-        <div style="margin-top : 50px; margin-bottom: 50px;">
-          <form  action = "http://localhost:5000/submitError" method="post"> 
-            <!-- <form role="form" ng-submit="getResults()" method="POST"> -->
-              <div class= "rows">
-                    <div class="form-group text-white">
-                      <label>Content:</label>
-                      <input style="width:500px; margin-bottom:20px;" type = "text" name = "text" value = "{{content}}">
-                      <label >Intent:</label>
-                      <input style=" margin-bottom:20px;" type = "text" name = "intent" value = "{{intent}}">
-                      <input class = "btn btn-primary" type="submit" value="Submit False"> 
-                    </div>
-                    
-                </div>
-            </form>
+        <div ng-app="failIntentApp" ng-controller="failIntentCtrl">
+          
+          <ul class="">
+            <li class="list-group-item" style="height:50px; width: 1000px;" ng-repeat="sentence in all_sentences track by $index">    
+                <div class="form-group text-white">
+                    <label>Content:</label>
+                    <input style="width:500px; margin-bottom:20px;" type = "text" name = "text" ng-model = sentence[0] disabled>
+                    <label >Intent:</label>
+                    <input style=" margin-bottom:20px;" type = "text" name = "intent" ng-model = sentence[1] disabled>
+                    <input type = "button" value = 'x' ng-click = remove($index)>
+                </div>   
+            </li>
+          </ul>
+          <button class="button subnext" ng-click="next()" style="float: right;"><span>Next </span></button>
+          <button class="button subprev" ng-click="prev()" style="float: right;"><span>Prev </span></button>
+          <input class = "btn btn-primary" type="submit" ng-click="submit()" value="Submit False"> 
         </div>
-        {% endif %}
-        {% if reply %}
-        <div class="text-white" style="margin-top:10px;margin-bottom:10px;">
-          <label>
-            {{reply}}
-          </label>
-        </div>
-        {% endif %}
-        {% if intent %}
-          <div class="text-white" id="myTextarea" >
-            <hr>
-            {{all_words}}
-            <hr>
-          </div>
-       
-        <!-- <button ng-click = "pretrain()"></button> -->
-        
-        <!-- <img src="{{url_for('static', filename='img/ipad.png')}}" class="img-fluid" alt=""> -->
-      <!-- </div> -->
-        <div class=" text-white text-center" style="margin-bottom: 25px;">
-            <b>Named entities recognition:</b>
-            <table class="col-md-offset-2" border = 1>
-              <tr>
-                <th> token </th>
-                <th> predicted entity</th>
-              </tr>
-              {% for key in outputs %}
-              
-                <tr>
-                    <th> {{ key[0] }} </th>
-                    <th> {{ key[1] }}</th>
-                </tr>
-                
-              {% endfor %}
-            </table>
-          </div>
-        {% endif %}
     </section>
-
     <!-- Projects Section -->
     <section id="projects" class="projects-section bg-light">
       <div class="container">
@@ -274,6 +226,7 @@
       </div>
     </section>
 
+
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
       <div class="container">
@@ -288,11 +241,98 @@
     <script src="{{url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
     <script src="{{url_for('static', filename='js/grayscale.min.js') }}"></script>
     <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-   <!-- <script>
-      var textedJson = JSON.stringify(outputs, undefined, 4);
-      $('#myTextarea').text(textedJson);
-   </script> -->
+    <!-- <script src="{{ url_for('static', filename='js/main.js') }}"></script> -->
+    <script type="text/javascript">
+      var app = angular.module('failIntentApp', []);
+      app.controller("failIntentCtrl", function ($scope, $http) {
+        var step;
+        console.log('start controller fail intent');
+        var all_words_notin_vocab;
+        var step_size;
+        $http.get("/falseIntent").then(function(result) {
+            step = 0;
+            step_size = 5;
+            console.log('startaaa');
+            console.log(result);
+            all_sentences = result.data.results
+            console.log(all_sentences);
+            $scope.all_sentences = []
+            if((step + 1) * step_size < all_sentences.length){
+              for(var j = 0 ; j < (step + 1) * step_size ; j++){
+                $scope.all_sentences.push(all_sentences[j]);
+              }
+            }else{
+              for(var j = 0 ; j < all_sentences.length ; j++){
+                $scope.all_sentences.push(all_sentences[j]);
+              }
+            }
+            
+            if(all_sentences.length == 1){
+                $('.subnext').hide();
+            }            
+            $('.subprev').hide();
+        }); 
+
+        $scope.next = function(){
+          console.log('start next!');
+          step++;
+          console.log(step);
+          if(all_sentences.length == 1){
+              $('.subnext').hide();
+              $('.subprev').hide();
+          }
+          else{
+              if( step > 0 && step<all_sentences.length-1){
+                  $('.subprev').show();
+                  $('.subnext').show();
+              }
+              if(step == all_sentences.length-1) {
+                  $('.subnext').hide();
+                  $('.subprev').show();       
+              }
+          }
+          $scope.all_sentences = []
+          if((step) * step_size < all_sentences.length){
+            for(var j = step * step_size ; j < (step + 1) * step_size ; j++){
+                $scope.all_sentences.push(all_sentences[j]);
+            }
+          }
+        }
+        $scope.prev = function(){
+          step-=1;
+          console.log(step);
+          if( step > 0){
+              $('.subprev').show();
+              $('.subnext').show();
+          }
+          if(step == all_sentences.length-1) {
+              $('.subprev').show();
+              $('.subnext').hide();
+              
+          }
+          if(step==0){
+              $('.subprev').hide();
+              $('.subnext').show();
+          }
+          $scope.all_sentences = []
+          if((step) * step_size < all_sentences.length){
+            for(var j = step * step_size ; j < (step + 1) * step_size ; j++){
+                $scope.all_sentences.push(all_sentences[j]);
+            }
+          }
+        }
+        $scope.remove = function(index){
+          console.log(index);
+          all_sentences.splice(index, 1);
+          console.log(all_sentences);
+          $scope.all_sentences = []
+          for(var j = 0 ; j < (step + 1) * step_size ; j++){
+            $scope.all_sentences.push(all_sentences[j]);
+          }
+        }
+        
+    })
+  </script>
 
   </body>
 

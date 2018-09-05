@@ -1,0 +1,8 @@
+trade,mua ssi 39.5 100 cổ
+end,tôi muốn kết thúc
+cash_balance,số dư tài khoản của tôi là bao nhiêu
+trade,mua cho tôi ssi 12.5 100 cổ
+trade,mua cho tôi 100 cổ ssi 12.5
+end,tôi muốn kết thúc ngay
+cash_balance,số dư tài khoản của tôi là bao nhiêu
+trade,mua cho tôi 100 cổ ssi 12.8

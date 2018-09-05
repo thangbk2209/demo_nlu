@@ -122,13 +122,21 @@ def named_entity_reconignition(content,intent):
 def index():
     # name = request.args.get('name')
     return render_template('home.html')
-@app.route('/check')
-def checknlu():    
+@app.route('/check/unknown')
+def check_unknown():    
     print ('call API check OK')
     # print (request.json)
     # texts = read_error()
-    return render_template('check.html')
-
+    return render_template('unknown.html')
+@app.route('/check/fail')
+def check_fail():    
+    print ('call API check OK')
+    # print (request.json)
+    # texts = read_error()
+    return render_template('fail.html')
+"""
+get all word not in vocab in sentences that have unknown intent
+"""
 @app.route('/word',methods = ['GET'])
 def word_notin_vocab():
     # read vocab
@@ -158,7 +166,14 @@ def word_notin_vocab():
             if word not in word2int:
                 words_notin_vocab.append(word)
     return jsonify(results = words_notin_vocab) 
-@app.route('/submit', methods=['POST'])
+@app.route('/falseIntent',methods = ['GET'])
+def getFalseIntent():
+    texts = read_error()
+    return jsonify(results = texts)
+"""
+Intent classify
+"""
+@app.route('/genIntent', methods=['POST'])
 def nlu():    
     print ('call API submit OK')
     # print (request.json)
@@ -174,6 +189,9 @@ def nlu():
     outputs,data = named_entity_reconignition(content,intent)
     # return jsonify(outputs=outputs)
     return render_template('home.html', content = content,intent = intent, outputs = data, all_words = all_words)
+"""
+submit if the classifier make false intent
+"""
 @app.route('/submitError', methods=['POST'])
 def submitError():    
     print ('call API check OK')
@@ -198,7 +216,7 @@ def checkError():
     texts = read_error()
     return render_template('check.html',texts = texts)
 
-@app.route('/nlu', methods=['POST'])
+@app.route('/getintents/api', methods=['POST'])
 def understand_language():    
     print ('call API OK')
     print (request.json)
@@ -239,13 +257,9 @@ def save_to_database(index,sentence,intent):
         file = open(fail_file_name,'a+', encoding="utf8")
     file.write(intent + ',' + sentence+'\n')
 def read_error():
-    # file = open('./fail.txt','r', encoding="utf8")
     texts = []
-    # intens_data = []
-    with open('fail_file_name', encoding="utf8") as file:
-        # inputFile.read().lower()
+    with open(fail_file_name, encoding="utf8") as file:
         for line in file :
-            # print (line)
             texti = []
             temp = line.split(",",1)
             temp[1] = temp[1].lower()
@@ -286,5 +300,4 @@ def read_ner_model():
 
 
 if __name__ == '__main__':
-    
     app.run(debug=True, host= '0.0.0.0',port=5000)
