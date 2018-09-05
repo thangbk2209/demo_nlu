@@ -1,3 +1,0 @@
-stock_balance,mua ssi 12.5 100 cổ
-trade,mua cho tôi 100 cổ ssi 12.5
-trade,tôi muốn kết thúc

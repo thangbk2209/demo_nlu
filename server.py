@@ -10,6 +10,13 @@ from pyvi import ViPosTagger,ViTokenizer
 import json
 from flask_pymongo import PyMongo
 from pymongo import MongoClient
+import datetime
+now = datetime.datetime.now()
+unknown_file_name = './unknown/' + str(now.day) + str(now.month) + str(now.year) +'.txt'
+fail_file_name = './fail/' + str(now.day) + str(now.month) + str(now.year) +'.txt'
+"""
+read word2vec trained model
+"""
 def read_trained_data(file_trained_data):
     with open(file_trained_data,'rb') as input_file :
         vectors = pk.load(input_file)
@@ -115,6 +122,42 @@ def named_entity_reconignition(content,intent):
 def index():
     # name = request.args.get('name')
     return render_template('home.html')
+@app.route('/check')
+def checknlu():    
+    print ('call API check OK')
+    # print (request.json)
+    # texts = read_error()
+    return render_template('check.html')
+
+@app.route('/word',methods = ['GET'])
+def word_notin_vocab():
+    # read vocab
+    print ('start getting /word ')
+    input_size = 16
+    window_size = 2
+    embedding_dim = 50
+    batch_size_word2vec = 8
+    file_to_save_word2vec_data = 'word2vec_ver6/ws-' + str(window_size) + '-embed-' + str(embedding_dim) + 'batch_size-' + str(batch_size_word2vec) + '.pkl'
+    vectors, word2int, int2word = read_trained_data(file_to_save_word2vec_data)
+    # read all sentences in unknown file
+    texts = []
+    print ("Current day: %d" % now.day)
+    print ("Current year: %d" % now.year)
+    print ("Current month: %d" % now.month)
+    
+    with open(unknown_file_name, encoding="utf8") as file:
+        for line in file :
+            temp = line.split(",",1)
+            temp[1] = temp[1].lower()
+            texts.append(temp[1])  #list of train_word
+    words_notin_vocab = []
+    for text in texts:
+        data_cleaner = DataCleaner(text)
+        all_words = data_cleaner.separate_sentence()   
+        for word in all_words:
+            if word not in word2int:
+                words_notin_vocab.append(word)
+    return jsonify(results = words_notin_vocab) 
 @app.route('/submit', methods=['POST'])
 def nlu():    
     print ('call API submit OK')
@@ -155,15 +198,6 @@ def checkError():
     texts = read_error()
     return render_template('check.html',texts = texts)
 
-@app.route('/check')
-def checknlu():    
-    print ('call API check OK')
-    # print (request.json)
-    texts = read_error()
-
-    return render_template('check.html',texts = texts)
-
-
 @app.route('/nlu', methods=['POST'])
 def understand_language():    
     print ('call API OK')
@@ -200,15 +234,15 @@ def check_understand_language():
 def save_to_database(index,sentence,intent):
     print ("start storing")
     if (index == 1):
-        file = open('./unknown.txt','a+', encoding="utf8")
+        file = open(unknown_file_name,'a+', encoding="utf8")
     else:
-        file = open('./fail.txt','a+', encoding="utf8")
+        file = open(fail_file_name,'a+', encoding="utf8")
     file.write(intent + ',' + sentence+'\n')
 def read_error():
     # file = open('./fail.txt','r', encoding="utf8")
     texts = []
     # intens_data = []
-    with open('./fail.txt', encoding="utf8") as file:
+    with open('fail_file_name', encoding="utf8") as file:
         # inputFile.read().lower()
         for line in file :
             # print (line)

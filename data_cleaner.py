@@ -697,6 +697,7 @@ mở_mang
 mở_nước
 mở_ra
 mợ
+muốn
 nay
 ngay
 ngay_bây_giờ
