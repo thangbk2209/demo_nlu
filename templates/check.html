@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/">Test</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Test</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
@@ -50,7 +50,7 @@
               <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/check">Check</a>
+                <a class="nav-link js-scroll-trigger" href="/check">Check</a>
             </li>
           </ul>
         </div>
@@ -76,71 +76,34 @@
             <h2 class="text-white mb-4">Intent classification and named entities recognition</h2>
           </div>
         </div>
-        <form  action = "http://localhost:5000/submit" method="post"> 
+        <!-- <form  action = "http://localhost:5000/submit" method="post">  -->
         <!-- <form role="form" ng-submit="getResults()" method="POST"> -->
-          <div class= "rows">
+          <!-- <div class= "rows">
                 <div class="form-group">
                     <label>User says</label>
                     <input type="text" class="form-control" name = "content" ng-model = "content" placeholder="User says!!!">
                 </div>
                 <input class = "btn btn-primary" type="submit"> 
             </div>
-        </form>
+        </form> -->
         <!-- </form>d -->
-        {% if intent %}
+        {% for sentence in texts %}
         <div style="margin-top : 50px; margin-bottom: 50px;">
-          <form  action = "http://localhost:5000/submitError" method="post"> 
+          <form  action = "http://localhost:5000/check" method="post"> 
             <!-- <form role="form" ng-submit="getResults()" method="POST"> -->
               <div class= "rows">
                     <div class="form-group text-white">
                         <label>Content:</label>
-                        <input style="width:500px; margin-bottom:20px;" type = "text" name = "content" value = "{{content}}">
+                        <input style="width:500px; margin-bottom:20px;" type = "text" name = "content" value = "{{sentence[1]}}">
                         <label >Intent:</label>
-                        <input style=" margin-bottom:20px;" type = "text" name = "intent" value = "{{intent}}">
-                        <input class = "btn btn-primary" type="submit" value="Submit False"> 
+                        <input style=" margin-bottom:20px;" type = "text" name = "intent" value = "{{sentence[0]}}">
+                        <input class = "btn btn-primary" type="submit" value="Check False"> 
                       </div>
                     
                 </div>
             </form>
         </div>
-        {% endif %}
-        {% if intent %}
-          <div class="text-white" id="myTextarea" >
-            <!-- {{all_words}}
-            {{content}},
-            
-            {{a}} -->
-            <!-- {{outputs}} -->
-            <!-- <b>Text:</b> {{content}} <br> -->
-            <hr>
-            {{all_words}}
-            <hr>
-            <!-- <b>Intent:</b> {{intent}} -->
-            <hr>
-          </div>
-       
-        <!-- <button ng-click = "pretrain()"></button> -->
-        
-        <!-- <img src="{{url_for('static', filename='img/ipad.png')}}" class="img-fluid" alt=""> -->
-      <!-- </div> -->
-        <div class=" text-white text-center" style="margin-bottom: 25px;">
-            <b>Named entities recognition:</b>
-            <table class="col-md-offset-2" border = 1>
-              <tr>
-                <th> token </th>
-                <th> predicted entity</th>
-              </tr>
-              {% for key in outputs %}
-              
-                <tr>
-                    <th> {{ key[0] }} </th>
-                    <th> {{ key[1] }}</th>
-                </tr>
-                
-              {% endfor %}
-            </table>
-          </div>
-        {% endif %}
+        {% endfor %}
     </section>
 
     <!-- Projects Section -->
