@@ -171,6 +171,8 @@ class VnGen:
             string1 = subject+" "+action+" "+self.stock_prefix[random.randint(0,len(self.stock_prefix)-1)]+" "+self.stock_code[stock_code_index]+" "+amount+" "+quantity+" "+sub_amount+" "+self.conjunction[random.randint(0,len(self.conjunction)-1)]+" "+self.price_prefix[random.randint(0,len(self.price_prefix)-1)]+" "+price+" "+self.currency_unit[int(random.random()*3)]  
             string2 = subject+" "+action+" "+amount+" "+quantity+" "+sub_amount+" "+self.words[2]+" "+self.stock_code[stock_code_index]+" "+self.price_prefix[random.randint(0,len(self.price_prefix)-1)]+" "+price+" "+self.currency_unit[int(random.random()*3)]
             string3 = subject+" "+action+" "+amount+" "+quantity+" "+sub_amount+" "+self.stock_code[stock_code_index]+" "+self.price_prefix[random.randint(0,len(self.price_prefix)-1)]+" "+price+" "+self.currency_unit[int(random.random()*3)]
+            # pattern example : 
+            string10 = action+" "+self.stock_prefix[random.randint(0,len(self.stock_prefix)-1)]+" "+self.stock_code[stock_code_index]+" "+self.stock_prefix[random.randint(0,len(self.stock_prefix)-1)]+" "+self.price_prefix[random.randint(0,len(self.price_prefix)-1)]+" "+quantity +" "+ sub_amount
             #market 
             string4 = self.prefix[random.randint(0,len(self.prefix)-1)] +" "+ self.infix[random.randint(0,len(self.infix)-1)]+" "+self.stock_code[stock_code_index] #+" "+self.quesword[1]#self.suffix[random.randint(0,len(self.suffix)-1)]
             #string7 = subject+" "+action+" "+self.stock_code[stock_code_index]+" "
@@ -259,4 +261,4 @@ if __name__ == "__main__":
     gen = VnGen()
     gen.gen_data(10000)
     gen.make_train_data_from_file("./data/filetester.txt")
-
+    

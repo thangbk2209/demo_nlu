@@ -1978,24 +1978,24 @@ xệp
                 acroi = line.rstrip('\n').split(',')
                 acronym_arr.append(acroi)
 
-        print (acronym_arr[:10])
+        # print (acronym_arr[:10])
         for i in range(len(acronym_arr)):
-            #if re.search(r'\A%s\s' % acronym_arr[i][0],string):
+          #  if re.search(r'\A%s\s' % acronym_arr[i][0],string):
              #  print("acr",acronym_arr[i][0])
-            text = re.sub(r'\A%s\s' % acronym_arr[i][0], r' %s ' % acronym_arr[i][1], text)
+            text = re.sub(r'\A\s%sW\s' % acronym_arr[i][0], r' %s ' % acronym_arr[i][1], text)
               # print("text1:",text)
            # if re.search(r'\s%s\Z' % acronym_arr[i][0],string):
             text = re.sub(r'\s%s\Z' % acronym_arr[i][0], r' %s ' % acronym_arr[i][1], text)
-            #    print("text2:",text)
-           # if re.search(r'\s%s\s' % acronym_arr[i][0],string):
+               # print("text2:",text)
+          #  if re.search(r'\s%s\s' % acronym_arr[i][0],string):
             text = re.sub(r'\s%s\s' % acronym_arr[i][0], r' %s ' % acronym_arr[i][1], text)
-            #    print("text3:",text)
+                #    print("text3:",text)
            # if re.search(r'\s%s\W' % acronym_arr[i][0],string):
             text = re.sub(r'\s%s\W' % acronym_arr[i][0], r' %s ' % acronym_arr[i][1], text)
             #    print("text2:",text)
         return text 
 if __name__ == "__main__" :
-    string = "bn còn bn cổ bnd lung bn?"
+    string = "bn còn bn cổ tbn bnd lung bn"
     k = DataCleaner(string)
     res = k.restore_acronym(string)
     print("res",res)

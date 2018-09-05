@@ -116,19 +116,20 @@ danh_mục N O
 nắm V O
 giữ V O
 bao_nhiêu P O
-cp N O
+cổ_phiếu N symbol-prefix
 ssi Np symbol
 
 tổng_mã N O
 ssi Np symbol
 có V O
 
-tổng_cp N O
+tổng_cổ_phiếu N O
 ssi Np symbol
 sở_hữu V O
 
 sở_hữu V O
-bn_cp N O
+bao_nhiêu P O
+cổ_phiếu N symbol-prefix
 ssi Np symbol
 
 kiểm_tra V O
@@ -137,7 +138,8 @@ mã N symbol-prefix
 ssi Np symbol
 
 kiểm_tra V O
-số_lượng_cp N O
+số_lượng N O
+cổ_phiếu N symbol-prefix
 ssi Np symbol
 
 kiểm_tra V O
@@ -199,7 +201,7 @@ bao_nhiêu N O
 
 nên C O
 đầu_tư V side-B
-bn V O
+bao_nhiêu P O
 ssi Np symbol
 
 nên C O
@@ -469,15 +471,15 @@ mua V side-B
 cổ N symbol-prefix
 ssi Np symbol
 giá N O
-21 M price
+21.5 M price
 
 đặt V O
 bán V side-S
 100 M quantity
-cp N O
+cổ_phiếu N symbol-prefix
 ssi Np symbol
 giá N O
-20.1 M price
+20 M price
 
 đặt V O
 bán V side-S
@@ -518,7 +520,7 @@ toàn_bộ N O
 mã N symbol-prefix
 ssi Np symbol
 giá N O
-19.5 M price
+19 M price
 
 đặt V O
 mua V side-B
@@ -546,7 +548,7 @@ cổ_phiếu N symbol-prefix
 
 đầu_tư V side-B
 1000 M quantity
-cp N O
+cổ_phiếu N symbol-prefix
 ssi Np symbol
 giá N O
 12 M quantity
@@ -555,7 +557,7 @@ muốn V O
 đầu_tư V side-B
 120 M quantity
 mã N symbol-prefix
-cp Np O
+cổ_phiếu N symbol-prefix
 ssi Np symbol
 giá N O
 21 M quantity
@@ -573,7 +575,7 @@ giá N O
 lệnh N O
 mua V side-B
 1000 M quantity
-cp N O
+cổ_phiếu N symbol-prefix
 ssi Np symbol
 giá N O
 25 M quantity
