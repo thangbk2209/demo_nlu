@@ -81,7 +81,7 @@
           <div class= "rows">
                 <div class="form-group">
                     <label>User says</label>
-                    <input type="text" class="form-control" name = "content" ng-model = "content" placeholder="User says!!!">
+                    <input type="text" class="form-control" name = "text" ng-model = "content" placeholder="User says!!!">
                 </div>
                 <input class = "btn btn-primary" type="submit"> 
             </div>
@@ -94,7 +94,7 @@
               <div class= "rows">
                     <div class="form-group text-white">
                         <label>Content:</label>
-                        <input style="width:500px; margin-bottom:20px;" type = "text" name = "content" value = "{{content}}">
+                        <input style="width:500px; margin-bottom:20px;" type = "text" name = "text" value = "{{content}}">
                         <label >Intent:</label>
                         <input style=" margin-bottom:20px;" type = "text" name = "intent" value = "{{intent}}">
                         <input class = "btn btn-primary" type="submit" value="Submit False"> 
@@ -104,18 +104,17 @@
             </form>
         </div>
         {% endif %}
+        {% if reply %}
+        <div class="text-white" style="margin-top:10px;margin-bottom:10px;">
+          <label>
+            {{reply}}
+          </label>
+        </div>
+        {% endif %}
         {% if intent %}
           <div class="text-white" id="myTextarea" >
-            <!-- {{all_words}}
-            {{content}},
-            
-            {{a}} -->
-            <!-- {{outputs}} -->
-            <!-- <b>Text:</b> {{content}} <br> -->
             <hr>
             {{all_words}}
-            <hr>
-            <!-- <b>Intent:</b> {{intent}} -->
             <hr>
           </div>
        

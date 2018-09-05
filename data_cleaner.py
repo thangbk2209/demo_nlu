@@ -171,6 +171,7 @@ cao_xa
 cha
 cha_chả
 chao_ôi
+cho
 cho_biết
 cho_nhau
 cho_rằng
@@ -458,6 +459,7 @@ giờ_lâu
 giờ_đi
 giờ_đây
 giờ_đến
+giúp
 giữ_lấy
 giữ_ý
 giữa_lúc
@@ -507,6 +509,7 @@ họ
 họ_gần
 họ_xa
 hỏi_xin
+hộ
 khi
 khi_khác
 khi_không

@@ -119,11 +119,13 @@ def index():
 def nlu():    
     print ('call API submit OK')
     # print (request.json)
-    content = request.form['content']
+    content = request.form['text']
     print (content)
     content = content.lower()
     print (content)
     intent,all_words = text_classify(content)
+    if(intent == "unknown"):
+        save_to_database(1,content,intent)
     print ('intent: ',intent)
     print ('all_words: ',all_words)
     outputs,data = named_entity_reconignition(content,intent)
@@ -133,14 +135,15 @@ def nlu():
 def submitError():    
     print ('call API check OK')
     # print (request.json)
-    content = request.form['content']
+    content = request.form['text']
     intent = request.form['intent']
     if(intent == "unknown"):
         save_to_database(1,content,intent)
     else:
         save_to_database(2,content,intent)
-    texts = read_error()
-    return render_template('home.html')
+    # texts = read_error()
+    reply = "Cảm ơn bạn đã góp ý!"
+    return render_template('home.html',reply = reply)
 
 @app.route('/checkError', methods=['POST'])
 def checkError():    
@@ -165,11 +168,13 @@ def checknlu():
 def understand_language():    
     print ('call API OK')
     print (request.json)
-    content = request.json['content']
+    content = request.json['text']
     print (content)
     content = content.lower()
     print (content)
     intent,all_words = text_classify(content)
+    if(intent == "unknown"):
+        save_to_database(1,content,intent)
     outputs,data = named_entity_reconignition(content,intent)
     print ('data')
     print (data)
@@ -186,10 +191,7 @@ def check_understand_language():
     intent,all_words = text_classify(content)
     if (check == "Sai"):
         print ('False 172')
-        if(intent == "unknown"):
-            save_to_database(1,content,intent)
-        else:
-            save_to_database(2,content,intent)
+        save_to_database(2,content,intent)
         # save_to_database(content,intent)
     # outputs,data = named_entity_reconignition(content,intent)
     reply = "Cảm ơn bạn đã góp ý!"

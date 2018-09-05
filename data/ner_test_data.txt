@@ -152,27 +152,34 @@ nên C O
 mua V side-B
 ssi Np symbol
 giá N O
-10.5 M price
+10 M price
 không R O
 
 nên C O
 mua V side-B
 ssi Np symbol
 giá N O
+nào R O
 
 bán V side-S
 ssi Np symbol
+bây_giờ P O
+được V O
 không R O
 
 nên C O
 bán V side-S
 ssi Np symbol
+thời_điểm N O
+này P O
 không R O
 
 có V O
 nên C O
 bán V side-S
 ssi Np symbol
+lúc N O
+này P O
 
 nên C O
 mua V side-B
@@ -182,10 +189,12 @@ không R O
 mua V side-B
 ssi Np symbol
 giá N O
+nào R O
 
 mua V side-B
 ssi Np symbol
 giá N O
+nào R O
 
 đầu_tư V side-B
 ssi Np symbol
@@ -209,6 +218,8 @@ nắm V O
 giữ V O
 hay C O
 bán V side-S
+lúc N O
+này P O
 mã N symbol-prefix
 ssi Np symbol
 
@@ -218,11 +229,15 @@ giữ V O
 hay C O
 bán V side-S
 ssi Np symbol
+lúc N O
+này P O
 
 nên C O
 bán V side-S
 toàn_bộ N O
 ssi Np symbol
+thời_điểm N O
+này P O
 không R O
 
 mua V side-B
@@ -236,24 +251,33 @@ bán V side-S
 ssi Np symbol
 giá N O
 12 M quantity
+được V O
 không R O
 
 nên C O
 giao_dịch V O
 ssi Np symbol
+thời_điểm N O
+này P O
 
 giá N O
+nào P O
+thì C O
 nên C O
 mua V side-B
 ssi Np symbol
 
 giá N O
+nào P O
+thì C O
 bán V side-S
 ssi Np symbol
 
 nên C O
 đầu_tư V side-B
 ssi Np symbol
+lúc N O
+này P O
 không R O
 
 nên C O
@@ -268,17 +292,22 @@ nắm V O
 giữ V O
 ssi Np symbol
 giai_đoạn N O
+này V O
 
 có V O
 ổn A O
 nắm V O
 giữ V O
 ssi Np symbol
+lúc N O
+này P O
 
 có V O
 nên C O
 mua V side-B
 ssi Np symbol
+lúc N O
+này P O
 không R O
 
 mua V side-B
@@ -310,6 +339,7 @@ tài_khoản N O
 kiểm_tra V O
 tiền N O
 còn V O
+lại R O
 
 còn R O
 bao_nhiêu P O
@@ -439,7 +469,7 @@ giá N O
 mua V side-B
 ssi Np symbol
 giá N O
-21 M price
+21.5 M price
 100 M quantity
 cổ_phiếu N symbol-prefix
 
@@ -486,7 +516,7 @@ bán V side-S
 100 M quantity
 ssi Np symbol
 giá N O
-19 M price
+19.5 M price
 
 đặt V O
 mua V side-B
@@ -535,7 +565,7 @@ ssi Np symbol
 bán V side-S
 toàn_bộ N O
 giá N O
-10.5 M price
+10 M price
 mã N symbol-prefix
 ssi Np symbol
 
@@ -597,6 +627,7 @@ mã N symbol-prefix
 ssi Np symbol
 
 thông_tin N O
+về E O
 ssi Np symbol
 hôm_nay N O
 
@@ -622,6 +653,7 @@ bao_nhiêu P O
 cho E O
 xem V O
 thông_tin N O
+về E O
 ssi Np symbol
 
 hiển_thị V O
@@ -639,6 +671,7 @@ ssi Np symbol
 hôm_nay N O
 
 thông_tin N O
+về E O
 ssi Np symbol
 
 hôm_nay N O
