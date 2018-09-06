@@ -164,7 +164,10 @@ def word_notin_vocab():
         all_words = data_cleaner.separate_sentence()   
         for word in all_words:
             if word not in word2int:
-                words_notin_vocab.append(word)
+                words_notin_vocabi = []
+                words_notin_vocabi.append(word)
+                words_notin_vocabi.append(text)
+                words_notin_vocab.append(words_notin_vocabi)
     return jsonify(results = words_notin_vocab) 
 @app.route('/falseIntent',methods = ['GET'])
 def getFalseIntent():

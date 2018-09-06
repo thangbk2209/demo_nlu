@@ -1,0 +1,5 @@
+trade,mua ssi 39.5 100 cổ
+cash_balance,số dư tài khoản của tôi là bao nhiêu
+trade,mua mã ssi 100 cổ phiếu  giá 23.4 
+market,với thị trường chứng khoán này, có nên mua ssi không?
+order_status,lệnh mua ssi của tôi đã được khớp lệnh chưa

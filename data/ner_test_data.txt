@@ -90,7 +90,6 @@ ssi Np symbol
 trong E O
 tài_khoản N O
 
-muốn V O
 kiểm_tra V O
 cổ_phiếu N symbol-prefix
 ssi Np symbol
@@ -152,7 +151,7 @@ nên C O
 mua V side-B
 ssi Np symbol
 giá N O
-10 M price
+10.5 M price
 không R O
 
 nên C O
@@ -352,7 +351,6 @@ còn R O
 bao_nhiêu P O
 tiền N O
 
-muốn V O
 xem V O
 tiền N O
 trong E O
@@ -381,7 +379,6 @@ trong E O
 tài_khoản N O
 
 xem V O
-cho E O
 tiền N O
 trong E O
 tài_khoản N O
@@ -464,23 +461,21 @@ ssi Np symbol
 100 M quantity
 cổ_phiếu N symbol-prefix
 giá N O
-9.5 M price
+9 M price
 
 mua V side-B
 ssi Np symbol
 giá N O
-21.5 M price
+21 M price
 100 M quantity
 cổ_phiếu N symbol-prefix
 
-muốn V O
 bán V side-S
 100 M quantity
 ssi Np symbol
 giá N O
 25 M quantity
 
-muốn V O
 mua V side-B
 ssi Np symbol
 khối_lượng N O
@@ -516,7 +511,7 @@ bán V side-S
 100 M quantity
 ssi Np symbol
 giá N O
-19.5 M price
+19 M price
 
 đặt V O
 mua V side-B
@@ -565,7 +560,7 @@ ssi Np symbol
 bán V side-S
 toàn_bộ N O
 giá N O
-10 M price
+10.5 M price
 mã N symbol-prefix
 ssi Np symbol
 
@@ -583,7 +578,6 @@ ssi Np symbol
 giá N O
 12 M quantity
 
-muốn V O
 đầu_tư V side-B
 120 M quantity
 mã N symbol-prefix
@@ -650,7 +644,6 @@ mở_cửa V O
 ssi Np symbol
 bao_nhiêu P O
 
-cho E O
 xem V O
 thông_tin N O
 về E O

@@ -81,7 +81,8 @@
           <ul class="">
             <li class="list-group-item" style="height:50px; width: 1000px;" ng-repeat="word in all_words track by $index">    
                 <h5>
-                  <input type=”text” style="width: 500px;" ng-model = word disabled>
+                  <input type=”text” style="width: 100px;" ng-model = word[0] disabled>
+                  <input type=”text” style="width: 500px;" ng-model = word[1] disabled>
                   <!-- <span class="glyphicon glyphicon-time" >{{word}}</span>  -->
                   <input type = "button" value = 'x' ng-click = remove($index)>
                 </h5>        
@@ -262,12 +263,9 @@
             }else{
               for(var j = 0 ; j < all_words_notin_vocab.length ; j++){
                 $scope.all_words.push(all_words_notin_vocab[j]);
-              }
-            }
-            
-            if(all_words_notin_vocab.length == 1){
                 $('.subnext').hide();
-            }            
+              }
+            }    
             $('.subprev').hide();
         }); 
 
@@ -275,19 +273,32 @@
           console.log('start next!');
           step++;
           console.log(step);
-          if(all_words_notin_vocab.length == 1){
+          if(all_words_notin_vocab.length == step_size){
               $('.subnext').hide();
               $('.subprev').hide();
           }
           else{
-              if( step > 0 && step<all_words_notin_vocab.length-1){
+              if( step > 0 && step*step_size < all_words_notin_vocab.length){
                   $('.subprev').show();
                   $('.subnext').show();
               }
-              if(step == all_words_notin_vocab.length-1) {
+              if(step >= all_words_notin_vocab.length/step_size - 1) {
                   $('.subnext').hide();
                   $('.subprev').show();       
               }
+          }
+          $scope.all_words = []
+          if((step) * step_size < all_words_notin_vocab.length){
+            if((step+1)*step_size < all_words_notin_vocab.length ){
+              for(var j = step * step_size ; j < (step + 1) * step_size ; j++){
+                $scope.all_words.push(all_words_notin_vocab[j]);
+              }
+            }else{
+              for(var j = step * step_size ; j < all_words_notin_vocab.length ; j++){
+                $scope.all_words.push(all_words_notin_vocab[j]);
+              }
+            }
+            
           }
         }
         $scope.prev = function(){
@@ -306,14 +317,36 @@
               $('.subprev').hide();
               $('.subnext').show();
           }
+          $scope.all_words = []
+          if((step) * step_size < all_words_notin_vocab.length){
+            if((step+1)*step_size < all_words_notin_vocab.length ){
+              for(var j = step * step_size ; j < (step + 1) * step_size ; j++){
+                $scope.all_words.push(all_words_notin_vocab[j]);
+              }
+            }else{
+              for(var j = step * step_size ; j < all_words_notin_vocab.length ; j++){
+                $scope.all_words.push(all_words_notin_vocab[j]);
+              }
+            }
+            
+          }
         }
         $scope.remove = function(index){
           console.log(index);
           all_words_notin_vocab.splice(index, 1);
           console.log(all_words_notin_vocab);
           $scope.all_words = []
-          for(var j = 0 ; j < (step + 1) * step_size ; j++){
-            $scope.all_words.push(all_words_notin_vocab[j]);
+          if((step) * step_size < all_words_notin_vocab.length){
+            if((step+1)*step_size < all_words_notin_vocab.length ){
+              for(var j = step * step_size ; j < (step + 1) * step_size ; j++){
+                $scope.all_words.push(all_words_notin_vocab[j]);
+              }
+            }else{
+              for(var j = step * step_size ; j < all_words_notin_vocab.length ; j++){
+                $scope.all_words.push(all_words_notin_vocab[j]);
+              }
+            }
+            
           }
         }
         

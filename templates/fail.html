@@ -264,12 +264,10 @@
             }else{
               for(var j = 0 ; j < all_sentences.length ; j++){
                 $scope.all_sentences.push(all_sentences[j]);
+                $('.subnext').hide();
               }
             }
             
-            if(all_sentences.length == 1){
-                $('.subnext').hide();
-            }            
             $('.subprev').hide();
         }); 
 
@@ -277,26 +275,30 @@
           console.log('start next!');
           step++;
           console.log(step);
-          if(all_sentences.length == 1){
+          if(all_sentences.length == step_size){
               $('.subnext').hide();
               $('.subprev').hide();
           }
           else{
-              if( step > 0 && step<all_sentences.length-1){
+              if( step > 0 && step< all_sentences.length/step_size - 1){
                   $('.subprev').show();
                   $('.subnext').show();
               }
-              if(step == all_sentences.length-1) {
+              if(step >= all_sentences.length/step_size - 1) {
                   $('.subnext').hide();
                   $('.subprev').show();       
               }
           }
           $scope.all_sentences = []
-          if((step) * step_size < all_sentences.length){
-            for(var j = step * step_size ; j < (step + 1) * step_size ; j++){
+            if((step+1) * step_size < all_sentences.length ){
+              for(var j = step * step_size ; j < (step + 1) * step_size ; j++){
                 $scope.all_sentences.push(all_sentences[j]);
+              }
+            }else{
+              for(var j = step * step_size ; j < all_sentences.length ; j++){
+                $scope.all_sentences.push(all_sentences[j]);
+              }
             }
-          }
         }
         $scope.prev = function(){
           step-=1;
@@ -305,20 +307,18 @@
               $('.subprev').show();
               $('.subnext').show();
           }
-          if(step == all_sentences.length-1) {
+          if(step == all_sentences.length/step_size -1) {
               $('.subprev').show();
               $('.subnext').hide();
               
           }
-          if(step==0){
+          if(step == 0){
               $('.subprev').hide();
               $('.subnext').show();
           }
           $scope.all_sentences = []
-          if((step) * step_size < all_sentences.length){
-            for(var j = step * step_size ; j < (step + 1) * step_size ; j++){
-                $scope.all_sentences.push(all_sentences[j]);
-            }
+          for(var j = step * step_size ; j < (step + 1) * step_size ; j++){
+              $scope.all_sentences.push(all_sentences[j]);
           }
         }
         $scope.remove = function(index){
@@ -326,9 +326,16 @@
           all_sentences.splice(index, 1);
           console.log(all_sentences);
           $scope.all_sentences = []
-          for(var j = 0 ; j < (step + 1) * step_size ; j++){
-            $scope.all_sentences.push(all_sentences[j]);
+          if((step + 1) * step_size < all_sentences.length){
+            for(var j = 0 ; j < (step + 1) * step_size ; j++){
+              $scope.all_sentences.push(all_sentences[j]);
+            }
+          }else{
+            for(var j = 0 ; j < all_sentences.length ; j++){
+              $scope.all_sentences.push(all_sentences[j]);
+            }
           }
+          
         }
         
     })
